@@ -94,11 +94,18 @@ def hae_uutiset():
                 "lahde": syote["nimi"]
             }
             kaikki_uutiset.append(uutinen)
+
+    # Tallennetaan uutiset tiedostoon myöhempää käyttöä varten
+    import json
+    with open("uutiset_cache.json", "w", encoding="utf-8") as f:
+        json.dump(kaikki_uutiset, f, ensure_ascii=False, indent=2)
+
     return kaikki_uutiset
 
 def luo_html(uutiset):
     paivitysaika = datetime.now().strftime("%d.%m.%Y %H:%M")
     kortit = ""
+    relevantit = 0
 
     for u in uutiset:
         print(f"Tarkistetaan relevanssi: {u['otsikko'][:50]}...")
@@ -109,6 +116,7 @@ def luo_html(uutiset):
 
         print(f"  → Relevantti! Tehdään yhteenveto...")
         yhteenveto = tee_yhteenveto(u["otsikko"], u["yhteenveto"])
+        relevantit += 1
 
         kortit += f"""
     <div class="uutiskortti">
@@ -134,35 +142,152 @@ def luo_html(uutiset):
   <title>Rakennusmarkkinan uutiset</title>
   <style>
     * {{ box-sizing: border-box; margin: 0; padding: 0; }}
-    body {{ font-family: Arial, sans-serif; background-color: #f4f4f4; }}
-    header {{ background-color: #1a1a2e; color: white; padding: 24px 20px; text-align: center; }}
-    header h1 {{ font-size: 26px; margin-bottom: 6px; }}
-    header p {{ font-size: 14px; color: #aaa; }}
-    main {{ padding: 20px; }}
-    .uutiskortti {{ background-color: white; border-radius: 8px; padding: 20px; margin: 16px auto; max-width: 700px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }}
-    .uutiskortti h2 {{ color: #1a1a2e; font-size: 18px; margin-bottom: 8px; }}
-    .uutiskortti p {{ color: #555; line-height: 1.6; margin-bottom: 12px; }}
-    .lahde-rivi {{ display: flex; align-items: center; gap: 12px; padding-top: 12px; border-top: 1px solid #eee; flex-wrap: wrap; }}
-    .lahde-teksti {{ font-size: 13px; color: #888; }}
-    .lue-lisaa {{ display: inline-block; color: #0066cc; text-decoration: none; font-size: 14px; font-weight: bold; padding: 4px 10px; border: 1px solid #0066cc; border-radius: 4px; }}
-    .lue-lisaa:hover {{ background-color: #0066cc; color: white; }}
-    footer {{ background-color: #1a1a2e; color: #aaa; text-align: center; padding: 20px; font-size: 13px; margin-top: 40px; }}
+
+    body {{
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: #f0f0f0;
+      color: #222;
+    }}
+
+    header {{
+      background-color: #D2051E;
+      color: white;
+    }}
+
+    .header-ylaosa {{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 32px;
+    }}
+
+    .header-ylaosa h1 {{
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }}
+
+    .header-ylaosa .alaotsikko {{
+      font-size: 13px;
+      opacity: 0.85;
+      margin-top: 4px;
+    }}
+
+    .header-alapalkki {{
+      background-color: #a80016;
+      padding: 8px 32px;
+      font-size: 12px;
+      opacity: 0.9;
+    }}
+
+    main {{
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 24px 16px;
+    }}
+
+    .uutismaara {{
+      font-size: 13px;
+      color: #666;
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid #D2051E;
+    }}
+
+    .uutiskortti {{
+      background-color: white;
+      border-radius: 4px;
+      padding: 20px 24px;
+      margin-bottom: 12px;
+      border-left: 4px solid #D2051E;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }}
+
+    .uutiskortti:hover {{
+      box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+    }}
+
+    .uutiskortti h2 {{
+      color: #1a1a1a;
+      font-size: 17px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      line-height: 1.4;
+    }}
+
+    .uutiskortti p {{
+      color: #444;
+      line-height: 1.7;
+      font-size: 15px;
+      margin-bottom: 14px;
+    }}
+
+    .lahde-rivi {{
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding-top: 12px;
+      border-top: 1px solid #eee;
+      flex-wrap: wrap;
+    }}
+
+    .lahde-teksti {{
+      font-size: 12px;
+      color: #999;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }}
+
+    .lue-lisaa {{
+      display: inline-block;
+      color: #D2051E;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 4px 12px;
+      border: 1.5px solid #D2051E;
+      border-radius: 3px;
+    }}
+
+    .lue-lisaa:hover {{
+      background-color: #D2051E;
+      color: white;
+    }}
+
+    footer {{
+      background-color: #1a1a1a;
+      color: #999;
+      text-align: center;
+      padding: 24px;
+      font-size: 12px;
+      margin-top: 40px;
+      line-height: 1.8;
+    }}
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Rakennusmarkkinan uutiset</h1>
-    <p>Automaattisesti kerätyt uutiset rakennusalalta — päivitetty päivittäin</p>
+    <div class="header-ylaosa">
+      <div>
+        <h1>Rakennusmarkkinan uutiset</h1>
+        <div class="alaotsikko">Automaattisesti kerätyt uutiset rakennusalalta</div>
+      </div>
+    </div>
+    <div class="header-alapalkki">
+      Päivitetty: {paivitysaika}
+    </div>
   </header>
 
   <main>
+    <div class="uutismaara">Tänään {relevantit} relevanttia uutista</div>
 {kortit}
   </main>
 
   <footer>
-    <p>Uutiset kerätty automaattisesti julkisista lähteistä. Kaikki oikeudet alkuperäisille julkaisijoille.</p>
-    <p style="margin-top: 6px;">Viimeksi päivitetty: {paivitysaika}</p>
+    <p>Uutiset kerätty automaattisesti julkisista lähteistä.</p>
+    <p>Kaikki oikeudet alkuperäisille julkaisijoille.</p>
   </footer>
 
 </body>
@@ -171,7 +296,7 @@ def luo_html(uutiset):
     with open("index.html", "w", encoding="utf-8") as f:
         f.write(html)
 
-    print(f"\nValmis! {len(uutiset)} uutista käyty läpi.")
+    print(f"\nValmis! {relevantit} relevanttia uutista {len(uutiset)}:sta.")
     print(f"Päivitetty: {paivitysaika}")
 
 if __name__ == "__main__":

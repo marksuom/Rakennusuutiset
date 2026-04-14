@@ -1,0 +1,130 @@
+:root {
+  --paavari: #1a1a2e;
+  --paavari-tumma: #111122;
+  --korostus: #0066cc;
+  --korostus-tumma: #0052a3;
+  --tausta: #f4f4f4;
+  --kortti-tausta: white;
+  --teksti-tumma: #1a1a1a;
+  --teksti-harmaa: #555;
+  --teksti-vaalea: #888;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--tausta);
+  color: var(--teksti-tumma);
+}
+
+header {
+  background-color: var(--paavari);
+  color: white;
+}
+
+.header-ylaosa {
+  padding: 24px 32px;
+}
+
+.header-ylaosa h1 {
+  font-size: 26px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.header-ylaosa .alaotsikko {
+  font-size: 14px;
+  color: #aaa;
+  text-align: center;
+  margin-top: 6px;
+}
+
+.header-alapalkki {
+  background-color: var(--paavari-tumma);
+  padding: 8px 32px;
+  font-size: 12px;
+  color: #aaa;
+  text-align: center;
+}
+
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 20px 16px;
+}
+
+.uutismaara {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 16px;
+}
+
+.uutiskortti {
+  background-color: var(--kortti-tausta);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.uutiskortti:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.uutiskortti h2 {
+  color: var(--paavari);
+  font-size: 18px;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.uutiskortti p {
+  color: var(--teksti-harmaa);
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.lahde-rivi {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #eee;
+  flex-wrap: wrap;
+}
+
+.lahde-teksti {
+  font-size: 13px;
+  color: var(--teksti-vaalea);
+}
+
+.lue-lisaa {
+  display: inline-block;
+  color: var(--korostus);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 4px 10px;
+  border: 1px solid var(--korostus);
+  border-radius: 4px;
+}
+
+.lue-lisaa:hover {
+  background-color: var(--korostus);
+  color: white;
+}
+
+footer {
+  background-color: var(--paavari);
+  color: #aaa;
+  text-align: center;
+  padding: 20px;
+  font-size: 13px;
+  margin-top: 40px;
+  line-height: 1.8;
+}

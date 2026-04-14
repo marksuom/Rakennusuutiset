@@ -6,33 +6,150 @@
   <title>Rakennusmarkkinan uutiset</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: Arial, sans-serif; background-color: #f4f4f4; }
-    header { background-color: #1a1a2e; color: white; padding: 24px 20px; text-align: center; }
-    header h1 { font-size: 26px; margin-bottom: 6px; }
-    header p { font-size: 14px; color: #aaa; }
-    main { padding: 20px; }
-    .uutiskortti { background-color: white; border-radius: 8px; padding: 20px; margin: 16px auto; max-width: 700px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
-    .uutiskortti h2 { color: #1a1a2e; font-size: 18px; margin-bottom: 8px; }
-    .uutiskortti p { color: #555; line-height: 1.6; margin-bottom: 12px; }
-    .lahde-rivi { display: flex; align-items: center; gap: 12px; padding-top: 12px; border-top: 1px solid #eee; flex-wrap: wrap; }
-    .lahde-teksti { font-size: 13px; color: #888; }
-    .lue-lisaa { display: inline-block; color: #0066cc; text-decoration: none; font-size: 14px; font-weight: bold; padding: 4px 10px; border: 1px solid #0066cc; border-radius: 4px; }
-    .lue-lisaa:hover { background-color: #0066cc; color: white; }
-    footer { background-color: #1a1a2e; color: #aaa; text-align: center; padding: 20px; font-size: 13px; margin-top: 40px; }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: #f0f0f0;
+      color: #222;
+    }
+
+    header {
+      background-color: #D2051E;
+      color: white;
+    }
+
+    .header-ylaosa {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 32px;
+    }
+
+    .header-ylaosa h1 {
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .header-ylaosa .alaotsikko {
+      font-size: 13px;
+      opacity: 0.85;
+      margin-top: 4px;
+    }
+
+    .header-alapalkki {
+      background-color: #a80016;
+      padding: 8px 32px;
+      font-size: 12px;
+      opacity: 0.9;
+    }
+
+    main {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 24px 16px;
+    }
+
+    .uutismaara {
+      font-size: 13px;
+      color: #666;
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid #D2051E;
+    }
+
+    .uutiskortti {
+      background-color: white;
+      border-radius: 4px;
+      padding: 20px 24px;
+      margin-bottom: 12px;
+      border-left: 4px solid #D2051E;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+
+    .uutiskortti:hover {
+      box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+    }
+
+    .uutiskortti h2 {
+      color: #1a1a1a;
+      font-size: 17px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      line-height: 1.4;
+    }
+
+    .uutiskortti p {
+      color: #444;
+      line-height: 1.7;
+      font-size: 15px;
+      margin-bottom: 14px;
+    }
+
+    .lahde-rivi {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding-top: 12px;
+      border-top: 1px solid #eee;
+      flex-wrap: wrap;
+    }
+
+    .lahde-teksti {
+      font-size: 12px;
+      color: #999;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .lue-lisaa {
+      display: inline-block;
+      color: #D2051E;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 4px 12px;
+      border: 1.5px solid #D2051E;
+      border-radius: 3px;
+    }
+
+    .lue-lisaa:hover {
+      background-color: #D2051E;
+      color: white;
+    }
+
+    footer {
+      background-color: #1a1a1a;
+      color: #999;
+      text-align: center;
+      padding: 24px;
+      font-size: 12px;
+      margin-top: 40px;
+      line-height: 1.8;
+    }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Rakennusmarkkinan uutiset</h1>
-    <p>Automaattisesti kerätyt uutiset rakennusalalta — päivitetty päivittäin</p>
+    <div class="header-ylaosa">
+      <div>
+        <h1>Rakennusmarkkinan uutiset</h1>
+        <div class="alaotsikko">Automaattisesti kerätyt uutiset rakennusalalta</div>
+      </div>
+    </div>
+    <div class="header-alapalkki">
+      Päivitetty: 14.04.2026 21:51
+    </div>
   </header>
 
   <main>
+    <div class="uutismaara">Tänään 18 relevanttia uutista</div>
 
     <div class="uutiskortti">
       <h2>Destia peruskorjaa kahdeksan siltaa Uudellamaalla</h2>
-      <p>Destia on voittanut Kaakkois-Suomen Elinvoimakeskukselta urakan, jossa peruskorjataan **kahdeksan siltaa Uudellamaalla** Hyvinkäällä, Inkoossa ja Järvenpäässä.[2][3][5] Urakka kattaa monipuoliset työt kuten betonirakenteiden kunnostusta, pintarakenteiden uusimista ja liikuntasaumoja, ja se toteutetaan **syksyyn 2027 mennessä**.[1][2] Hankkeella vahvistetaan liikennetur</p>
+      <p>Destia peruskorjaa kahdeksan siltaa Uudellamaalla Kaakkois-Suomen Elinvoimakeskuksen urakassa, jonka työt toteutetaan kevään 2026 ja syksyn 2027 välillä.[2][4][5] Hankkeen kohteet sijaitsevat Hyvinkäällä, Inkoossa ja Järvenpäässä, ja se kattaa betonirakenteiden kunnostuksia sekä pintarakenteiden uusimisia.[4][5] Urakka vahvistaa Destian asemaa sillankorjausu</p>
       <div class="lahde-rivi">
         <span class="lahde-teksti">Lähde: Rakennuslehti</span>
         <a class="lue-lisaa"
@@ -46,7 +163,7 @@
 
     <div class="uutiskortti">
       <h2>Perinteikäs talotoimittaja keskeyttää myynnin Suomessa</h2>
-      <p>Perinteikäs talotoimittaja keskeyttää myynnin Suomessa kesään 2026 asti, mutta toimitukset jatkuvat vuoteen 2027.[1] Yhtiö sitoutuu täyttämään kaikki velvoitteensa asiakkaille.[1] Hankkeet sijoittuvat valtakunnallisesti Suomessa ilman mainintoja tiettyjen kohteiden koosta tai tarkemmasta aikataulusta.[2]</p>
+      <p>Perinteikäs talotoimittaja on päättänyt keskeyttää myyntinsä Suomessa, vaikka myynti jatkuu kesään saakka ja toimitukset ulottuvat ensi vuoteen.[2] Yhtiö on sitoutunut täyttämään kaikki velvoitteensa maksukyvyttömyyden huolimatta.[2] Hakemaansa konkurssia edeltävästi yhtiö oli päässyt saneerausmenettelyyn kesäkuussa, mutta lopulta jätti konkurssihakemuksen itse, koska</p>
       <div class="lahde-rivi">
         <span class="lahde-teksti">Lähde: Rakennuslehti</span>
         <a class="lue-lisaa"
@@ -60,7 +177,7 @@
 
     <div class="uutiskortti">
       <h2>Joensuuhun nousee kaksi ikääntyneiden asumisyksikköä</h2>
-      <p>Rakennusliike Lapti rakentaa Joensuun Rantakylään kaksi ikääntyneiden asumispalveluyksikköä, joihin tulee yhteensä 120 asuntoa (kumpaankin 60 asuntoa)[1]. Rakentaminen alkoi huhtikuun alussa ja hankkeet valmistuvat kesällä 2027[1]. Asumisyksiköt sisältävät sekä ympärivuorokautista palveluasumista että yhteisöllistä asumista ikääntyneille, ja</p>
+      <p>Joensuun Rantakylään, osoitteeseen Rantakylänkatu 10 & 12, rakennetaan kaksi ikääntyneiden asumisyksikköä, joihin tulee yhteensä **120 asuntoa** (kumpaankin 60 asuntoa).[1][2] Rakentaminen alkoi **huhtikuun alussa 2026**, ja yksiköt valmistuvat **kesällä 2027**; rakennusliike Lapti vastaa toteutuksesta, ja Siun sote vuokraa tilat noin 1,4 milj</p>
       <div class="lahde-rivi">
         <span class="lahde-teksti">Lähde: Rakennuslehti</span>
         <a class="lue-lisaa"
@@ -74,7 +191,7 @@
 
     <div class="uutiskortti">
       <h2>Ruotsalainen konsulttijätti laajenee Suomessa vauhdilla – ostaa jälleen yrityksen</h2>
-      <p>Ruotsalainen konsulttijätti Provikon ostaa suomalaisen yrityksen laajentaakseen toimintaansa Suomessa. Ostettava yritys tuo mukanaan vahvaa erityisosaamista vaativissa julkisissa hankinnoissa ja suurissa infrahankkeissa. Kaupan kokoluokkaa, tarkkaa sijaintia tai aikataulua ei ole määritelty.</p>
+      <p>Ruotsalainen konsulttijätti Sweco laajentaa toimintaansa Suomessa ostamalla maisema-arkkitehtitoimisto Näkymän koko osakekannan.[2] Kauppa vahvistaa Swecon asemaa erityisesti suurissa kaupungeissa ja kulttuurihistoriallisesti arvokkaissa kohteissa, joissa Provikolla on vahvaa osaamista vaativissa julkisissa hankinnoissa sekä suurissa infrahankkeissa.[1] Uutinen on julkaistu 14.4.2026.[</p>
       <div class="lahde-rivi">
         <span class="lahde-teksti">Lähde: Rakennuslehti</span>
         <a class="lue-lisaa"
@@ -88,7 +205,7 @@
 
     <div class="uutiskortti">
       <h2>Honkarakenne nimitti uuden toimitusjohtajan</h2>
-      <p>Hirsitalovalmistaja **Honkarakenne Oyj** on nimittänyt diplomi-insinööri **Magnus Hindströmin** uudeksi toimitusjohtajaksi, ja hän aloittaa tehtävässään **3.8.2026**.[1][2][3] Nykyinen toimitusjohtaja Marko Saarelainen jatkaa roolissaan nimityksen vahvistamiseen asti ja siirtyy sen jälkeen Japanin tytäryhtiön johtoon.[2][3] Yhtiö on tunnettu yli 90 000 hirsiraken</p>
+      <p>Hirsitalovalmistaja **Honkarakenne Oyj** on nimittänyt diplomi-insinööri **Magnus Hindströmin** uudeksi toimitusjohtajaksi, ja hän aloittaa tehtävässään **3.8.2026**.[1][2][3] Nykyinen toimitusjohtaja **Marko Saarelainen** jatkaa tehtävässä nimitykseen asti ja siirtyy sen jälkeen yhtiön Japanin tytäryhtiön johtoon.[3][4] Honkarakenne on myynyt yli **90 000 hirsi</p>
       <div class="lahde-rivi">
         <span class="lahde-teksti">Lähde: Rakennuslehti</span>
         <a class="lue-lisaa"
@@ -102,7 +219,9 @@
 
     <div class="uutiskortti">
       <h2>Taloyhtiöitä piinaavaan ongelmaan ehdotetaan nyt ratkaisuja – Asiantuntijalla heräsi huoli</h2>
-      <p>**Taloyhtiöiden lainansaantiongelmat ovat jatkuneet ja jonkin verran yleistyneet, erityisesti pienten yhtiöiden ja 1970–1990-luvuilla rakennettujen kohteiden kohdalla.[1][2]** Rahamarkkinoiden epävarmuus, korkojen nousu ja asuntojen arvonlasku ovat heikentäneet rahoitusympäristöä merkittävästi.[2][3] Pankit vaativat nyt yhä enemmän suunnitelmallisuutta ja tarkempia</p>
+      <p>**Taloyhtiöiden lainansaantivaikeudet ovat pitkittymiä ja yleistyneet**, erityisesti pienissä yhtiöissä ja edullisemmilla alueilla[1]. Ongelma syntyy asuntojen arvojen laskusta, joka heikentää taloyhtiöiden vakuusarvoa ja pienentää pankkien myöntämien lainojen määrää korjaushankkeisiin[4].
+
+Rahoituksen saatavuudessa on merkittäviä alueellisia eroja, ja l</p>
       <div class="lahde-rivi">
         <span class="lahde-teksti">Lähde: Kauppalehti — Rakentaminen</span>
         <a class="lue-lisaa"
@@ -116,7 +235,7 @@
 
     <div class="uutiskortti">
       <h2>Konkurssien riivaama ala katkerana: Poliitikot pahensivat lamaa</h2>
-      <p>Rakennusalan etujärjestön pääekonomisti Jouni Vihmo arvioi Talousaamussa, että alan konkurssit jatkuvat kasvussa poliitikkojen pahentamana laman vuoksi[1][2][4]. Vuonna 2025 rakennusalalla haettiin konkurssiin yli 700 yritystä, joista maaliskuussa 72 (212 henkilötyövuotta) ja huhtikuussa 87 (299 henkilötyövuotta), mikä on ennätystasoa sitten 1990-luvun lamavuosie</p>
+      <p>Rakennusalan etujärjestön pääekonomisti Jouni Vihmo varoittaa Talousaamussa lisääntyvistä konkursseista, sillä alkuvuonna on kaatunut jo noin 60 yritystä ja reilun vuoden aikana lähes 700[1]. Uusien asuntohankkeiden määrä putoaa tänä vuonna noin 20 000:een eli puoleen edellisvuodesta, mikä pahentaa ahdinkoa ja voi vaikuttaa jopa 20 000 työntekijään[2]</p>
       <div class="lahde-rivi">
         <span class="lahde-teksti">Lähde: Kauppalehti — Rakentaminen</span>
         <a class="lue-lisaa"
@@ -130,7 +249,7 @@
 
     <div class="uutiskortti">
       <h2>Nokian imu muuttui, sijoittajat luottavat nyt buddhalaiseen filosofiaan, rakentajilta karu ennuste – Katso perjantain Talousaamu</h2>
-      <p>Talousaamussa käsiteltiin Suomen asuinrakentamisen historiallisen heikkoa tilannetta, josta rakentajat antoivat karun ennusteen.[2] Keskustelussa ei mainittu tarkkoja hankkeiden kokoluokkia, sijainteja tai aikatauluja. Sijoittajat suhtautuvat Nokiaan odottavasti buddhalaiseen filosofiaan nojaten.[1]</p>
+      <p>Suomen asuinrakentamisen tilanne on historiallisen heikko, mistä keskusteltiin perjantain Talousaamussa.[1] Rakentajilta annettiin karu ennuste alalle, joka vaikuttaa suoraan rakennustuotteiden kysyntään kotimaassa. Uutisessa ei mainita tiettyjä hankkeiden kokoluokkia, sijainteja tai aikatauluja.</p>
       <div class="lahde-rivi">
         <span class="lahde-teksti">Lähde: Kauppalehti — Rakentaminen</span>
         <a class="lue-lisaa"
@@ -144,7 +263,7 @@
 
     <div class="uutiskortti">
       <h2>Jopa 1990-luvun lamassa ja finanssikriisissä meni paremmin – Pääekonomistilta synkkä arvio</h2>
-      <p>Pääekonomisti arvioi asuntorakentamisen näkymiä Suomessa poikkeuksellisen surkeiksi, jopa 1990-luvun laman ja finanssikriisin aikoja heikommiksi. Vertailu korostaa nykytilanteen vakavuutta historiallisiin taantumiin nähden, ilman mainintoja hankkeiden koosta, sijainnista tai aikataulusta. Talousaamussa käsitelty analyysi ennakoi syvää laskua rakennusalalla.[1][2]</p>
+      <p>Pääekonomisti varoittaa asuntorakentamisen poikkeuksellisen heikoista näkymistä, jotka ovat jopa 1990-luvun laman ja finanssikriisin tasoa heikompia.[1][2] Vertailussa korostuu nykyisen taantuman hitaus ja kuluttajien pessimismi, toisin kuin äkillisissä kriiseissä.[1] Rakennusalan toimittajille tämä ennakoi vähäisiä tilauksia ilman mainintoja uusista hankkeista, sijainneista tai aikataul</p>
       <div class="lahde-rivi">
         <span class="lahde-teksti">Lähde: Kauppalehti — Rakentaminen</span>
         <a class="lue-lisaa"
@@ -158,7 +277,7 @@
 
     <div class="uutiskortti">
       <h2>Tämä uusi sääntö voi pysäyttää rakennushankkeesi – Jonot ovat jo kuukausia</h2>
-      <p>Uusi rakentamislaki tuo 1.1.2026 alkaen rakennustuoteluettelon ja ilmastoselvityksen velvoitteet kaikille yli 30 m²:n rakennuksille, joiden rakentamislupaa haetaan tuosta eteenpäin, sekä tietomallipohjaiset luvat ja hiilijalanjälkilaskennan.[1][2][7] Nämä hallinnolliset vaatimukset voivat pahentaa jo kuukausia kestäviä lupajonoja heikossa suhdanteessa.[1] P</p>
+      <p>En voi vastata tähän pyyntöön, koska annettu uutisen otsikko ja sisältö eivät ole saatavilla hakutuloksissa. Hakutulokset käsittelevät vuoden 2025 alussa voimaan tullutta uutta rakentamislakia ja sen muutoksia (erityisesti alle 30 neliömetrin rakennusten rakentamisvapautta sekä ilmastoselvityksistä asetettuja vaatimuksia), mutta ne eivät sisällä mainittuun otsikkoon tai sisältöön</p>
       <div class="lahde-rivi">
         <span class="lahde-teksti">Lähde: Kauppalehti — Rakentaminen</span>
         <a class="lue-lisaa"
@@ -171,24 +290,8 @@
     </div>
 
     <div class="uutiskortti">
-      <h2>Yksi asia muutti kaiken – Onko edessä jälleen täysjarrutus?</h2>
-      <p>Iranin sota uhkaa katkaista Suomen talouskasvun elpymisen juuri silloin, kun näkymiä oli alettu parantaa.[1][2] Konfliktista aiheutuvat energian hintasokit ja lisääntynyt epävarmuus voivat hillitä investointeja ja kulutusta, mikä heikentää kasvuennusteita, jotka olivat vuodelle 2026 ennustettu 0,8–1,5 prosentin välille.[3][4]
-
-Lähi-idän tilanteen vaikutukset</p>
-      <div class="lahde-rivi">
-        <span class="lahde-teksti">Lähde: Kauppalehti — Suhdanteet</span>
-        <a class="lue-lisaa"
-           href="https://www.kauppalehti.fi/uutiset/a/07392a82-2325-43ff-9247-1758e5bdc037"
-           target="_blank"
-           rel="noopener noreferrer">
-          Lue alkuperäinen uutinen →
-        </a>
-      </div>
-    </div>
-
-    <div class="uutiskortti">
       <h2>S-Pankki leikkasi nyt kasvuennustetta – Yksi asia voi vielä pahentaa tilannetta</h2>
-      <p>S-Pankki on laskenut Suomen talouden BKT-kasvuennustetta vuodelle 2026 aiemmasta 1,3 prosentista 0,9 prosenttiin pääosin Lähi-idän tilanteen aiheuttaman epävarmuuden vuoksi.[1][2][5] Rakennusalan kannalta investointien odotetaan kasvavan 4 prosenttia vuosina 2026–2027, mikä voi tukea tuotetoimituksia, vaikka yksityinen kulutus kasvaa vaimeasti 0,8 prosenttia.[2][3</p>
+      <p>S-Pankki on leikannut Suomen vuoden 2026 BKT-kasvuennustetta 1,3 prosentista 0,9 prosenttiin pääosin Lähi-idän geopoliittisten konfliktien vuoksi, mikä voi heikentää investointeja ja yksityistä kulutusta rakennusalalla.[1][2][5] Investointien odotetaan kuitenkin kasvavan keskimäärin 4 prosenttia vuosina 2026–2027 elinkeinoelämän luottamuksen vahvistuessa.[2] Kasvu voi va</p>
       <div class="lahde-rivi">
         <span class="lahde-teksti">Lähde: Kauppalehti — Suhdanteet</span>
         <a class="lue-lisaa"
@@ -202,7 +305,7 @@ Lähi-idän tilanteen vaikutukset</p>
 
     <div class="uutiskortti">
       <h2>Rakentajille tehty kysely vihjaa: Merkkejä paremmasta löytyy jo</h2>
-      <p>Rakennusalan ammattilaisten tuore kysely osoittaa parantuvia näkymiä, kun tonttien kysyntä – erityisesti asuntotontteihin – kasvaa monissa kunnissa, mukaan lukien isot kaupungit sekä Itä- ja Pohjois-Suomen keskuskaupungit.[1] Rakentajille ARA-hankkeet ja palveluasuminen ovat kiinnostavia, ja vireillä olevat hankkeet viittaavat positiiviseen kehitykseen ilman aiempien kohteiden peruu</p>
+      <p>Stark Suomen helmikuussa 2026 tekemään kyselyyn vastasi lähes 3 000 rakennus- ja remontointialan ammattilaista, joista 40,5 prosenttia näkee jo merkkejä käänteestä parempaan.[1][2] Tulevan puolen vuoden osalta 48 prosenttia odottaa tilanteen paranevan ja seuraavan vuoden aikana peräti 77 prosenttia uskoo kehitykseen parempaan suuntaan.[1][2] Rakennustuotteiden toimittajalle kysely vihjaa pi</p>
       <div class="lahde-rivi">
         <span class="lahde-teksti">Lähde: Kauppalehti — Suhdanteet</span>
         <a class="lue-lisaa"
@@ -216,7 +319,7 @@ Lähi-idän tilanteen vaikutukset</p>
 
     <div class="uutiskortti">
       <h2>Yli miljoona neliötä tyhjillään – Asiantuntija kertoo, mitä niille vielä voi tapahtua</h2>
-      <p>Pääkaupunkiseudulla on yli miljoona neliömetriä tyhjää toimistotilaa, joka edustaa 12 prosenttia koko toimistokannasta[2]. Kiinteistöasiantuntijat näkevät ratkaisuna vanhojen toimistotilojen muuttamisen asunnoiksi ja muihin käyttötarkoituksiin, osittain purkamisella sellaisista rakennuksista, jotka eivät ole enää nykyaikaisia[2]. Helsingin ydinkeskustassa tyhjät nel</p>
+      <p>Pääkaupunkiseudulla on yli miljoona neliötä tyhjillään olevia toimistotiloja, ja toimistokriisi on jatkunut lähes 20 vuotta. Kiinteistösijoittamisen asiantuntija vakuuttaa, että kriisiin löytyy helpottavia ratkaisuja, vaikka hankkeiden tarkkoja kokoluokkia, sijainteja tai aikatauluja ei mainita. Rakennustuotteiden toimittajille tilanne korostaa tarvetta joustaviin ratkaisuihin tyhjie</p>
       <div class="lahde-rivi">
         <span class="lahde-teksti">Lähde: Kauppalehti — Toimitilat</span>
         <a class="lue-lisaa"
@@ -230,7 +333,7 @@ Lähi-idän tilanteen vaikutukset</p>
 
     <div class="uutiskortti">
       <h2>Valtion jätti-investoinnit eivät hidastu – Nato-rahoitus avaa uusia ovia</h2>
-      <p>Senaatin konsernijohtajan mukaan valtion jätti-investoinnit turvallisuusviranomaisten tarpeisiin jatkuvat korkealla tasolla lähivuosina, ja Nato-rahoitus avaa uusia mahdollisuuksia hankkeille.[1][2] Tämä koskee erityisesti isoja infrastruktuuriprojekteja kuten F-35-hävittäjätukikohtia Suomessa, joihin Nato on hyväksynyt rahoituskelpoisuuden yli sadan miljoonan euron osuudelle, pää</p>
+      <p>Suomen puolustusrakentamisen investoinnit jatkuvat korkealla tasolla, ja maa on saanut ensimmäisen kerran pääsyn Naton yhteisrahoitukseen puolustusinfrahankkeille[1]. Nato on hyväksynyt lähes koko F-35-infrarakentamisohjelman rahoituskelpoiseksi, ja Puolustuskiinteistöjen johtaja arvioi Nato-liittolaisten maksavan yli sata miljoonaa euroa hankkeiden kustannuksista[1]. Suomen lis</p>
       <div class="lahde-rivi">
         <span class="lahde-teksti">Lähde: Kauppalehti — Toimitilat</span>
         <a class="lue-lisaa"
@@ -244,7 +347,7 @@ Lähi-idän tilanteen vaikutukset</p>
 
     <div class="uutiskortti">
       <h2>Suosittu etätyö tyhjentää nyt toimistot – Lisää tulee silti</h2>
-      <p>Pääkaupunkiseudun keskeisillä toimistoalueilla on syyskuun 2025 lopussa ennätysmäärä tyhjää toimistotilaa, yli 750 000 neliömetriä, ja vajaakäyttöaste on noussut 17,1 prosenttiin etätyön lisääntyessä.[1][2] Vaikka tyhjää tilaa riittää erityisesti Sörnäisissä ja Pitäjänmäellä, uutta toimistotilaa rakennetaan parhaillaan Helsingissä Kala</p>
+      <p>Pääkaupunkiseudun toimistotilojen vajaakäyttö on saavuttanut ennätyksen yli 700 000–790 000 neliömetriä tyhjää tilaa keskeisillä alueilla, kuten Sörnäisissä, Pitäjänmäellä ja Keilaniemessä[1][2][3][4]. Tilanne on pahentunut etätyön lisääntymisen myötä jo yli 15 vuotta, vaikka uutta laadukasta A-luokan toimistotilaa rakennetaan[1][2]</p>
       <div class="lahde-rivi">
         <span class="lahde-teksti">Lähde: Kauppalehti — Toimitilat</span>
         <a class="lue-lisaa"
@@ -257,22 +360,8 @@ Lähi-idän tilanteen vaikutukset</p>
     </div>
 
     <div class="uutiskortti">
-      <h2>Helsingin ”rumin rakennus” on nyt myytävänä – Kuka ostaa?</h2>
-      <p>Helsingin kaupungin äänestämä **rumimmaksi rakennukseksi** on pantu myyntiin.[1] Rakennustuotetoimittajalle tämä avaa mahdollisuuden tarjota materiaaleja tai palveluita potentiaaliselle ostajalle kohteessa Helsingissä. Aikataulua tai hankkeen kokoluokkaa ei uutisessa tarkemmin mainita.[1]</p>
-      <div class="lahde-rivi">
-        <span class="lahde-teksti">Lähde: Kauppalehti — Toimitilat</span>
-        <a class="lue-lisaa"
-           href="https://www.kauppalehti.fi/uutiset/a/36be6ec4-5b59-4b0c-8adb-58c3b69d4233"
-           target="_blank"
-           rel="noopener noreferrer">
-          Lue alkuperäinen uutinen →
-        </a>
-      </div>
-    </div>
-
-    <div class="uutiskortti">
       <h2>Yhä useampi toimisto jää nyt tyhjäksi: ”Lyö uusia ennätyksiä”</h2>
-      <p>Etätyön yleistyminen vähentää toimistotilojen tarvetta Suomessa, jolloin valtion tilat voivat puolittua nykyisestä ja pääkaupunkiseudun tyhjää tilaa on syyskuussa 2025 noin 750 000 neliömetriä (vajaakäyttöaste 17,1 %).[1][2] Yritykset luopuvat tiloistaan tai pienentävät niitä pysyvästi, mikä heikentää toimistosektorin vetovoimaa sijoittajille.[2][</p>
+      <p>Etätyön yleistyminen vähentää toimistotilojen tarvetta Suomessa, ja pääkaupunkiseudulla tyhjää tilaa on syyskuussa 2025 noin 750 000 neliömetriä vajaakäyttöasteella 17,1 prosenttia[2]. Valtion toimistotilat voivat puolittua nykyisestä noin 20 neliömetrin henkilötyövuotta kohden, ja yritykset ennakoivat tyhjien tilojen määrän kasvavan[1][3]</p>
       <div class="lahde-rivi">
         <span class="lahde-teksti">Lähde: Kauppalehti — Toimitilat</span>
         <a class="lue-lisaa"
@@ -285,8 +374,22 @@ Lähi-idän tilanteen vaikutukset</p>
     </div>
 
     <div class="uutiskortti">
+      <h2>Rajavartiolaitos rakentaa miljoonien vastadroonijärjestelmää – pudonneet droonit voivat vauhdittaa varautumista</h2>
+      <p>Rajavartiolaitos on solminut noin **viiden miljoonan euron** sopimuksen Sensofusion Oy:n kanssa Suomen rajalle asennettavasta vastadroonijärjestelmästä, josta 90 prosenttia rahoittaa EU.[1] Järjestelmä vahvistaa rajavalvontaa drooneja vastaan koko itärajalla, ja hankinta tukee eurooppalaista turvallisuuskehitystä.[1] Sensofusion laajentaa toimintojaan yrityskaupalla Atol Aviationin kanssa Jämsän Hallissa, mik</p>
+      <div class="lahde-rivi">
+        <span class="lahde-teksti">Lähde: Yle Uutiset — Talous</span>
+        <a class="lue-lisaa"
+           href="https://yle.fi/a/74-20220300?origin=rss"
+           target="_blank"
+           rel="noopener noreferrer">
+          Lue alkuperäinen uutinen →
+        </a>
+      </div>
+    </div>
+
+    <div class="uutiskortti">
       <h2>Työmaa muuttaa liikennejärjestelyjä Jyväskylän keskustassa</h2>
-      <p>Alva-yhtiöt korjaa kaukolämpöverkon vuotokohdan Yliopistonkadun ja Väinönkadun risteyksessä Jyväskylän keskustassa viikkojen 17 ja 18 aikana.[1] Työmaa aiheuttaa poikkeavia liikennejärjestelyjä 20.–30. huhtikuuta, jolloin yksi ajokaista suljetaan, Väinönkadun suojatie on suljettu ja pyöräkaista on pois käytöstä työmaa</p>
+      <p>Alva-yhtiöt Oy:n rakennuttama kaukolämpöverkon vuotokohdan korjaus työmaa alkaa Yliopistonkadun ja Väinönkadun risteyksessä Jyväskylän keskustassa maanantaina 20.4. ja jatkuu viikkojen 17–18 ajan valmistuen 30.4. mennessä.[1] Urakoitsijana toimii Maansiirto Harry Mäkelä Oy, ja työmaa sulkee yhden ajokaistan sekä pyöräkaistan aiheuttaen poikkeavia lii</p>
       <div class="lahde-rivi">
         <span class="lahde-teksti">Lähde: Keskisuomalainen</span>
         <a class="lue-lisaa"
@@ -301,8 +404,8 @@ Lähi-idän tilanteen vaikutukset</p>
   </main>
 
   <footer>
-    <p>Uutiset kerätty automaattisesti julkisista lähteistä. Kaikki oikeudet alkuperäisille julkaisijoille.</p>
-    <p style="margin-top: 6px;">Viimeksi päivitetty: 14.04.2026 21:28</p>
+    <p>Uutiset kerätty automaattisesti julkisista lähteistä.</p>
+    <p>Kaikki oikeudet alkuperäisille julkaisijoille.</p>
   </footer>
 
 </body>
