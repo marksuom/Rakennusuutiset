@@ -1,195 +1,181 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fi">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rakennusmarkkinan uutiset</title>
-    <style>
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rakennusmarkkinan uutiset</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; background-color: #f4f4f4; }
+    header { background-color: #1a1a2e; color: white; padding: 24px 20px; text-align: center; }
+    header h1 { font-size: 26px; margin-bottom: 6px; }
+    header p { font-size: 14px; color: #aaa; }
+    main { padding: 20px; }
+    .uutiskortti { background-color: white; border-radius: 8px; padding: 20px; margin: 16px auto; max-width: 700px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    .uutiskortti h2 { color: #1a1a2e; font-size: 18px; margin-bottom: 8px; }
+    .uutiskortti p { color: #555; line-height: 1.6; margin-bottom: 12px; }
+    .lahde-rivi { display: flex; align-items: center; gap: 12px; padding-top: 12px; border-top: 1px solid #eee; flex-wrap: wrap; }
+    .lahde-teksti { font-size: 13px; color: #888; }
+    .lue-lisaa { display: inline-block; color: #0066cc; text-decoration: none; font-size: 14px; font-weight: bold; padding: 4px 10px; border: 1px solid #0066cc; border-radius: 4px; }
+    .lue-lisaa:hover { background-color: #0066cc; color: white; }
+    footer { background-color: #1a1a2e; color: #aaa; text-align: center; padding: 20px; font-size: 13px; margin-top: 40px; }
+  </style>
+</head>
+<body>
 
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
-      }
+  <header>
+    <h1>Rakennusmarkkinan uutiset</h1>
+    <p>Automaattisesti kerätyt uutiset rakennusalalta — päivitetty päivittäin</p>
+  </header>
 
-      /* --- YLÄTUNNISTE --- */
-      header {
-        background-color: #1a1a2e;
-        color: white;
-        padding: 24px 20px;
-        text-align: center;
-      }
+  <main>
 
-      header h1 {
-        font-size: 26px;
-        margin-bottom: 6px;
-      }
-
-      header p {
-        font-size: 14px;
-        color: #aaa;
-      }
-
-      /* --- PÄÄSISÄLTÖ --- */
-      main {
-        padding: 20px;
-      }
-
-      .uutiskortti {
-        background-color: white;
-        border-radius: 8px;
-        padding: 20px;
-        margin: 16px auto;
-        max-width: 700px;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-      }
-
-      .uutiskortti h2 {
-        color: #1a1a2e;
-        font-size: 18px;
-        margin-bottom: 8px;
-      }
-
-      .uutiskortti p {
-        color: #555;
-        line-height: 1.6;
-        margin-bottom: 12px;
-      }
-
-      .lahde-rivi {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        padding-top: 12px;
-        border-top: 1px solid #eee;
-        flex-wrap: wrap;
-      }
-
-      .lahde-teksti {
-        font-size: 13px;
-        color: #888;
-      }
-
-      .lue-lisaa {
-        display: inline-block;
-        color: #0066cc;
-        text-decoration: none;
-        font-size: 14px;
-        font-weight: bold;
-        padding: 4px 10px;
-        border: 1px solid #0066cc;
-        border-radius: 4px;
-      }
-
-      .lue-lisaa:hover {
-        background-color: #0066cc;
-        color: white;
-      }
-
-      /* --- ALATUNNISTE --- */
-      footer {
-        background-color: #1a1a2e;
-        color: #aaa;
-        text-align: center;
-        padding: 20px;
-        font-size: 13px;
-        margin-top: 40px;
-      }
-
-      footer a {
-        color: #aaa;
-        text-decoration: underline;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>Rakennusmarkkinan uutiset</h1>
-      <p>
-        Automaattisesti kerätyt uutiset rakennusalalta — päivitetty päivittäin
-      </p>
-    </header>
-
-    <main>
-      <div class="uutiskortti">
-        <h2>Asuntorakentaminen kasvoi Helsingissä</h2>
-        <p>
-          Pääkaupunkiseudulla on myönnetty tänä vuonna 15 % enemmän
-          rakennuslupia kuin edellisvuonna.
-        </p>
-        <div class="lahde-rivi">
-          <span class="lahde-teksti">Lähde: Rakennuslehti</span>
-          <a
-            class="lue-lisaa"
-            href="https://www.rakennuslehti.fi"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Lue alkuperäinen uutinen →
-          </a>
-        </div>
+    <div class="uutiskortti">
+      <h2>Destia peruskorjaa kahdeksan siltaa Uudellamaalla</h2>
+      <p>Urakka sisältää paljon erilaisia töitä ja toteutetaan syksyyn 2027 mennessä.</p>
+      <div class="lahde-rivi">
+        <span class="lahde-teksti">Lähde: Rakennuslehti</span>
+        <a class="lue-lisaa"
+           href="https://www.rakennuslehti.fi/2026/04/destia-peruskorjaa-kahdeksan-siltaa-uudellamaalla/"
+           target="_blank"
+           rel="noopener noreferrer">
+          Lue alkuperäinen uutinen →
+        </a>
       </div>
+    </div>
 
-      <div class="uutiskortti">
-        <h2>Rakennusmateriaalien hinnat laskivat</h2>
-        <p>
-          Teräksen ja betonin hinnat ovat laskeneet noin 8 % viimeisen
-          kvartaalin aikana.
-        </p>
-        <div class="lahde-rivi">
-          <span class="lahde-teksti">Lähde: Rakennuslehti</span>
-          <a
-            class="lue-lisaa"
-            href="https://www.rakennuslehti.fi"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Lue alkuperäinen uutinen →
-          </a>
-        </div>
+    <div class="uutiskortti">
+      <h2>Perinteikäs talotoimittaja keskeyttää myynnin Suomessa</h2>
+      <p>Myynti jatkuu kesään asti ja toimitukset ensi vuoteen. Yhtiö lupaa täyttää kaikki velvoitteensa.</p>
+      <div class="lahde-rivi">
+        <span class="lahde-teksti">Lähde: Rakennuslehti</span>
+        <a class="lue-lisaa"
+           href="https://www.rakennuslehti.fi/2026/04/perinteikas-talotoimittaja-keskeyttaa-myynnin-suomessa/"
+           target="_blank"
+           rel="noopener noreferrer">
+          Lue alkuperäinen uutinen →
+        </a>
       </div>
+    </div>
 
-      <div class="uutiskortti">
-        <h2>Uusi infrastruktuurihanke Tampereelle</h2>
-        <p>
-          Tampereen kaupunki käynnistää 200 miljoonan euron tunnelihankkeen ensi
-          keväänä.
-        </p>
-        <div class="lahde-rivi">
-          <span class="lahde-teksti">Lähde: Yle Uutiset</span>
-          <a
-            class="lue-lisaa"
-            href="https://yle.fi/uutiset"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Lue alkuperäinen uutinen →
-          </a>
-        </div>
+    <div class="uutiskortti">
+      <h2>Joensuuhun nousee kaksi ikääntyneiden asumisyksikköä</h2>
+      <p>Rakentaminen on alkanut huhtikuussa ja valmista on ensi vuonna.</p>
+      <div class="lahde-rivi">
+        <span class="lahde-teksti">Lähde: Rakennuslehti</span>
+        <a class="lue-lisaa"
+           href="https://www.rakennuslehti.fi/2026/04/joensuuhun-nousee-kaksi-ikaantyneiden-asumisyksikkoa/"
+           target="_blank"
+           rel="noopener noreferrer">
+          Lue alkuperäinen uutinen →
+        </a>
       </div>
-    </main>
+    </div>
 
-    <footer>
-      <p>
-        Uutiset kerätty automaattisesti julkisista lähteistä. Kaikki oikeudet
-        alkuperäisille julkaisijoille.
-      </p>
-      <p style="margin-top: 6px">
-        Viimeksi päivitetty: <span id="paivitysaika">ladataan...</span>
-      </p>
-    </footer>
+    <div class="uutiskortti">
+      <h2>Ruotsalainen konsulttijätti laajenee Suomessa vauhdilla – ostaa jälleen yrityksen</h2>
+      <p>Provikolla on vahvaa erityisosaamista vaativissa julkisissa hankinnoissa ja suurissa infrahankkeissa.</p>
+      <div class="lahde-rivi">
+        <span class="lahde-teksti">Lähde: Rakennuslehti</span>
+        <a class="lue-lisaa"
+           href="https://www.rakennuslehti.fi/2026/04/ruotsalainen-konsulttijatti-laajenee-suomessa-vauhdilla-ostaa-jalleen-yrityksen/"
+           target="_blank"
+           rel="noopener noreferrer">
+          Lue alkuperäinen uutinen →
+        </a>
+      </div>
+    </div>
 
-    <script>
-      const nyt = new Date();
-      const muoto = new Intl.DateTimeFormat("fi-FI", {
-        dateStyle: "long",
-        timeStyle: "short",
-      });
-      document.getElementById("paivitysaika").textContent = muoto.format(nyt);
-    </script>
-  </body>
+    <div class="uutiskortti">
+      <h2>Honkarakenne nimitti uuden toimitusjohtajan</h2>
+      <p>Uusi toimitusjohtaja aloittaa tehtävässään elokuun alkupuolella.</p>
+      <div class="lahde-rivi">
+        <span class="lahde-teksti">Lähde: Rakennuslehti</span>
+        <a class="lue-lisaa"
+           href="https://www.rakennuslehti.fi/2026/04/honkarakenne-nimitti-uuden-toimitusjohtajan/"
+           target="_blank"
+           rel="noopener noreferrer">
+          Lue alkuperäinen uutinen →
+        </a>
+      </div>
+    </div>
+
+    <div class="uutiskortti">
+      <h2>Meno Sompasaunalla on rauhoittunut Mustikkamaalle muuton jälkeen, kertovat saunaseuran aktiivit</h2>
+      <p>Kevät houkuttelee nyt ihmisiä Sompasaunaan, joka muutti viime kesänä jälleen uuteen paikkaan.</p>
+      <div class="lahde-rivi">
+        <span class="lahde-teksti">Lähde: Yle Uutiset - Talous</span>
+        <a class="lue-lisaa"
+           href="https://yle.fi/a/74-20220608?origin=rss"
+           target="_blank"
+           rel="noopener noreferrer">
+          Lue alkuperäinen uutinen →
+        </a>
+      </div>
+    </div>
+
+    <div class="uutiskortti">
+      <h2>Jyväskylässä liikuntapaikan seiniltä on vuosien aikana kadonnut tauluja – nyt mysteeri sai uuden käänteen</h2>
+      <p>Monitoimi­talosta on vuosien aikana kadonnut tauluja, joissa esiintyy juoksijoita. Ei ole tiedossa, milloin taulut ovat kadonneet, ja kuka ne on vienyt.</p>
+      <div class="lahde-rivi">
+        <span class="lahde-teksti">Lähde: Yle Uutiset - Talous</span>
+        <a class="lue-lisaa"
+           href="https://yle.fi/a/74-20220568?origin=rss"
+           target="_blank"
+           rel="noopener noreferrer">
+          Lue alkuperäinen uutinen →
+        </a>
+      </div>
+    </div>
+
+    <div class="uutiskortti">
+      <h2>Lämmin kevät saa suomalaiset keventämään vaatetusta – ”Kyllä se on niin mukava fiilis, kun on shortsit jalassa”</h2>
+      <p>Talvivaatteet ovat saaneet jäädä komeroihin, kun huhtikuussa on ollut poikkeuk­sellisen lämmintä. Lämpimään on tutkijan mukaan helpompi sopeutua kuin kylmään.</p>
+      <div class="lahde-rivi">
+        <span class="lahde-teksti">Lähde: Yle Uutiset - Talous</span>
+        <a class="lue-lisaa"
+           href="https://yle.fi/a/74-20219873?origin=rss"
+           target="_blank"
+           rel="noopener noreferrer">
+          Lue alkuperäinen uutinen →
+        </a>
+      </div>
+    </div>
+
+    <div class="uutiskortti">
+      <h2>Analyysi: Suomi antaa syöpäpotilaiden kuolla muita Pohjoismaita aiemmin, ja siitä ollaan oltu hämmentävän hiljaa</h2>
+      <p>Suomessa olisi syytä miettiä laajasti, miten syöpäpotilaita halutaan hoitaa, kirjoittavat tutkivat toimittajat Kirsi Karppinen ja Minna Knus-Galán.</p>
+      <div class="lahde-rivi">
+        <span class="lahde-teksti">Lähde: Yle Uutiset - Talous</span>
+        <a class="lue-lisaa"
+           href="https://yle.fi/a/74-20220497?origin=rss"
+           target="_blank"
+           rel="noopener noreferrer">
+          Lue alkuperäinen uutinen →
+        </a>
+      </div>
+    </div>
+
+    <div class="uutiskortti">
+      <h2>Rajavartiolaitos rakentaa miljoonien vastadroonijärjestelmää – pudonneet droonit voivat vauhdittaa varautumista</h2>
+      <p>Suomeen rakennetaan tällä hetkellä uutta vastadroonijärjestelmää, koska nykyinen järjestelmä on rajoittunut.</p>
+      <div class="lahde-rivi">
+        <span class="lahde-teksti">Lähde: Yle Uutiset - Talous</span>
+        <a class="lue-lisaa"
+           href="https://yle.fi/a/74-20220300?origin=rss"
+           target="_blank"
+           rel="noopener noreferrer">
+          Lue alkuperäinen uutinen →
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>Uutiset kerätty automaattisesti julkisista lähteistä. Kaikki oikeudet alkuperäisille julkaisijoille.</p>
+    <p style="margin-top: 6px;">Viimeksi päivitetty: 14.04.2026 21:01</p>
+  </footer>
+
+</body>
 </html>
