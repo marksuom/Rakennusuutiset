@@ -1,5 +1,12 @@
 import feedparser
+import requests
+import os
 from datetime import datetime
+from dotenv import load_dotenv
+
+# Ladataan API-avain turvallisesti .env-tiedostosta
+load_dotenv()
+API_KEY = os.getenv("PERPLEXITY_API_KEY")
 
 # Rakennusalan RSS-syötteet
 SYOTTEET = [
@@ -12,6 +19,39 @@ SYOTTEET = [
         "url": "https://feeds.yle.fi/uutiset/v1/recent.rss?publisherIds=YLE_UUTISET&concepts=18-34837"
     }
 ]
+
+def tee_yhteenveto(otsikko, teksti):
+    if not API_KEY:
+        print("Varoitus: API-avainta ei löydy .env-tiedostosta")
+        return teksti[:200] + "..." if len(teksti) > 200 else teksti
+
+    try:
+        vastaus = requests.post(
+            "https://api.perplexity.ai/chat/completions",
+            headers={
+                "Authorization": f"Bearer {API_KEY}",
+                "Content-Type": "application/json"
+            },
+            json={
+                "model": "sonar",
+                "messages": [
+                    {
+                        "role": "system",
+                        "content": "Olet rakennusalan uutistoimittaja. Tee lyhyt ja selkeä 2-3 lauseen yhteenveto suomeksi annetusta uutisesta. Älä lisää omia mielipiteitä."
+                    },
+                    {
+                        "role": "user",
+                        "content": f"Otsikko: {otsikko}\n\nSisältö: {teksti}"
+                    }
+                ],
+                "max_tokens": 150
+            }
+        )
+        vastaus.raise_for_status()
+        return vastaus.json()["choices"][0]["message"]["content"]
+    except Exception as e:
+        print(f"API-virhe: {e}")
+        return teksti[:200] + "..." if len(teksti) > 200 else teksti
 
 def hae_uutiset():
     kaikki_uutiset = []
@@ -33,10 +73,13 @@ def luo_html(uutiset):
 
     kortit = ""
     for u in uutiset:
+        print(f"Tehdään yhteenveto: {u['otsikko'][:50]}...")
+        yhteenveto = tee_yhteenveto(u["otsikko"], u["yhteenveto"])
+
         kortit += f"""
     <div class="uutiskortti">
       <h2>{u['otsikko']}</h2>
-      <p>{u['yhteenveto'][:200] + '...' if len(u['yhteenveto']) > 200 else u['yhteenveto']}</p>
+      <p>{yhteenveto}</p>
       <div class="lahde-rivi">
         <span class="lahde-teksti">Lähde: {u['lahde']}</span>
         <a class="lue-lisaa"
@@ -94,7 +137,7 @@ def luo_html(uutiset):
     with open("index.html", "w", encoding="utf-8") as f:
         f.write(html)
 
-    print(f"Valmis! Löydettiin {len(uutiset)} uutista.")
+    print(f"\nValmis! {len(uutiset)} uutista päivitetty.")
     print(f"Päivitetty: {paivitysaika}")
 
 if __name__ == "__main__":
