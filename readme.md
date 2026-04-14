@@ -77,3 +77,8 @@ git add .
 ```
 
 git commit -m "Lisätty README ja projektin muistiinpanot"
+
+### Muistettavaa ennen julkaisua
+
+- Luoda uusi sähköposti projektia varten
+- Päivittää Git-sähköposti: `git config --global user.email "uusi@email.fi"`
