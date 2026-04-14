@@ -4,27 +4,25 @@ import os
 from datetime import datetime
 from dotenv import load_dotenv
 
-# Ladataan API-avain turvallisesti .env-tiedostosta
 load_dotenv()
 API_KEY = os.getenv("PERPLEXITY_API_KEY")
 
-# Rakennusalan RSS-syötteet
 SYOTTEET = [
-    {
-        "nimi": "Rakennuslehti",
-        "url": "https://www.rakennuslehti.fi/feed/"
-    },
-    {
-        "nimi": "Yle Uutiset - Talous",
-        "url": "https://feeds.yle.fi/uutiset/v1/recent.rss?publisherIds=YLE_UUTISET&concepts=18-34837"
-    }
+    {"nimi": "Rakennuslehti", "url": "https://www.rakennuslehti.fi/feed/"},
+    {"nimi": "Kauppalehti — Rakentaminen", "url": "https://feeds.kauppalehti.fi/rss/topic/rakentaminen"},
+    {"nimi": "Kauppalehti — Suhdanteet", "url": "https://feeds.kauppalehti.fi/rss/topic/suhdanteet"},
+    {"nimi": "Kauppalehti — Toimitilat", "url": "https://feeds.kauppalehti.fi/rss/topic/toimitilat"},
+    {"nimi": "Yle — Tampere", "url": "https://feeds.yle.fi/uutiset/v1/recent.rss?publisherIds=YLE_TAMPERE"},
+    {"nimi": "Yle — Turku", "url": "https://feeds.yle.fi/uutiset/v1/recent.rss?publisherIds=YLE_TURKU"},
+    {"nimi": "Yle — Oulu", "url": "https://feeds.yle.fi/uutiset/v1/recent.rss?publisherIds=YLE_OULU"},
+    {"nimi": "Yle — Jyväskylä", "url": "https://feeds.yle.fi/uutiset/v1/recent.rss?publisherIds=YLE_KESKI_SUOMI"},
+    {"nimi": "Yle — Kuopio", "url": "https://feeds.yle.fi/uutiset/v1/recent.rss?publisherIds=YLE_KUOPIO"},
+    {"nimi": "Yle Uutiset — Talous", "url": "https://feeds.yle.fi/uutiset/v1/recent.rss?publisherIds=YLE_UUTISET&concepts=18-34837"},
+    {"nimi": "Keskisuomalainen", "url": "https://www.ksml.fi/feed/rss"},
+    {"nimi": "Kaleva", "url": "https://www.kaleva.fi/rss/kaikki"},
 ]
 
-def tee_yhteenveto(otsikko, teksti):
-    if not API_KEY:
-        print("Varoitus: API-avainta ei löydy .env-tiedostosta")
-        return teksti[:200] + "..." if len(teksti) > 200 else teksti
-
+def on_relevantti(otsikko, teksti):
     try:
         vastaus = requests.post(
             "https://api.perplexity.ai/chat/completions",
@@ -37,7 +35,37 @@ def tee_yhteenveto(otsikko, teksti):
                 "messages": [
                     {
                         "role": "system",
-                        "content": "Olet rakennusalan uutistoimittaja. Tee lyhyt ja selkeä 2-3 lauseen yhteenveto suomeksi annetusta uutisesta. Älä lisää omia mielipiteitä."
+                        "content": "Olet rakennustuotetoimittajan assistentti. Tehtäväsi on arvioida onko uutinen relevantti rakennustuotetoimittajalle. Relevantteja aiheita ovat: uudet rakennushankkeet, rakentamisen suhdanteet, toimitilat, infrastruktuuri, kaavoitus, rakennusluvat, kiinteistömarkkina, rakennusmateriaalit ja -tuotteet, alan yritykset. Vastaa AINOASTAAN sanalla KYLLÄ tai EI."
+                    },
+                    {
+                        "role": "user",
+                        "content": f"Otsikko: {otsikko}\nSisältö: {teksti[:300]}"
+                    }
+                ],
+                "max_tokens": 5
+            }
+        )
+        vastaus.raise_for_status()
+        tulos = vastaus.json()["choices"][0]["message"]["content"].strip().upper()
+        return "KYLLÄ" in tulos
+    except Exception as e:
+        print(f"Relevanssivirhe: {e}")
+        return True
+
+def tee_yhteenveto(otsikko, teksti):
+    try:
+        vastaus = requests.post(
+            "https://api.perplexity.ai/chat/completions",
+            headers={
+                "Authorization": f"Bearer {API_KEY}",
+                "Content-Type": "application/json"
+            },
+            json={
+                "model": "sonar",
+                "messages": [
+                    {
+                        "role": "system",
+                        "content": "Olet rakennusalan uutistoimittaja. Tee lyhyt ja selkeä 2-3 lauseen yhteenveto suomeksi annetusta uutisesta rakennustuotetoimittajan näkökulmasta. Korosta erityisesti hankkeiden kokoluokkaa, sijaintia ja aikataulua jos ne mainitaan. Älä lisää omia mielipiteitä."
                     },
                     {
                         "role": "user",
@@ -70,10 +98,16 @@ def hae_uutiset():
 
 def luo_html(uutiset):
     paivitysaika = datetime.now().strftime("%d.%m.%Y %H:%M")
-
     kortit = ""
+
     for u in uutiset:
-        print(f"Tehdään yhteenveto: {u['otsikko'][:50]}...")
+        print(f"Tarkistetaan relevanssi: {u['otsikko'][:50]}...")
+
+        if not on_relevantti(u["otsikko"], u["yhteenveto"]):
+            print(f"  → Hylätty")
+            continue
+
+        print(f"  → Relevantti! Tehdään yhteenveto...")
         yhteenveto = tee_yhteenveto(u["otsikko"], u["yhteenveto"])
 
         kortit += f"""
@@ -137,7 +171,7 @@ def luo_html(uutiset):
     with open("index.html", "w", encoding="utf-8") as f:
         f.write(html)
 
-    print(f"\nValmis! {len(uutiset)} uutista päivitetty.")
+    print(f"\nValmis! {len(uutiset)} uutista käyty läpi.")
     print(f"Päivitetty: {paivitysaika}")
 
 if __name__ == "__main__":
