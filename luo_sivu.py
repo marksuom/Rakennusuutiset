@@ -2,7 +2,7 @@ import feedparser
 import requests
 import os
 import re
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -105,7 +105,8 @@ def hae_uutiset():
     return kaikki_uutiset
 
 def luo_html(uutiset):
-    paivitysaika = datetime.now().strftime("%d.%m.%Y %H:%M")
+    suomi = timezone(timedelta(hours=3))
+    paivitysaika = datetime.now(suomi).strftime("%d.%m.%Y %H:%M")
     kortit = ""
     relevantit = 0
 
