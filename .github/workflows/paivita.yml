@@ -1,0 +1,35 @@
+name: Päivitä uutiset päivittäin
+
+on:
+  schedule:
+    - cron: "0 4 * * *" # Joka päivä klo 7:00 Suomen aikaa (UTC+3)
+  workflow_dispatch: # Mahdollistaa myös manuaalisen ajamisen
+
+jobs:
+  paivita:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Hae koodi
+        uses: actions/checkout@v4
+
+      - name: Asenna Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+
+      - name: Asenna kirjastot
+        run: pip install -r requirements.txt
+
+      - name: Aja uutishaku
+        env:
+          PERPLEXITY_API_KEY: ${{ secrets.PERPLEXITY_API_KEY }}
+        run: python luo_sivu.py
+
+      - name: Tallenna päivitetty sivu
+        run: |
+          git config user.name "github-actions"
+          git config user.email "265981152+marksuom@users.noreply.github.com"
+          git add index.html
+          git diff --staged --quiet || git commit -m "Automaattinen päivitys $(date +'%d.%m.%Y %H:%M')"
+          git push
