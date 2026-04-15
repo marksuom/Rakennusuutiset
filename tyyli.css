@@ -115,13 +115,8 @@ header {
   flex-wrap: wrap;
 }
 
-.filtteri-otsikko {
-  font-size: 12px;
-  font-weight: bold;
-  color: var(--teksti-harmaa);
-  min-width: 38px;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
+.filtteri-haku {
+  justify-content: center;
 }
 
 .filtteri-napit {
@@ -154,10 +149,10 @@ header {
 #hakukentta {
   border: 1px solid #ddd;
   border-radius: 20px;
-  padding: 5px 14px;
+  padding: 6px 16px;
   font-size: 13px;
-  width: 280px;
-  max-width: 100%;
+  width: 100%;
+  max-width: 500px;
   outline: none;
   transition: border-color 0.15s;
 }

@@ -64,14 +64,12 @@ def on_relevantti(otsikko, teksti):
                     {
                         "role": "system",
                         "content": (
-                            "Olet rakennustuotetoimittajan assistentti. Tehtäväsi on arvioida onko uutinen "
-                            "relevantti rakennustuotetoimittajalle. Relevantteja aiheita ovat: uudet "
-                            "rakennushankkeet, rakentamisen suhdanteet, toimitilat, infrastruktuuri, "
-                            "kaavoitus, rakennusluvat, kiinteistömarkkina, rakennusmateriaalit ja -tuotteet, "
-                            "alan yritykset. Erityisen relevantteja ovat uutiset jotka koskevat seuraavia "
-                            "rakennusalan yrityksiä: YIT, SRV, Skanska, NCC, Peab, Hartela, Lehto Group, "
-                            "Lapti, Are, Luja, Jatke, Fira, Consti, Bonava, Destia, Kreate, Caverion. "
-                            "Vastaa AINOASTAAN sanalla KYLLÄ tai EI."
+                            "Arvioi onko uutinen relevantti rakennustuotetoimittajalle. "
+                            "Relevanttia: rakennushankkeet, suhdanteet, toimitilat, infrastruktuuri, "
+                            "kaavoitus, rakennusluvat, kiinteistöt, rakennusmateriaalit, "
+                            "YIT, SRV, Skanska, NCC, Peab, Hartela, Lehto, Lapti, Are, "
+                            "Luja, Jatke, Fira, Consti, Bonava, Destia, Kreate, Caverion. "
+                            "Vastaa KYLLÄ tai EI."
                         )
                     },
                     {
@@ -107,14 +105,11 @@ def analysoi_uutinen(otsikko, teksti):
                     {
                         "role": "system",
                         "content": (
-                            "Olet rakennusalan uutistoimittaja. Analysoi uutinen ja palauta AINOASTAAN "
-                            "JSON-objekti ilman muuta tekstiä, muodossa:\n"
-                            '{"yhteenveto": "...", "alue": "...", "aihepiiri": "..."}\n\n'
-                            "Ohjeet:\n"
-                            "- yhteenveto: 2-3 lausetta suomeksi rakennustuotetoimittajan näkökulmasta. "
-                            "Korosta hankkeiden kokoluokkaa, sijaintia ja aikataulua. Älä käytä viittausnumeroita.\n"
-                            f"- alue: valitse YKSI seuraavista: {alueet_str}\n"
-                            f"- aihepiiri: valitse YKSI seuraavista: {aihepiirit_str}"
+                            "Palauta AINOASTAAN JSON ilman muuta tekstiä:\n"
+                            '{"yhteenveto": "...", "alue": "...", "aihepiiri": "..."}\n'
+                            "- yhteenveto: 2-3 lausetta suomeksi, korosta kokoluokka/sijainti/aikataulu, ei viittausnumeroita\n"
+                            f"- alue: YKSI: {alueet_str}\n"
+                            f"- aihepiiri: YKSI: {aihepiirit_str}"
                         )
                     },
                     {
@@ -288,20 +283,17 @@ def luo_html(analysoidut, paivat, paiva_str):
   <div class="filtterit">
     <div class="kehys">
       <div class="filtteri-rivi">
-        <span class="filtteri-otsikko">Alue:</span>
         <div class="filtteri-napit" id="alue-napit">
           {alue_napit}
         </div>
       </div>
       <div class="filtteri-rivi">
-        <span class="filtteri-otsikko">Aihe:</span>
         <div class="filtteri-napit" id="aihe-napit">
           {aihe_napit}
         </div>
       </div>
-      <div class="filtteri-rivi">
-        <span class="filtteri-otsikko">Haku:</span>
-        <input type="text" id="hakukentta" placeholder="Hae otsikoista ja yhteenvedoista...">
+      <div class="filtteri-rivi filtteri-haku">
+        <input type="text" id="hakukentta" placeholder="Hae uutisista...">
       </div>
     </div>
   </div>
