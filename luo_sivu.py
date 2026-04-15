@@ -279,26 +279,30 @@ def luo_html(analysoidut, paivat, paiva_str):
       Päivitetty: {paivitysaika}
     </div>
     <nav class="paivanavigaatio">
+      <div class="kehys">
         {paivanavigaatio}
+      </div>
     </nav>
   </header>
 
   <div class="filtterit">
-    <div class="filtteri-rivi">
-      <span class="filtteri-otsikko">Alue:</span>
-      <div class="filtteri-napit" id="alue-napit">
-        {alue_napit}
+    <div class="kehys">
+      <div class="filtteri-rivi">
+        <span class="filtteri-otsikko">Alue:</span>
+        <div class="filtteri-napit" id="alue-napit">
+          {alue_napit}
+        </div>
       </div>
-    </div>
-    <div class="filtteri-rivi">
-      <span class="filtteri-otsikko">Aihe:</span>
-      <div class="filtteri-napit" id="aihe-napit">
-        {aihe_napit}
+      <div class="filtteri-rivi">
+        <span class="filtteri-otsikko">Aihe:</span>
+        <div class="filtteri-napit" id="aihe-napit">
+          {aihe_napit}
+        </div>
       </div>
-    </div>
-    <div class="filtteri-rivi">
-      <span class="filtteri-otsikko">Haku:</span>
-      <input type="text" id="hakukentta" placeholder="Hae otsikoista ja yhteenvedoista...">
+      <div class="filtteri-rivi">
+        <span class="filtteri-otsikko">Haku:</span>
+        <input type="text" id="hakukentta" placeholder="Hae otsikoista ja yhteenvedoista...">
+      </div>
     </div>
   </div>
 

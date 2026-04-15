@@ -27,26 +27,32 @@ header {
   color: white;
 }
 
+/* --- Yhteinen leveysrajoitin --- */
+.kehys {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
 .header-ylaosa {
-  padding: 24px 32px;
+  padding: 28px 16px 20px;
+  text-align: center;
 }
 
 .header-ylaosa h1 {
   font-size: 26px;
   font-weight: 700;
-  text-align: center;
 }
 
 .header-ylaosa .alaotsikko {
   font-size: 14px;
   color: #aaa;
-  text-align: center;
   margin-top: 6px;
 }
 
 .header-alapalkki {
   background-color: var(--paavari-tumma);
-  padding: 8px 32px;
+  padding: 7px 16px;
   font-size: 12px;
   color: #aaa;
   text-align: center;
@@ -54,20 +60,23 @@ header {
 
 /* --- Päivänavigaatio --- */
 .paivanavigaatio {
+  background-color: var(--paavari-tumma);
+  border-top: 1px solid rgba(255,255,255,0.07);
+  padding: 10px 16px;
+}
+
+.paivanavigaatio .kehys {
   display: flex;
   gap: 6px;
-  padding: 12px 32px;
-  background-color: var(--paavari-tumma);
   flex-wrap: wrap;
   justify-content: center;
-  border-top: 1px solid rgba(255,255,255,0.07);
 }
 
 .paivanavigaatio button {
   background: transparent;
   border: 1px solid rgba(255,255,255,0.25);
   color: #ccc;
-  padding: 5px 13px;
+  padding: 5px 14px;
   border-radius: 20px;
   font-size: 13px;
   cursor: pointer;
@@ -90,7 +99,10 @@ header {
 .filtterit {
   background: white;
   border-bottom: 1px solid #e0e0e0;
-  padding: 14px 32px;
+  padding: 12px 16px;
+}
+
+.filtterit .kehys {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -107,7 +119,7 @@ header {
   font-size: 12px;
   font-weight: bold;
   color: var(--teksti-harmaa);
-  min-width: 36px;
+  min-width: 38px;
   text-transform: uppercase;
   letter-spacing: 0.04em;
 }
@@ -144,7 +156,8 @@ header {
   border-radius: 20px;
   padding: 5px 14px;
   font-size: 13px;
-  width: 300px;
+  width: 280px;
+  max-width: 100%;
   outline: none;
   transition: border-color 0.15s;
 }
