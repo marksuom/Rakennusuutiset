@@ -16,7 +16,7 @@
       </div>
     </div>
     <div class="header-alapalkki">
-      Päivitetty: 15.04.2026 11:24
+      Päivitetty: 15.04.2026 11:35
     </div>
     <nav class="paivanavigaatio">
       <div class="kehys">
@@ -28,7 +28,6 @@
   <div class="filtterit">
     <div class="kehys">
       <div class="filtteri-rivi">
-        <span class="filtteri-otsikko">Alue:</span>
         <div class="filtteri-napit" id="alue-napit">
           <button class="aktiivinen" onclick="asetaAlue(this, 'kaikki')">Kaikki alueet</button>
         <button onclick="asetaAlue(this, 'Pääkaupunkiseutu')">Pääkaupunkiseutu</button>
@@ -42,7 +41,6 @@
         </div>
       </div>
       <div class="filtteri-rivi">
-        <span class="filtteri-otsikko">Aihe:</span>
         <div class="filtteri-napit" id="aihe-napit">
           <button class="aktiivinen" onclick="asetaAihe(this, 'kaikki')">Kaikki aiheet</button>
         <button onclick="asetaAihe(this, 'Uudet hankkeet')">Uudet hankkeet</button>
@@ -53,9 +51,8 @@
 
         </div>
       </div>
-      <div class="filtteri-rivi">
-        <span class="filtteri-otsikko">Haku:</span>
-        <input type="text" id="hakukentta" placeholder="Hae otsikoista ja yhteenvedoista...">
+      <div class="filtteri-rivi filtteri-haku">
+        <input type="text" id="hakukentta" placeholder="Hae uutisista...">
       </div>
     </div>
   </div>
@@ -68,7 +65,7 @@
          data-aihepiiri="Uudet hankkeet">
       <div class="kortti-aihepiiri">Uudet hankkeet</div>
       <h2>Peab sai ison koulu-urakan Kauniaisista</h2>
-      <p>Peab on saanut 13 miljoonan euron arvoisen urakan Kaarinan kaupungilta uuden ala-asteen ja päiväkodin rakentamisesta, joka kattaa 5900 m² tilat esikoululle ja luokille 1–4 sekä purkamisen vanhasta rakennuksesta. Hanke sijaitsee Kaarinassa Varsinais-Suomessa, työt alkavat helmikuussa 2026 ja valmistuvat helmikuussa 2028. Rakennustuotetoimittajalle tämä on merkittävä kouluhanke kasvukeskuksessa.</p>
+      <p>Peab on saanut 13 miljoonan euron urakan rakentaa uusi 5900 m² alaista alakoulu ja päiväkoti Kaarinassa, joka sisältää vanhan rakennuksen purkamisen, uusrakentamisen, maanmuotoilun ja pysäköinnin. Rakentaminen alkaa helmikuussa ja valmistuu helmikuussa 2028. Projekti rekisteröidään tilauskannassa ensimmäisellä neljänneksellä 2026.</p>
       <div class="lahde-rivi">
         <span class="lahde-teksti">Lähde: Rakennuslehti · Koko Suomi</span>
         <a class="lue-lisaa"
@@ -85,7 +82,7 @@
          data-aihepiiri="Uudet hankkeet">
       <div class="kortti-aihepiiri">Uudet hankkeet</div>
       <h2>Jatke rakentaa asuinkerrostalon Laajasaloon</h2>
-      <p>Tencon urakoi Helsingin kaupungille 65 asunnon kohtuuhintaisen vuokra-asuinkerrostalon Laajasaloon Koirasaarentielle 10. Rakennustyöt alkavat huhti-toukokuussa 2026 ja valmistuvat lokakuussa 2027. Kyseessä on Tenconin ensimmäinen urakka Helsingin kaupungille ja ensimmäinen hanke Laajasalon alueella.</p>
+      <p>Tencon urakoi Helsingin kaupungille 65 asunnon kerrostalon Laajasaloon Koirasaarentielle 10. Rakennustyöt alkavat huhti-toukokuussa 2026 ja valmistuvat lokakuussa 2027. Kohde on Tenconin ensimmäinen urakka kaupungille ja ensimmäinen Laajasalossa.</p>
       <div class="lahde-rivi">
         <span class="lahde-teksti">Lähde: Rakennuslehti · Pääkaupunkiseutu</span>
         <a class="lue-lisaa"
@@ -98,83 +95,15 @@
     </div>
 
     <div class="uutiskortti"
-         data-alue="Koko Suomi"
-         data-aihepiiri="Uudet hankkeet">
-      <div class="kortti-aihepiiri">Uudet hankkeet</div>
-      <h2>Niuvanniemen sairaalan suunnittelukilpailu ratkesi</h2>
-      <p>Niuvanniemen oikeuspsykiatrisen sairaalan uudisrakennuksen suunnittelukilpailun ensimmäinen vaihe on ratkennut, ja ehdotukset 'Toivo' ja 'Niityllä' etenevät jatkokehitykseen käyttäjien ja asiantuntijoiden kanssa. Hanke sijoittuu Kuopioon noin 11 000 brm²:n kokoluokassa sisältäen kuusi potilasosastoa ulkoilupihoineen sekä hoitokeskuksen, painottaen turvallisuutta, kulttuuriympäristön arvostamista ja kustannustehokkuutta. Lopullinen suunnittelutoimeksianto ja sopimukset päätetään kehitysvaiheen jälkeen, minkä jälkeen rakentaminen pyritään aloittamaan viiveettömästi.</p>
-      <div class="lahde-rivi">
-        <span class="lahde-teksti">Lähde: Rakennuslehti · Koko Suomi</span>
-        <a class="lue-lisaa"
-           href="https://www.rakennuslehti.fi/2026/04/niuvanniemen-sairaalan-suunnittelukilpailu-ratkesi/"
-           target="_blank"
-           rel="noopener noreferrer">
-          Lue alkuperäinen →
-        </a>
-      </div>
-    </div>
-
-    <div class="uutiskortti"
-         data-alue="Koko Suomi"
+         data-alue="Pääkaupunkiseutu"
          data-aihepiiri="Alan yritykset">
       <div class="kortti-aihepiiri">Alan yritykset</div>
       <h2>Remount kasvoi vahvasti yritysostojen siivittämänä – ”Konsernitasolla tilauskanta on säilynyt vakaana”</h2>
-      <p>Korjausrakennuskonserni re:mount kasvoi vahvasti vuonna 2024 yritysostojen ansiosta, nostattaen pro forma -liikevaihdon noin 187 miljoonaan euroon ja henkilöstömäärän 380:een. Vuonna 2024 tehtiin viisi yritysostoa Pääkaupunkiseudulla, Turussa ja Tampereella, ja vuonna 2025 kaksi lisää Pääkaupunkiseudulla sekä Seinäjoella, jolloin tytäryhtiöitä on nyt 11. Konsernitasolla tilauskanta on säilynyt vakaana ja korjausrakentamisen näkymät ovat hyvät kilpailun kiristyessäkin.</p>
-      <div class="lahde-rivi">
-        <span class="lahde-teksti">Lähde: Rakennuslehti · Koko Suomi</span>
-        <a class="lue-lisaa"
-           href="https://www.rakennuslehti.fi/2026/04/remount-kasvoi-vahvasti-yritysostojen-siivittamana/"
-           target="_blank"
-           rel="noopener noreferrer">
-          Lue alkuperäinen →
-        </a>
-      </div>
-    </div>
-
-    <div class="uutiskortti"
-         data-alue="Pääkaupunkiseutu"
-         data-aihepiiri="Infrastruktuuri">
-      <div class="kortti-aihepiiri">Infrastruktuuri</div>
-      <h2>Destia peruskorjaa kahdeksan siltaa Uudellamaalla</h2>
-      <p>Destia on voittanut urakan, jossa peruskorjataan kahdeksan siltaa Uudellamaalla Kaakkois-Suomen ELY-keskuksen toimeksiannosta. Hanke kattaa monipuoliset työt kuten betonirakenteiden kunnostusta, pintarakenteiden uusimista ja liikuntasaumojen korjausta. Työt toteutetaan kevään 2026 ja syksyn 2027 välillä.</p>
+      <p>Korjausrakennuskonserni re:mount kasvoi vahvasti vuonna 2024 yritysostojen ansiosta, liikevaihto nousi yli kolmanneksella ja pro forma -liikevaihto noin 187 miljoonaan euroon noin 380 henkilön voimin. Vuonna 2025 jatkettu kasvua kahdella uudella yritysostolla, tilauskanta pysynyt vakaana. Toiminta keskittyy pääkaupunkiseudulle, Turkuun, Tampereelle ja Seinäjoelle.</p>
       <div class="lahde-rivi">
         <span class="lahde-teksti">Lähde: Rakennuslehti · Pääkaupunkiseutu</span>
         <a class="lue-lisaa"
-           href="https://www.rakennuslehti.fi/2026/04/destia-peruskorjaa-kahdeksan-siltaa-uudellamaalla/"
-           target="_blank"
-           rel="noopener noreferrer">
-          Lue alkuperäinen →
-        </a>
-      </div>
-    </div>
-
-    <div class="uutiskortti"
-         data-alue="Pääkaupunkiseutu"
-         data-aihepiiri="Uudet hankkeet">
-      <div class="kortti-aihepiiri">Uudet hankkeet</div>
-      <h2>Suomeen pukkaa nyt datakeskuksia tolkutonta tahtia</h2>
-      <p>Suomeen suunnitellaan satoja datakeskushankkeita yhteensä yli 50 000 megawatin teholla, mikä ylittää kolminkertaisesti nykyisen huippukulutuksen, mutta Fingridin mukaan toteutuu realistisesti vain kymmenesosa eli noin 5 000 megawattia. Hankkeet keskittyvät pääosin Etelä-Suomeen lähelle pääkaupunkiseutua, missä sähköverkko on jo täynnä eikä kestä kaikkia. Verkostojen vahvistaminen ja sijoittuminen tuotantoalueille lähemmäs ovat välttämättömiä aikataulun mukaiselle toteutumiselle.</p>
-      <div class="lahde-rivi">
-        <span class="lahde-teksti">Lähde: Kauppalehti — Rakentaminen · Pääkaupunkiseutu</span>
-        <a class="lue-lisaa"
-           href="https://www.kauppalehti.fi/uutiset/a/f06582e2-ec7f-4f3c-8c60-04d9089b0b1c"
-           target="_blank"
-           rel="noopener noreferrer">
-          Lue alkuperäinen →
-        </a>
-      </div>
-    </div>
-
-    <div class="uutiskortti"
-         data-alue="Koko Suomi"
-         data-aihepiiri="Toimitilat & kiinteistöt">
-      <div class="kortti-aihepiiri">Toimitilat & kiinteistöt</div>
-      <h2>Taloyhtiöitä piinaavaan ongelmaan ehdotetaan nyt ratkaisuja – Asiantuntijalla heräsi huoli</h2>
-      <p>Taloyhtiöillä on kasvavia vaikeuksia saada korjauslainoja etenkin korjausvelan, pienen koon ja sijaintialueen vuoksi, mikä vaikeuttaa laajoja saneerauksia kuten linjasaneerauksia koko Suomessa. Ongelma korostuu pienissä rivitaloyhtiöissä ja edullisilla alueilla, joissa vakuusarvot eivät riitä. Asiantuntijat suosittelevat suunnitelmallista kunnossapitoa ja ennakointia välttääkseen konkurssiriskit.</p>
-      <div class="lahde-rivi">
-        <span class="lahde-teksti">Lähde: Kauppalehti — Rakentaminen · Koko Suomi</span>
-        <a class="lue-lisaa"
-           href="https://www.kauppalehti.fi/uutiset/a/baed86e9-901a-4a1b-94da-0e9370d9bb6e"
+           href="https://www.rakennuslehti.fi/2026/04/remount-kasvoi-vahvasti-yritysostojen-siivittamana/"
            target="_blank"
            rel="noopener noreferrer">
           Lue alkuperäinen →
@@ -187,7 +116,7 @@
          data-aihepiiri="Suhdanteet">
       <div class="kortti-aihepiiri">Suhdanteet</div>
       <h2>Konkurssien riivaama ala katkerana: Poliitikot pahensivat lamaa</h2>
-      <p>Rakennusalan konkurssit ovat kasvaneet merkittävästi 2020-luvulla, ja alan etujärjestön pääekonomisti Jouni Vihmo arvioi lisääntyvän määrän jatkuvan poliitikkojen pahentaman laman vuoksi. Tilastokeskuksen tietojen mukaan vuoden 2025 alussa rakennusalalla haettiin vireille kymmeniä konkursseja kuukaudessa, kuten 87 huhtikuussa ja 72 maaliskuussa, uhkaen satoja työpaikkoja. Ala on kärjessä konkurssitilastoissa koko Suomessa ilman merkkejä nopeasta toipumisesta.</p>
+      <p>Rakennusala kärsii korkeasta konkurssien määrästä, joka ylittää 1990-luvun lamavuosia. Vuonna 2025 tehtiin noin 700-800 rakennusalan konkurssia, ja trendi jatkaa kasvuaan huhtikuussa 2025.</p>
       <div class="lahde-rivi">
         <span class="lahde-teksti">Lähde: Kauppalehti — Rakentaminen · Koko Suomi</span>
         <a class="lue-lisaa"
@@ -204,7 +133,7 @@
          data-aihepiiri="Suhdanteet">
       <div class="kortti-aihepiiri">Suhdanteet</div>
       <h2>Nokian imu muuttui, sijoittajat luottavat nyt buddhalaiseen filosofiaan, rakentajilta karu ennuste – Katso perjantain Talousaamu</h2>
-      <p>Suomen asuinrakentaminen on historiallisen heikossa tilanteessa, ja rakentajat antavat karun ennusteen alan kehitykselle. Keskustelussa Talousaamussa korostettiin markkinoiden historiallisen heikkoa virettä ilman mainintoja uusista hankkeista, sijainneista tai aikatauluista. Tämä heijastaa laajaa suhdanteiden laskua koko Suomessa.</p>
+      <p>Talousaamussa käsiteltiin sijoittajien toiveikkuutta Lähi-idän kriisin keskellä sekä Trumpin Nato-kritiikkiä. Keskusteltiin Nokian odotuksista ja sijoittajien buddhalaiseen filosofiaan nojaavasta luottamuksesta. Rakentajilta tuli karu ennuste Suomen asuinrakentamisen historiallisen heikosta tilanteesta.</p>
       <div class="lahde-rivi">
         <span class="lahde-teksti">Lähde: Kauppalehti — Rakentaminen · Koko Suomi</span>
         <a class="lue-lisaa"
@@ -217,13 +146,13 @@
     </div>
 
     <div class="uutiskortti"
-         data-alue="Pääkaupunkiseutu"
+         data-alue="Koko Suomi"
          data-aihepiiri="Suhdanteet">
       <div class="kortti-aihepiiri">Suhdanteet</div>
       <h2>Jopa 1990-luvun lamassa ja finanssikriisissä meni paremmin – Pääekonomistilta synkkä arvio</h2>
-      <p>Pääekonomisti vertaa nykyisiä asuntorakentamisen näkymiä historiallisiin kriiseihin ja antaa synkkiän arvion tilanteesta. Uutinen käsittelee asuntorakentamisen surkeilta näyttäviä tulevaisuudennäkymiä talousaamun keskustelussa.</p>
+      <p>Pääekonomisti antaa synkän arvion asuntorakentamisen näkymistä, jotka ovat heikompia kuin 1990-luvun lamassa ja finanssikriisissä. Talousaamussa käsiteltiin surkeita suhdanteita ja vertailtiin historiallisiin kriiseihin. Arvio korostaa nykytilanteen poikkeuksellista heikkoutta.</p>
       <div class="lahde-rivi">
-        <span class="lahde-teksti">Lähde: Kauppalehti — Rakentaminen · Pääkaupunkiseutu</span>
+        <span class="lahde-teksti">Lähde: Kauppalehti — Rakentaminen · Koko Suomi</span>
         <a class="lue-lisaa"
            href="https://www.kauppalehti.fi/uutiset/a/4f9ae3e5-6773-45c6-8380-dd176b2a4d89"
            target="_blank"
@@ -237,8 +166,25 @@
          data-alue="Koko Suomi"
          data-aihepiiri="Suhdanteet">
       <div class="kortti-aihepiiri">Suhdanteet</div>
+      <h2>Yksi asia muutti kaiken – Onko edessä jälleen täysjarrutus?</h2>
+      <p>Iranin sota, joka alkoi helmikuun lopussa 2026, uhkaa jarruttaa Suomen parantuneita talouskasvunäkymiä nostamalla energian hintoja ja lisäämällä epävarmuutta. Kriisi vaikuttaa öljyn ja kaasun saatavuuteen Hormuzinsalmella, mikä nostaa inflaatiopaineita ja heikentää kulutusta sekä investointeja. Vaikutukset jäävät toistaiseksi maltillisiksi, jos sota päättyy pian, mutta kuukauden kestäneenä se voi johtaa kasvuennusteiden leikkauksiin.</p>
+      <div class="lahde-rivi">
+        <span class="lahde-teksti">Lähde: Kauppalehti — Suhdanteet · Koko Suomi</span>
+        <a class="lue-lisaa"
+           href="https://www.kauppalehti.fi/uutiset/a/07392a82-2325-43ff-9247-1758e5bdc037"
+           target="_blank"
+           rel="noopener noreferrer">
+          Lue alkuperäinen →
+        </a>
+      </div>
+    </div>
+
+    <div class="uutiskortti"
+         data-alue="Koko Suomi"
+         data-aihepiiri="Suhdanteet">
+      <div class="kortti-aihepiiri">Suhdanteet</div>
       <h2>S-Pankki leikkasi nyt kasvuennustetta – Yksi asia voi vielä pahentaa tilannetta</h2>
-      <p>S-Pankki on laskenut Suomen talouden BKT-kasvuennusteen vuodelle 2026 0,9 prosenttiin aiemman 1,3 prosentin sijaan, pääosin Lähi-idän geopoliittisen epävarmuuden vuoksi. Kasvua odotetaan investointien ja yksityisen kulutuksen tukemana, mutta ennuste on herkkä ulkoisille riskeille koko maassa. Rakennusalalla tämä voi hidastaa uusia hankkeita ja heikentää suhdanteita vuonna 2026.</p>
+      <p>S-Pankki on laskenut Suomen vuoden 2026 BKT-kasvuennusteen 1,3 prosentista 0,9 prosenttiin joulukuun 2025 ennusteeseen verrattuna. Pääsyynä on Lähi-idän geopoliittinen epävarmuus ja konfliktit, jotka voivat pahentaa tilannetta pidemmällä aikavälillä. Kasvu odotetaan kiihtyvän 1,5 prosenttiin vuonna 2027 investointien ja yksityisen kulutuksen tukemana.</p>
       <div class="lahde-rivi">
         <span class="lahde-teksti">Lähde: Kauppalehti — Suhdanteet · Koko Suomi</span>
         <a class="lue-lisaa"
@@ -255,7 +201,7 @@
          data-aihepiiri="Suhdanteet">
       <div class="kortti-aihepiiri">Suhdanteet</div>
       <h2>Rakentajille tehty kysely vihjaa: Merkkejä paremmasta löytyy jo</h2>
-      <p>Rakennusalan ammattilaisten tuore kysely osoittaa, että alan näkymät alkavat kirkastua ja merkkejä paremmasta löytyy jo useilla alueilla. Rakentajat arvioivat tonttimarkkinoiden tilannetta positiiviseksi, kysyntää asuntotonteille ja rakentamishankkeita on vireillä koko Suomessa ilman aikataulutietoja. Suhdanteet viittaavat maltilliseen hintakehitykseen ja kasvavaan kiinnostukseen ARA-palveluasumiseen sekä vuokrataloihin.</p>
+      <p>Rakennusalan ammattilaisten kysely osoittaa, että alan näkymät kirkastuvat ja merkkejä paremmasta löytyy jo useissa kunnissa. Tonttien kysyntä, erityisesti asuntotontteihin, on kasvanut tai pysynyt ennallaan, ja hintojen odotetaan nousevan hieman tai pysyvän vakaina. Suhdannekehitys on positiivinen erityisesti kasvukeskusten ulkopuolella, ja rakentajat näkevät parantuvia edellytyksiä.</p>
       <div class="lahde-rivi">
         <span class="lahde-teksti">Lähde: Kauppalehti — Suhdanteet · Koko Suomi</span>
         <a class="lue-lisaa"
@@ -272,7 +218,7 @@
          data-aihepiiri="Toimitilat & kiinteistöt">
       <div class="kortti-aihepiiri">Toimitilat & kiinteistöt</div>
       <h2>Yli miljoona neliötä tyhjillään – Asiantuntija kertoo, mitä niille vielä voi tapahtua</h2>
-      <p>Pääkaupunkiseudulla on maaliskuun 2026 lopussa yli 791 000 neliömetriä tyhjää toimistotilaa keskeisillä toimistoalueilla, mikä vastaa 18,1 prosentin vajaakäyttöastetta. Tilanne on jatkunut jo lähes 20 vuotta, ja asiantuntijat ehdottavat ratkaisuiksi muun muassa tyhjien toimistojen muuntamista asunnoiksi, mikä voisi tuoda ydinkeskustaan tuhansia uusia asukkaita. Vajaakäyttö on lievässä kasvussa tietyillä alueilla kuten Kalasatamassa, mutta laskenut muualla kuten Otaniemessä ja Pitäjänmäellä.</p>
+      <p>Pääkaupunkiseudulla on tyhjillään yli 791 000 neliömetriä toimistotilaa maaliskuun 2026 lopussa, mikä vastaa 18,1 prosentin vajaakäyttöastetta. Asiantuntijat ehdottavat ratkaisuiksi toimistojen muuntamista asunnoiksi, erityisesti ydinkeskustassa noin 70 000 m² tyhjästä tilasta saataisiin tuhat asuntoa. Muita vaihtoehtoja ovat lyhytaikaiset vuokraukset kuten pop-upit, coworking-tilat ja joustavat sopimukset pienyrityksille.</p>
       <div class="lahde-rivi">
         <span class="lahde-teksti">Lähde: Kauppalehti — Toimitilat · Pääkaupunkiseutu</span>
         <a class="lue-lisaa"
@@ -286,10 +232,10 @@
 
     <div class="uutiskortti"
          data-alue="Koko Suomi"
-         data-aihepiiri="Infrastruktuuri">
-      <div class="kortti-aihepiiri">Infrastruktuuri</div>
+         data-aihepiiri="Toimitilat & kiinteistöt">
+      <div class="kortti-aihepiiri">Toimitilat & kiinteistöt</div>
       <h2>Valtion jätti-investoinnit eivät hidastu – Nato-rahoitus avaa uusia ovia</h2>
-      <p>Valtion jätti-investoinnit turvallisuusviranomaisten tarpeisiin jatkuvat korkealla tasolla lähivuosina Senaatin konsernijohtajan mukaan, ja Nato-rahoitus avaa uusia mahdollisuuksia hankkeille koko Suomessa. Esimerkiksi F-35-hävittäjien rakentamisohjelma puolen miljardin euron kokoluokassa saa satojen miljoonien Nato-yhteisrahoitusta ensi vuodesta alkaen. Tämä tukee puolustusinfran kehitystä strategisesti tärkeillä alueilla lähitulevaisuudessa.</p>
+      <p>Suomi on saanut Naton yhteisrahoitusta infrastruktuurihankkeisiin, kuten F-35-hävittäjätukikohtien rakentamiseen. Lisäksi Suomi isännöi Naton innovaatiotoimintoja ja osallistuu miljardien eurojen innovaatiorahastoihin, mikä avaa yrityksille uusia markkinavaatimuksia.</p>
       <div class="lahde-rivi">
         <span class="lahde-teksti">Lähde: Kauppalehti — Toimitilat · Koko Suomi</span>
         <a class="lue-lisaa"
@@ -306,7 +252,7 @@
          data-aihepiiri="Toimitilat & kiinteistöt">
       <div class="kortti-aihepiiri">Toimitilat & kiinteistöt</div>
       <h2>Suosittu etätyö tyhjentää nyt toimistot – Lisää tulee silti</h2>
-      <p>Pääkaupunkiseudulla on ennätyksellisen paljon tyhjää toimistotilaa, lähes 800 000 neliömetriä maaliskuussa 2025. Etätyön yleistyminen ja työnantajien pyrkimys pienentää kustannuksia vähentävät toimistotilan kysyntää, mutta samalla vuokralaiset vaativat tiloilta entistä enemmän, mikä vaikeuttaa vapaiden neliöiden täyttöä.</p>
+      <p>Pääkaupunkiseudulla on ennätyksellisen paljon tyhjää toimistotilaa, noin 700 000–800 000 neliömetriä maaliskuun 2025 lopussa. Etätyö ja tilavaatimusten kasvu tyhjentävät toimistoja, vaikka uutta tilaa rakennetaan edelleen. Vajaakäyttöaste on Euroopan korkein verrattuna muihin pääkaupunkeihin.</p>
       <div class="lahde-rivi">
         <span class="lahde-teksti">Lähde: Kauppalehti — Toimitilat · Pääkaupunkiseutu</span>
         <a class="lue-lisaa"
@@ -319,13 +265,30 @@
     </div>
 
     <div class="uutiskortti"
-         data-alue="Koko Suomi"
+         data-alue="Pääkaupunkiseutu"
+         data-aihepiiri="Toimitilat & kiinteistöt">
+      <div class="kortti-aihepiiri">Toimitilat & kiinteistöt</div>
+      <h2>Helsingin ”rumin rakennus” on nyt myytävänä – Kuka ostaa?</h2>
+      <p>Helsingin kaupungin äänestämä 'rumin rakennus' on laitettu myyntiin. Kyseessä on merkittävä kiinteistökauppa pääkaupunkiseudulla. Ostajaa odotetaan kiinnostuneiden joukosta.</p>
+      <div class="lahde-rivi">
+        <span class="lahde-teksti">Lähde: Kauppalehti — Toimitilat · Pääkaupunkiseutu</span>
+        <a class="lue-lisaa"
+           href="https://www.kauppalehti.fi/uutiset/a/36be6ec4-5b59-4b0c-8adb-58c3b69d4233"
+           target="_blank"
+           rel="noopener noreferrer">
+          Lue alkuperäinen →
+        </a>
+      </div>
+    </div>
+
+    <div class="uutiskortti"
+         data-alue="Pääkaupunkiseutu"
          data-aihepiiri="Toimitilat & kiinteistöt">
       <div class="kortti-aihepiiri">Toimitilat & kiinteistöt</div>
       <h2>Yhä useampi toimisto jää nyt tyhjäksi: ”Lyö uusia ennätyksiä”</h2>
-      <p>Etätyön vakiintuminen vähentää toimistotilojen tarvetta merkittävästi, ja valtion tilamäärä voi puolittua nykyisestä 20 neliömetristä henkilötyövuotta kohden koko Suomessa. Yritykset pienentävät vuokrasopimuksia 20-30 % ja IT-alalla jopa 30-40 %, mikä laskee vuokratasoja etenkin B- ja C-luokan kohteissa. Sijoittajat karttavat sektoria tyhjien toimistojen ennätysten myötä.</p>
+      <p>Etätyön vakiintuminen vähentää toimistotilojen tarvetta merkittävästi, ja valtion tilat voivat puolittua nykyisestä. Pääkaupunkiseudulla tyhjien toimistotilojen määrä kasvaa ennätystasolle, ja uusien vuokrasopimusten koot pienenevät 20-30 %. Sijoittajat karttavat sektoria vuokratasojen laskiessa etenkin B- ja C-luokan tiloissa.</p>
       <div class="lahde-rivi">
-        <span class="lahde-teksti">Lähde: Kauppalehti — Toimitilat · Koko Suomi</span>
+        <span class="lahde-teksti">Lähde: Kauppalehti — Toimitilat · Pääkaupunkiseutu</span>
         <a class="lue-lisaa"
            href="https://www.kauppalehti.fi/uutiset/a/a1099c95-a4c4-4a8e-b1ab-86b76869e1de"
            target="_blank"
@@ -337,10 +300,44 @@
 
     <div class="uutiskortti"
          data-alue="Koko Suomi"
-         data-aihepiiri="Alan yritykset">
-      <div class="kortti-aihepiiri">Alan yritykset</div>
+         data-aihepiiri="Toimitilat & kiinteistöt">
+      <div class="kortti-aihepiiri">Toimitilat & kiinteistöt</div>
+      <h2>Vuokra-asuntoja välittävältä yritysjohtajalta varoitus: ”Vuokratontti saattaa olla orjasopimus”</h2>
+      <p>Vuokraturvan toimitusjohtaja Timo Metsola varoittaa vuokra-asuntojen välittäjille, että vuokratontit saattavat olla orjasopimuksia, ja esittää lakimuutoksia asunnonostajien suojaamiseksi ikäviltä yllätyksiltä. Hän kritisoi erityisesti uudisasuntojen isoja taloyhtiölainoja, joita hän itse osaltaan ideoi ja pitää nyt virheenä. Aihe liittyy laajempiin asumismarkkinoiden haasteisiin, kuten epävarmuuteen ja vuokrien kehitykseen.</p>
+      <div class="lahde-rivi">
+        <span class="lahde-teksti">Lähde: Yle Uutiset — Talous · Koko Suomi</span>
+        <a class="lue-lisaa"
+           href="https://yle.fi/a/74-20220664?origin=rss"
+           target="_blank"
+           rel="noopener noreferrer">
+          Lue alkuperäinen →
+        </a>
+      </div>
+    </div>
+
+    <div class="uutiskortti"
+         data-alue="Koko Suomi"
+         data-aihepiiri="Uudet hankkeet">
+      <div class="kortti-aihepiiri">Uudet hankkeet</div>
+      <h2>Lehto mukana Vaasan EnergyWeekeillä keskiviikkona 18.3.2026</h2>
+      <p>Lehto osallistuu Vaasan EnergyWeek -tapahtumaan keskiviikkona 18.3.2026, joka on Pohjoismaiden merkittävin energia-alan verkostoitumis- ja seminaaritapahtuma. Tapahtuma järjestetään Vaasassa 16.–19.3.2026 ja keskittyy uusiutuviin energioihin, älykkääseen energiaan, kaasuenergiaan sekä energian varastointiin. Se kokoaa energia-alan yritykset, asiantuntijat ja päättäjät keskustelemaan energiamurroksesta.</p>
+      <div class="lahde-rivi">
+        <span class="lahde-teksti">Lähde: Lehto Group · Koko Suomi</span>
+        <a class="lue-lisaa"
+           href="https://lehto.fi/lehto-mukana-vaasan-energyweekeilla-keskiviikkona-18-3-2026/"
+           target="_blank"
+           rel="noopener noreferrer">
+          Lue alkuperäinen →
+        </a>
+      </div>
+    </div>
+
+    <div class="uutiskortti"
+         data-alue="Koko Suomi"
+         data-aihepiiri="Uudet hankkeet">
+      <div class="kortti-aihepiiri">Uudet hankkeet</div>
       <h2>Virta päällä vihreässä siirtymässä – Lehto Groupin uusi alku energia-alalla</h2>
-      <p>Lehto Group on siirtynyt rakennusyhtiöstä kokonaisvaltaiseksi sähkövarastotoimijaksi ja kehittää energian varastointihankkeita omaan portfolioonsa sekä myyntiin ja vuokraukseen koko Suomessa. Yhtiö toteuttaa ensimmäiset rakennuksiin asennettavat akk Ratkaisut vuonna 2024, ja pilottikohteet on jo tunnistettu Helsingissä ja muualla maassa. Kumppanuus Capalo AI:n kanssa optimoi hajautettuja akkuvarastoja Suomen sähköverkossa.</p>
+      <p>Lehto Group on uudistunut rakennusyhtiöstä kokonaisvaltaiseksi sähkövarastotoimijaksi, keskittyen uusiutuvan energian ratkaisuihin vihreässä siirtymässä. Yhtiö kehittää, rakentaa, ylläpitää ja vuokraa sähkövarastoja verkkomarkkinoille ja kiinteistöille, hyödyntäen kasvavaa sähköistyvää Suomea. Toiminta on skaalautuvaa ja sisältää kansainvälistymispotentiaalia, kuten Kalajoen sähkövarastohanke.</p>
       <div class="lahde-rivi">
         <span class="lahde-teksti">Lähde: Lehto Group · Koko Suomi</span>
         <a class="lue-lisaa"
@@ -357,7 +354,7 @@
          data-aihepiiri="Uudet hankkeet">
       <div class="kortti-aihepiiri">Uudet hankkeet</div>
       <h2>Kalajoelle uutta energiaa – suunnitteilla 30 MW sähkövarasto</h2>
-      <p>Lehto Group on hankkinut oikeudet 30 MW:n sähkövaraston rakentamiseen Kalajoelle, Pohjois-Suomeen, osana kasvavaa energialiiketoimintaansa. Hanke sisältää sähköaseman ja toteutetaan kahdessa vaiheessa noin 35 hehtaarin alueella, josta suurin osa on varattu myös aurinkopuistolle; sähkövaraston käyttöönotto on suunniteltu vuoden 2027 ensimmäiselle puoliskolle. Ensimmäisen vaiheen investointi on arviolta 15 miljoonaa euroa, rahoitus pankkilainalla ja leasingillä.</p>
+      <p>Lehto Group Oyj on hankkinut oikeudet 30 MW sähkövaraston rakentamiseen Kalajoelle kahdessa vaiheessa, mukaan lukien sähköasema ja mahdollinen aurinkopuisto 35 hehtaarin alueella. Ensimmäisen vaiheen investointi on noin 15 miljoonaa euroa, ja sähkövaraston tuotava käyttö voi alkaa vuoden 2027 ensimmäisellä puoliskolla liittymän kasvaessa 30 MW:ksi. Hanke tukee Lehdon kasvua energialiiketoiminnassa ilman vielä sitovia rahoitussopimuksia.</p>
       <div class="lahde-rivi">
         <span class="lahde-teksti">Lähde: Lehto Group · Koko Suomi</span>
         <a class="lue-lisaa"
@@ -374,7 +371,7 @@
          data-aihepiiri="Uudet hankkeet">
       <div class="kortti-aihepiiri">Uudet hankkeet</div>
       <h2>Lehdolla käynnissä akkupuistohanke Pielavedellä</h2>
-      <p>Lehto Group Oyj toteuttaa Pielavedellä 9 MW / 18 MWh akkupuistoa, joka on kohtalaisen suuri energiavarasto Suomen mittakaavassa ja tukee sähköverkon tasapainotusta sekä Fingridin toimintaa. Hanke etenee suunnitellusti ja valmistuu alkuvuodesta 2026. Sijainti muuntamoaseman läheisyydessä mahdollistaa tehokkaan verkkoon liittämisen Savon Voiman alueella.</p>
+      <p>Lehto Group Oyj rakentaa Pielavedelle 9 MW / 18 MWh akkupuistoa, joka valmistuu alkuvuodesta 2026. Hanke tukee Fingridin sähköverkkoa tasapainottamalla kulutuksen ja tuotannon vaihteluita sekä taajuuden säätelyllä. Sijainti valikoitui alueen vahvan sähköverkkoinfrastruktuurin ansiosta Savon Voiman verkkoalueella.</p>
       <div class="lahde-rivi">
         <span class="lahde-teksti">Lähde: Lehto Group · Koko Suomi</span>
         <a class="lue-lisaa"
@@ -391,7 +388,7 @@
          data-aihepiiri="Uudet hankkeet">
       <div class="kortti-aihepiiri">Uudet hankkeet</div>
       <h2>Joensuuhun rakentuu kahteen uuteen asumisyksikköön yhteensä 120 asuntoa ikääntyneille</h2>
-      <p>Joensuun Rantakylään nousee kahteen uuteen asumisyksikköön yhteensä 120 asuntoa ikääntyneille, kumpaankin yksikköön 60 asuntoa. Rakentaminen alkoi huhtikuun alussa ja kohteet valmistuvat kesällä 2027, kokonaispinta-alan ollessa yli 5700 brm². Lapti vastaa suunnittelusta ja toteutuksesta Siun soten tarpeisiin, tarjoten ympärivuorokautista palveluasumista ja yhteisöllistä asumista.</p>
+      <p>Joensuuhun Rantakylään rakentuu kahteen uuteen asumisyksikköön yhteensä 120 asuntoa ikääntyneille, kumpaankin 60 asuntoa. Rakentaminen alkoi huhtikuun alussa ja yksiköt valmistuvat kesällä 2027. Hankkeesta vastaa Lapti Pohjois-Karjan hyvinvointialueen Siun soten käyttöön.</p>
       <div class="lahde-rivi">
         <span class="lahde-teksti">Lähde: Lapti · Koko Suomi</span>
         <a class="lue-lisaa"
@@ -405,10 +402,10 @@
 
     <div class="uutiskortti"
          data-alue="Koko Suomi"
-         data-aihepiiri="Toimitilat & kiinteistöt">
-      <div class="kortti-aihepiiri">Toimitilat & kiinteistöt</div>
+         data-aihepiiri="Uudet hankkeet">
+      <div class="kortti-aihepiiri">Uudet hankkeet</div>
       <h2>Lapti toteuttaa Poriin uuden 50-paikkaisen palvelutalon</h2>
-      <p>Rakennusliike Lapti toteuttaa Poriin Vähärauman Suntinkujalle uuden 50-paikkaisen ikäihmisten palvelutalon. Rakentaminen alkoi huhtikuussa 2026 ja palvelutalo valmistuu keväällä 2027. Kaksikerroksinen, noin 2000 neliömetrin hoivakoti toteutetaan BREEAM-in-use ympäristösertifikaatin Very good -tasolla.</p>
+      <p>Lapti toteuttaa Poriin uuden 50-paikkaisen palvelutalon ikäihmisille. Tilat on suunniteltu monipuolisesti vastaamaan asumispalvelutarpeisiin turvallisuuden, viihtyisyyden ja toimivan arjen näkökulmista. Hanke julkaistiin 2.4.2026.</p>
       <div class="lahde-rivi">
         <span class="lahde-teksti">Lähde: Lapti · Koko Suomi</span>
         <a class="lue-lisaa"
@@ -425,7 +422,7 @@
          data-aihepiiri="Uudet hankkeet">
       <div class="kortti-aihepiiri">Uudet hankkeet</div>
       <h2>Uuden Ilmailumuseon rakentaminen alkaa Vantaan Aviapoliksessa</h2>
-      <p>Rakennusliike Lapti on allekirjoittanut sopimuksen Suomen Ilmailumuseosäätiön kanssa uuden Ilmailumuseon toteutuksesta Vantaan Aviapoliksessa, ja rakennustyöt ovat käynnistyneet huhtikuussa 2026. Hanke on kokoluokaltaan 25 miljoonan euron mittainen ja valmistuu vuodenvaihteessa 2027–2028. Museo rakennetaan nykyisen museon viereen katetun yhteyden kera Aviapoliksen lukioon.</p>
+      <p>Uuden Ilmailumuseon rakennustyöt ovat alkaneet Vantaan Aviapoliksessa maaliskuun lopulla 2026, ja museo valmistuu vuodenvaihteessa 2027–2028. Hankkeen kokonaisbudjetti on 25 miljoonaa euroa, josta tavoitellaan vielä 5 miljoonaa yksityisrahoitusta. Museo rakennetaan nykyisen museon viereen ja tavoittelee yli 100 000 kävijää vuosittain.</p>
       <div class="lahde-rivi">
         <span class="lahde-teksti">Lähde: Lapti · Pääkaupunkiseutu</span>
         <a class="lue-lisaa"
@@ -439,10 +436,27 @@
 
     <div class="uutiskortti"
          data-alue="Koko Suomi"
+         data-aihepiiri="Toimitilat & kiinteistöt">
+      <div class="kortti-aihepiiri">Toimitilat & kiinteistöt</div>
+      <h2>Laptin vastuullisuusraportti 2025 julkaistu</h2>
+      <p>Rakennusliike Lapti julkaisi vastuullisuusraporttinsa 2025 17.3.2026, jossa raportoidaan edistymisestä kohti vastuullisuustavoitteita vuoden 2025 osalta. Raportti korostaa parannuksia ympäristövastuussa, kuten A-energiatehokkuusluokan kohteita, massiivipuun käyttöä ja uusiutuvia energiaratkaisuja sekä turvallisuudessa tapaturmataajuuden alenemista. Yritys on liittynyt FiGBC:n jäseneksi vahvistaakseen ympäristövastuullisuuttaan.</p>
+      <div class="lahde-rivi">
+        <span class="lahde-teksti">Lähde: Lapti · Koko Suomi</span>
+        <a class="lue-lisaa"
+           href="https://lapti.fi/ajankohtaista/laptin-vastuullisuusraportti-2025-julkaistu/"
+           target="_blank"
+           rel="noopener noreferrer">
+          Lue alkuperäinen →
+        </a>
+      </div>
+    </div>
+
+    <div class="uutiskortti"
+         data-alue="Koko Suomi"
          data-aihepiiri="Uudet hankkeet">
       <div class="kortti-aihepiiri">Uudet hankkeet</div>
       <h2>Kirsi Kunnaksen päiväkoti avautui Ylöjärvellä – vastaa Siltatien asuinalueen varhaiskasvatustarpeeseen</h2>
-      <p>Lapti toteutti Ylöjärvellä Siltatien asuinalueelle Kirsi Kunnaksen päiväkodin, jossa on 160 varhaiskasvatuspaikkaa ja noin 2200 neliötä tilaa, mukaan lukien erityistilat vaativaa tukea tarvitseville lapsille. Hanke valmistui urakkasummalla 7,6 miljoonaa euroa, ja päiväkoti avautui maaliskuussa 2026 täyttyen elokuusta alkaen lähialueen lapsilla. Pedagogisena painopisteenä ovat sanataide ja kestävä kehitys.</p>
+      <p>Kirsi Kunnaksen päiväkoti avautui Ylöjärvellä Siltatien asuinalueella maaliskuussa 2026, tarjoten 160 varhaiskasvatuspaikkaa mukaan lukien tilat vaativan erityisen tuen lapsille. Pedagogisena painopisteenä ovat sanataide ja kestävä kehitys, ja yksikkö täyttyy elokuusta 2026 alkaen lähialueen lapsista. Päiväkodin johtajana aloittaa Annu Oksi huhtikuussa 2026.</p>
       <div class="lahde-rivi">
         <span class="lahde-teksti">Lähde: Lapti · Koko Suomi</span>
         <a class="lue-lisaa"
@@ -455,30 +469,13 @@
     </div>
 
     <div class="uutiskortti"
-         data-alue="Pääkaupunkiseutu"
-         data-aihepiiri="Alan yritykset">
-      <div class="kortti-aihepiiri">Alan yritykset</div>
-      <h2>Lujatalolle uusi markkinointi- ja myyntijohtaja Lujakoti-asuntomyyntiin</h2>
-      <p>Lujatalo Oy on nimittänyt Hanne Miettisen markkinointi- ja myyntijohtajaksi Uudenmaan asuntorakentamisen yksikköön 30.3.2026 alkaen, vastaten Lujakodin valtakunnallisesta markkinoinnista ja asuntomyynnin johtamisesta koko Suomessa. Tehtävä vahvistaa Lujakoti-brändiä ja kasvattaa myyntiä osana yhtiön uudistunutta strategiaa. Rakennustuotetoimittajalle tämä merkitsee potentiaalisia uusia tilauksia kasvavan asuntotuotannon myötä.</p>
-      <div class="lahde-rivi">
-        <span class="lahde-teksti">Lähde: Luja · Pääkaupunkiseutu</span>
-        <a class="lue-lisaa"
-           href="https://www.luja.fi/2026/04/13/lujatalolle-uusi-markkinointi-ja-myyntijohtaja-lujakoti-asuntomyyntiin/"
-           target="_blank"
-           rel="noopener noreferrer">
-          Lue alkuperäinen →
-        </a>
-      </div>
-    </div>
-
-    <div class="uutiskortti"
-         data-alue="Koko Suomi"
+         data-alue="Jyväskylä / Keski-Suomi"
          data-aihepiiri="Uudet hankkeet">
       <div class="kortti-aihepiiri">Uudet hankkeet</div>
       <h2>Hipposkeskuksen pysäköintilaitoksen perustuksiin vaihtui vähähiilinen betoni</h2>
-      <p>Keski-Suomen Betonirakenne Oy (KSBR) rakentaa Jyväskylässä Hipposkeskuksen yhteyteen pysäköintilaitosta, jonka perustuksiin on vaihdettu vähähiilinen betoni (GWP.85), mikä vähentää CO2-päästöjä 15 prosenttia ja säästää 72 tonnia päästöjä verrattuna perinteiseen betoniin. Työt käynnistyivät joulukuussa 2025 kvr-urakkana Hippos Ky:n kanssa. Vähähiilinen betoni sopii erinomaisesti kookkaiden pilarianturoiden toteutukseen pienemmän lämmöntuoton ansiosta.</p>
+      <p>Jyväskylässä Hipposkeskuksen yhteyteen rakentuvassa pysäköintilaitoksessa käytetään perustuksiin vähähiilistä betonia, joka vähentää hiilidioksidipäästöjä noin 15 prosenttia verrattuna perinteiseen betoniin. Rakentaminen alkoi joulukuussa 2025 ja rakentaa KSBR (Keski-Suomen Betonirakenne Oy).</p>
       <div class="lahde-rivi">
-        <span class="lahde-teksti">Lähde: Luja · Koko Suomi</span>
+        <span class="lahde-teksti">Lähde: Luja · Jyväskylä / Keski-Suomi</span>
         <a class="lue-lisaa"
            href="https://www.luja.fi/2026/03/19/hipposkeskuksen-pysakointilaitoksen-perustuksiin-vaihtui-vahahiilinen-betoni/"
            target="_blank"
@@ -493,7 +490,7 @@
          data-aihepiiri="Uudet hankkeet">
       <div class="kortti-aihepiiri">Uudet hankkeet</div>
       <h2>Hausia toteuttaa asuntokohteen Lujabetonin valmistamilla Kuorikivi-elementeillä – kaikki asunnot varattiin nopeasti</h2>
-      <p>Hausia toteuttaa uuden asuntokohteen Helsingin Lauttasaareen Lujabetonin toimittamilla betonielementeillä, mukaan lukien Lammin Betonin kehittämä innovatiivinen Kuorikivi-elementtiratkaisu ulkoseiniin. Kaikki asunnot varattiin nopeasti, mikä korostaa hankkeen kysyntää pääkaupunkiseudulla. Projekti edustaa tehokasta betonielementtituotantoa ja nopeaa toteutusta rakennusalalla.</p>
+      <p>Hausia toteuttaa uuden asuntokohteen Helsingin Lauttasaareen Lujabetonin valmistamilla Kuorikivi-elementeillä yhteistyössä Lammin Betonin kanssa. Kaikki asunnot varattiin nopeasti, ja Lujabetoni hoitaa kaikki betonielementit mukaan lukien innovatiivisen rapattavan julkisivuratkaisun. Kuorikivi-elementti tarjoaa tasalaatuisuutta, nopeutta ja kestävyyttä.</p>
       <div class="lahde-rivi">
         <span class="lahde-teksti">Lähde: Luja · Pääkaupunkiseutu</span>
         <a class="lue-lisaa"
@@ -506,13 +503,13 @@
     </div>
 
     <div class="uutiskortti"
-         data-alue="Koko Suomi"
+         data-alue="Turku / Varsinais-Suomi"
          data-aihepiiri="Uudet hankkeet">
       <div class="kortti-aihepiiri">Uudet hankkeet</div>
       <h2>Lujatalo toteuttaa 80-paikkaisen palveluasumisen yksikön Raisioon yhteistyössä Plus Hoivakotien kanssa</h2>
-      <p>Lujatalo toteuttaa Raisioon noin 3700 brm² kokoisen palveluasumisyksikön, joka tarjoaa 80 paikkaa ikääntyneille yhteisölliseen asumiseen ja ympärivuorokautisiin palveluihin. Hanke sijoittuu keskeiselle paikalle kauppakeskus Myllyn lähelle osoitteeseen Nikkarinkatu 2, ja rakentaminen käynnistyy alkusyksystä 2026 valmistuen loppuvuodesta 2027. Tilaajana on Plus Hoivakodit Oy ja palveluista vastaa Ikifit Oy.</p>
+      <p>Lujatalo toteuttaa Raisioon uuden 80-paikkaisen ikääntyneiden hoivakodin noin 3700 brm² suuruisen hankkeen, joka sijoittuu kauppakeskus Myllyn läheisyyteen Nikkarinkadulle. Rakentamisen arvioidaan käynnistyvän alkusyksystä 2026 ja yksikön on määrä valmistua loppuvuodesta 2027.</p>
       <div class="lahde-rivi">
-        <span class="lahde-teksti">Lähde: Luja · Koko Suomi</span>
+        <span class="lahde-teksti">Lähde: Luja · Turku / Varsinais-Suomi</span>
         <a class="lue-lisaa"
            href="https://www.luja.fi/2026/03/11/lujatalo-toteuttaa-80-paikkaisen-palveluasumisen-yksikon-raisioon-yhteistyossa-plus-hoivakotien-kanssa/"
            target="_blank"
@@ -527,7 +524,7 @@
          data-aihepiiri="Uudet hankkeet">
       <div class="kortti-aihepiiri">Uudet hankkeet</div>
       <h2>Lujabetonille uusi betonitehdas Loimaalle – investointi mahdollistaa suuremmat volyymit ja vähähiilisen betonin tuotannon</h2>
-      <p>Lujabetoni on toteuttanut merkittävän investoinnin Loimaalle rakentaen modernin, automatisoidun betonitehtaan, joka mahdollistaa suuremmat tuotantovolyymit ja vähähiilisen betonin valmistuksen kasvavaan kysyntään vastaten. Tehdas on nyt valmis ja tuotannossa, tukien yhtiön kehitystä vaativien betoniratkaisujen toimittajana. Investointi keskittyy yhteen suurempaan betoniasemaan aiemman kahden sijaan, vahvistaen Loimaan tehtaan asemaa tuleville hankkeille.</p>
+      <p>Lujabetoni on toteuttanut merkittävän investoinnin Loimaalle rakentaen uuden, modernin ja automatisoidun betonitehtaan. Tehdas mahdollistaa suuremmat tuotantovolyymit sekä vähähiilisen betonin tuotannon kasvavaan kysyntään vastaten. Investointi tukee yhtiön kehitystä vaativien betoniratkaisujen toimittajana.</p>
       <div class="lahde-rivi">
         <span class="lahde-teksti">Lähde: Luja · Koko Suomi</span>
         <a class="lue-lisaa"
@@ -544,7 +541,7 @@
          data-aihepiiri="Uudet hankkeet">
       <div class="kortti-aihepiiri">Uudet hankkeet</div>
       <h2>Jatke Uusimaa rakentaa Eden Asunnoille 41 asunnon kohteen Helsingin Laajasalossa</h2>
-      <p>Jatke Uusimaa Oy aloittaa heti 41 laadukkaan vuokrakodin rakentamisen Eden Asunnoille Helsingin Laajasalon Yliskylään. Kohde on EU-taksonomian mukainen A-energialuokan energiatehokas talo maalämmöllä, ja sen arvioidaan valmistuvan vuonna 2027. Sijainti tarjoaa erinomaiset liikenneyhteydet ja palvelut vehreällä alueella.</p>
+      <p>Jatke Uusimaa rakentaa Eden Asunnoille 41 vuokra-asunnon kohteen Helsingin Laajasalon Yliskylään. Rakennustyöt alkavat heti ja hanke valmistuu vuonna 2027. Kohde on A-energialuokan energiatehokas rakennus maalämmöllä.</p>
       <div class="lahde-rivi">
         <span class="lahde-teksti">Lähde: Jatke · Pääkaupunkiseutu</span>
         <a class="lue-lisaa"
@@ -557,13 +554,13 @@
     </div>
 
     <div class="uutiskortti"
-         data-alue="Koko Suomi"
+         data-alue="Turku / Varsinais-Suomi"
          data-aihepiiri="Uudet hankkeet">
       <div class="kortti-aihepiiri">Uudet hankkeet</div>
       <h2>Jatke urakoi Etelä-Karjalan hyvinvointialueelle Lappeenrantaan uuden sotekeskuksen</h2>
-      <p>Jatke Toimitilat Oy urakoi Lappeenrannan Kahilanniemen sairaalakampukselle uuden sotekeskuksen, joka korvaa Armilan hyvinvointiaseman ja sisältää mm. maanalaisen yhdystunnelin, Mieri-uudisrakennuksen sekä L-siiven purkamisen ja uudisrakennuksen. Hanke on arvoltaan noin 95 miljoonaa euroa, rakennustyöt käynnistyvät syksyllä 2026 ja kokonaisuus valmistuu vuoden 2030 loppuun mennessä. Uusi keskus parantaa palveluiden synergiaa ja tarjoaa moderneja tiloja Etelä-Karjalan hyvinvointialueelle.</p>
+      <p>Jatke Toimitilat Oy rakentaa Lappeenrantaan uuden sotekeskuksen Etelä-Karjalan hyvinvointialueelle Kahilanniemen kampusalueelle. Hankkeen arvioidaan valmistuvan vuoden 2030 loppuun mennessä, rakennustyöt käynnistyvät syksyllä 2026. Hankkeen kustannusarvio on noin 95 miljoonaa euroa.</p>
       <div class="lahde-rivi">
-        <span class="lahde-teksti">Lähde: Jatke · Koko Suomi</span>
+        <span class="lahde-teksti">Lähde: Jatke · Turku / Varsinais-Suomi</span>
         <a class="lue-lisaa"
            href="https://jatke.fi/jatke-urakoi-etela-karjalan-hyvinvointialueelle-lappeenrantaan-uuden-sotekeskuksen/"
            target="_blank"
@@ -578,7 +575,7 @@
          data-aihepiiri="Toimitilat & kiinteistöt">
       <div class="kortti-aihepiiri">Toimitilat & kiinteistöt</div>
       <h2>Espoon kaupungin Hurraa!-palkinto Espoonlahden terveysaseman peruskorjaukselle</h2>
-      <p>Espoonlahden terveysaseman peruskorjaus palkittiin vuoden 2025 Hurraa!-tunnustuspalkinnolla. Jatke Toimitilat Oy:n toteuttamassa saneerauksessa rakennuksen sisätilat ja ulkoalueet uudistettiin perusteellisesti, samalla parannettiin energiatehokkuutta aurinkopaneeleilla ja maalämpökentillä. Urakka alkoi syyskuussa 2023 ja valmistui keväällä 2025.</p>
+      <p>Espoon kaupungin vuoden 2025 Hurraa!-palkinto myönnettiin Espoonlahden terveysaseman peruskorjaukselle, joka toteutettiin Jatke Toimitilat Oy:n urakoinnilla. Urakka alkoi syyskuussa 2023 ja valmistui keväällä 2025, sisältäen perusteellisen sisä- ja ulkotilojen uudistuksen sekä energiatehokkuuden parantamisen aurinkopaneeleilla ja maalämmöllä. Palkinto jaettiin 23.3.2026 korostaen korjaamisen merkitystä hiilineutraaliustavoitteiden edistämisessä.</p>
       <div class="lahde-rivi">
         <span class="lahde-teksti">Lähde: Jatke · Pääkaupunkiseutu</span>
         <a class="lue-lisaa"
@@ -595,7 +592,7 @@
          data-aihepiiri="Alan yritykset">
       <div class="kortti-aihepiiri">Alan yritykset</div>
       <h2>Jatkeen uusi strategia on julkaistu – visiona Rakastettu Rakentaja</h2>
-      <p>Jatke on julkaissut strategiansa vuosille 2026–2030, jonka visiona on olla Rakastettu Rakentaja ja missio Parasta rakentamassa. Strategia vastaa muuttuvaan liiketoimintaympäristöön tähtäämällä terveeseen kasvuun ja kannattavuuden parantamiseen koko Suomessa. Yritys vahvisti asemaansa kasvattamalla liikevaihtoaan 503,4 miljoonaan euroon ja liikevoittoaan 13,7 miljoonaan euroon vuonna 2025.</p>
+      <p>Jatke on julkaissut uuden strategiansa vuosille 2026–2030, jonka visiona on olla Rakastettu Rakentaja. Strategia vastaa muuttuvaan liiketoimintaympäristöön tähtäämällä terveeseen kasvuun ja kannattavuuden parantamiseen. Yritys kasvatti liikevaihtoaan 503,4 miljoonaan euroon ja liikevoittoaan 13,7 miljoonaan euroon vuonna 2025.</p>
       <div class="lahde-rivi">
         <span class="lahde-teksti">Lähde: Jatke · Koko Suomi</span>
         <a class="lue-lisaa"
@@ -608,13 +605,13 @@
     </div>
 
     <div class="uutiskortti"
-         data-alue="Koko Suomi"
-         data-aihepiiri="Alan yritykset">
-      <div class="kortti-aihepiiri">Alan yritykset</div>
+         data-alue="Pääkaupunkiseutu"
+         data-aihepiiri="Suhdanteet">
+      <div class="kortti-aihepiiri">Suhdanteet</div>
       <h2>Jatke-konsernin tulostiedote 2025 – Jatke saavutti strategiakauden liikevaihtotavoitteensa</h2>
-      <p>Jatke-konserni saavutti vuoden 2025 liikevaihdon kasvutavoitteen 503,4 miljoonalla eurolla ja liikevoiton 13,7 miljoonalla eurolla matalasuhdanteesta huolimatta. Tulouttamaton tilauskanta on vahva 516,9 miljoonaa euroa, mikä tukee toimintaa pääkaupunkiseudulla, Tampereella ja Turussa. Kaikki tytäryhtiöt tekivät positiivisen tuloksen, ja omavaraisuusaste parani 45,1 prosenttiin.</p>
+      <p>Jatke-konserni saavutti vuoden 2025 strategiakaudelle asettamansa kasvutavoitteet liikevaihdolla 503,4 miljoonaa euroa ja liikevoitolla 13,7 miljoonaa euroa epävarmasta markkinatilanteesta huolimatta. Konsernin tulouttamaton tilauskanta on vahva 516,9 miljoonaa euroa.</p>
       <div class="lahde-rivi">
-        <span class="lahde-teksti">Lähde: Jatke · Koko Suomi</span>
+        <span class="lahde-teksti">Lähde: Jatke · Pääkaupunkiseutu</span>
         <a class="lue-lisaa"
            href="https://jatke.fi/jatke-konsernin-tulostiedote-2025-jatke-saavutti-strategiakauden-liikevaihtotavoitteensa/"
            target="_blank"
@@ -626,10 +623,10 @@
 
     <div class="uutiskortti"
          data-alue="Koko Suomi"
-         data-aihepiiri="Suhdanteet">
-      <div class="kortti-aihepiiri">Suhdanteet</div>
+         data-aihepiiri="Alan yritykset">
+      <div class="kortti-aihepiiri">Alan yritykset</div>
       <h2>Firalle positiivinen tulos pienentyneestä liikevaihdosta huolimatta</h2>
-      <p>Rakentamisen palveluyhtiö Fira säilytti voitollisen tuloksen vuonna 2025 liikevaihdosta huolimatta, vaikka useiden hankkeiden aloitus siirtyi vuodelle 2026. Yhtiö odottaa vuodelle 2026 huomattavasti parempaa kehitystä tilauskannastaan huolimatta.</p>
+      <p>Rakentamisen palveluyhtiö Firan liikevaihto laski vuonna 2025 odotetusti noin 249 miljoonaan euroon edellisvuodesta, mutta tulos pysyi voitollisena merkittävän parannuksen myötä. Korjausrakentamisessa oli kasvua, vaikka toimitilojen myynti jäi tavoitteesta. Vuosi 2026 näyttää yhtiön mukaan huomattavasti paremmalta useiden hankkeiden siirtymän ansiosta.</p>
       <div class="lahde-rivi">
         <span class="lahde-teksti">Lähde: Fira · Koko Suomi</span>
         <a class="lue-lisaa"
@@ -646,7 +643,7 @@
          data-aihepiiri="Uudet hankkeet">
       <div class="kortti-aihepiiri">Uudet hankkeet</div>
       <h2>Fira rakentaa modernin jakelukeskuksen lääketukkuri Oriolalle</h2>
-      <p>Fira rakentaa Järvenpäähän noin 30 000 neliömetrin modernin jakelukeskuksen lääketukkuri Oriolalle, jonka korkein osa nousee lähes 40 metriin. Rakennustyöt alkavat välittömästi ja hanke valmistuu vuoden 2027 lopussa projektinjohtourakkana, tavoitellen vähintään BREEAM Excellent -tasoa. Investoinnin kokonaisarvo on 110–120 miljoonaa euroa, ja se tukee Oriolan kasvua ja logistiikan modernisointia.</p>
+      <p>Rakennuspalvelu Fira rakentaa lääketukkuri Oriolalle noin 30 000 neliömetrin suuruisen modernin jakelukeskuksen Järvenpäähän. Investointi on arvoltaan 110–120 miljoonaa euroa ja valmistuu vuoden 2027 lopussa.</p>
       <div class="lahde-rivi">
         <span class="lahde-teksti">Lähde: Fira · Pääkaupunkiseutu</span>
         <a class="lue-lisaa"
@@ -660,10 +657,10 @@
 
     <div class="uutiskortti"
          data-alue="Koko Suomi"
-         data-aihepiiri="Alan yritykset">
-      <div class="kortti-aihepiiri">Alan yritykset</div>
+         data-aihepiiri="Uudet hankkeet">
+      <div class="kortti-aihepiiri">Uudet hankkeet</div>
       <h2>Datakeskuksien monitoimimies Ari Kurvi: ”Työskentelen 50 vuotta alalla – sitten katson mitä teen isona”</h2>
-      <p>Firan datakeskusyksikön monitoimimies Ari Kurvi on koulutukseltaan elektroniikka-asentaja ja konkari datakeskushankkeissa, joissa hän keskittyy infrastruktuuriin, suunnitteluun ja yhteiskunnallisiin vaikutuksiin. Hän täydentää Firan osaamista näissä hankkeissa Suomessa, korostaen datakeskusten optimaalista rakentamista hyödyntäen esimerkiksi lämmön talteenottoa. Artikkeli julkaistiin 10.2.2026 eikä mainitse tiettyjä hankkeiden kokoluokkia, sijainteja tai aikatauluja.</p>
+      <p>Firan blogissa julkaistu artikkeli 10.2.2026 esittelee datakeskusten monitoimimiehen Ari Kurvin, joka on työskennellyt alalla pitkään ja täydentää Firan osaamista datakeskushankkeissa. Koulutukseltaan elektroniikka-asentaja hän keskittyy datakeskusten infrastruktuuriin, suunnitteluun ja yhteiskunnallisiin vaikutuksiin. Artikkeli korostaa hänen kokemustaan ja suunnitelmia jatkaa 50 vuoden työuraa.</p>
       <div class="lahde-rivi">
         <span class="lahde-teksti">Lähde: Fira · Koko Suomi</span>
         <a class="lue-lisaa"
@@ -680,7 +677,7 @@
          data-aihepiiri="Alan yritykset">
       <div class="kortti-aihepiiri">Alan yritykset</div>
       <h2>Fira on ostanut Flow Modulesin liiketoiminnot 1.1.2026</h2>
-      <p>Fira Rakennus Oy on ostanut liiketoimintakaupalla Flow Modules Oy:n kylpyhuone-talotekniikkamoduulien esivalmistuksen, joka siirtyy Firalle 1.1.2026 alkaen. Kauppa vahvistaa Firan asemaa modularisoidun rakentamisen osaajana koko Suomessa. Hankkeen kokoluokka keskittyy esivalmistettuun talotekniikkaan ilman tarkempaa euromäärää tai rakennuskohdetta.</p>
+      <p>Fira Rakennus Oy on ostanut liiketoimintakaupalla Flow Modules Oy:n kylpyhuone-talotekniikkamoduulin esivalmistuksen, ja kauppa toteutuu 1.1.2026. Kauppa vahvistaa Firalle oman moduuliesivalmistuksen osaamista rakennusalalla. Fira on suomalainen rakennusliike, joka keskittyy laadukkaisiin hankeratkaisuihin.</p>
       <div class="lahde-rivi">
         <span class="lahde-teksti">Lähde: Fira · Koko Suomi</span>
         <a class="lue-lisaa"
@@ -697,7 +694,7 @@
          data-aihepiiri="Uudet hankkeet">
       <div class="kortti-aihepiiri">Uudet hankkeet</div>
       <h2>Fira aloitti As Oy Helsingin Saarenhelmen rakentamisen Nihtiin</h2>
-      <p>Fira on aloittanut kuusikerroksisen As Oy Helsingin Saarenhelmen rakentamisen Helsingin Nihdin merelliselle alueelle, ja kohteeseen valmistuu 41 Hitas-asuntoa yksiöstä viitoseen koot 31–119 m². Rakentaminen käynnistyi vuoden 2025 lopulla vuoden 2025 aikana solmitun sopimuksen jälkeen, ja valmistuminen on tavoitteena vuonna 2027. Hankkeessa hyödynnetään Firan tehokkaita ratkaisuja nopeaan ja virheettömään toteutukseen keskeisellä paikalla Mustikkamaan ja Korkeasaaren läheisyydessä.</p>
+      <p>Fira on aloittanut kuusikerroksisen As Oy Helsingin Saarenhelmen rakentamisen Helsingin Nihtiin, ja kohde sisältää 41 Hitas-asuntoa yksiöstä viitöseen kooltaan 31–119 m². Rakentaminen käynnistyi vuoden 2025 aikana, ja valmistuminen on suunniteltu noin vuodelle 2027. Kohde sijaitsee merellisellä Nihdin alueella Mustikkamaan ja Korkeasaaren läheisyydessä.</p>
       <div class="lahde-rivi">
         <span class="lahde-teksti">Lähde: Fira · Pääkaupunkiseutu</span>
         <a class="lue-lisaa"
@@ -711,10 +708,10 @@
 
     <div class="uutiskortti"
          data-alue="Koko Suomi"
-         data-aihepiiri="Alan yritykset">
-      <div class="kortti-aihepiiri">Alan yritykset</div>
+         data-aihepiiri="Uudet hankkeet">
+      <div class="kortti-aihepiiri">Uudet hankkeet</div>
       <h2>Kreate lähtee rakentamaan tunneleita Norjaan – Gullberg-tunnelin sisäverhousurakasta sopimus</h2>
-      <p>Kreate Sverige AB on solminut 3,5 miljoonan euron sopimuksen Gullberg-tunnelin sisäverhousurakasta Lofooteilla Norjassa osana OPS E10 Hålogalandsvegen -hanketta, sisältäen 2,7 miljoonan euron option. Sopimus merkitsee strategista avausta Norjan markkinoille ja vahvistaa Kreaten kilpailukykyä tunnelirakentamisessa. Hanke sijaitsee Norjan Lofooteilla, eikä aikataulua ole tarkemmin määritelty.</p>
+      <p>Kreate Sverige AB voitti sopimuksen Gullberg-tunnelin sisäverhousurakasta Pohjois-Norjassa osana laajaa E10 Hålogalandsvegen-hanketta. Sopimuksen arvo on 3,5 miljoonaa euroa (38 miljoonaa Norjan kruunua) ja se sisältää 2,7 miljoonan euron optiourakaksi.</p>
       <div class="lahde-rivi">
         <span class="lahde-teksti">Lähde: Kreate · Koko Suomi</span>
         <a class="lue-lisaa"
@@ -731,7 +728,7 @@
          data-aihepiiri="Infrastruktuuri">
       <div class="kortti-aihepiiri">Infrastruktuuri</div>
       <h2>Kreate uudistaa Kannelmäen juna-aseman Helsingissä – lähes 8,5 miljoonan euron urakka on osa kolmen aseman peruskorjausta Kehäradalla</h2>
-      <p>Kreate toteuttaa lähes 8,5 miljoonan euron arvoisen Kannelmäen juna-aseman peruskorjauksen Helsingissä, joka on osa kolmen Kehäradan aseman – Kannelmäen, Malminkartanon ja Pohjois-Haagan – samanaikaista uudistusta. Hankkeessa uudistetaan laiturialue, portaikot, hissit, katokset, sähkö- ja LVI-järjestelmät sekä haastavaa Kehäradan ylittävää yhdyssiltaa, ja valtaosa töistä tehdään kesän 2026 rataliikennekatkon aikana. Urakka käynnistyy huhti–toukokuussa 2026 ja valmistuu joulukuussa 2026.</p>
+      <p>Kreate toteuttaa Kannelmäen juna-aseman peruskorjauksen Helsingissä lähes 8,5 miljoonan euron urakalla, joka valmistuu joulukuussa 2026. Hankkeessa uudistetaan laiturialue, portaikot, hissit, katokset, sähkö- ja LVI-järjestelmät sekä radan yli kulkeva yhdyssilta, parantaen turvallisuutta, esteettömyyttä ja matkustamisen sujuvuutta. Urakka on osa Pääkaupunkiseudun Kaupunkiliikenteen kolmen Kehäradan aseman (Kannelmäki, Malminkartano, Pohjois-Haaga) samanaikaista peruskorjausta, jossa valtaosa töistä tehdään kesän 2026 rataliikennekatkon aikana.</p>
       <div class="lahde-rivi">
         <span class="lahde-teksti">Lähde: Kreate · Pääkaupunkiseutu</span>
         <a class="lue-lisaa"
@@ -748,7 +745,7 @@
          data-aihepiiri="Uudet hankkeet">
       <div class="kortti-aihepiiri">Uudet hankkeet</div>
       <h2>Vaativa asematunneliurakka käynnistyy Malminkartanossa – Kreate yhdistää rata- ja kalliorakentamisen ensimmäistä kertaa</h2>
-      <p>Kreate on allekirjoittanut lähes 9 miljoonan euron arvoisen urakkasopimuksen Malminkartanon rautatieaseman tunnelin laajasta peruskorjauksesta Helsingissä Kehäradalla. Hanke yhdistää ensimmäistä kertaa yhtiön ratayksikön ja uuden kalliorakentamisen yksikön osaamisen, sisältäen rakenteiden uusimisen, betonikorjaukset ja sähköjärjestelmien uudistamisen. Työt käynnistyvät nyt ja valmistuvat loppuvuodesta 2026.</p>
+      <p>Kreate peruskorjaa Malminkartanon rautatieaseman asematunnelia Helsingissä lähes 9 miljoonan euron urakalla, joka valmistuu lokakuussa. Kyseessä on ensimmäinen yhteishanke Kreaten ratayksikön ja uuden kalliorakentamisen yksikön välillä.</p>
       <div class="lahde-rivi">
         <span class="lahde-teksti">Lähde: Kreate · Pääkaupunkiseutu</span>
         <a class="lue-lisaa"
@@ -765,7 +762,7 @@
          data-aihepiiri="Infrastruktuuri">
       <div class="kortti-aihepiiri">Infrastruktuuri</div>
       <h2>Mt 180 Kurkela–Kuusisto -hanke toteutusvaiheeseen – Kreaten tilauskanta vahvistuu noin 78 miljoonalla eurolla</h2>
-      <p>Kreate siirtyy Mt 180 Kurkela–Kuusisto -hankkeen toteutusvaiheeseen Varsinais-Suomessa, missä rakennetaan 3,5 km uutta maantietä, parannetaan 1,3 km kaksiajorataista tietä ja uusitaan yhdeksän siltaa, mukaan lukien suuri Auvaisbergin silta. Hanke vahvistaa Kaarinan ja Turunmaan saariston yhteyksiä, ja Kreaten tilauskanta kasvaa noin 78 miljoonalla eurolla. Rakennustyöt käynnistyvät maaliskuun 2026 puolivälissä, ja väylä sekä sillat avautuvat liikenteelle marraskuussa 2027.</p>
+      <p>Mt 180 Kurkela–Kuusisto -hanke siirtyy toteutusvaiheeseen maaliskuun 2026 puolivälissä, jolloin Kreaten tilauskanta vahvistuu noin 78 miljoonalla eurolla. Hanke kattaa 3,5 km uutta maantietä, 1,3 km kaistalevennystä ja yhdeksän siltaa Varsinais-Suomessa Kaarinan ja Turunmaan saaristossa. Tavoitteena on väylän ja siltojen avaaminen liikenteelle marraskuussa 2027, kokonaiskustannusarvio noin 112–114 miljoonaa euroa.</p>
       <div class="lahde-rivi">
         <span class="lahde-teksti">Lähde: Kreate · Koko Suomi</span>
         <a class="lue-lisaa"
@@ -782,7 +779,7 @@
          data-aihepiiri="Infrastruktuuri">
       <div class="kortti-aihepiiri">Infrastruktuuri</div>
       <h2>Kelukosken voimalaitoksen patoturvallisuus vahvistuu – Kreate rakentaa uuden patoluukun vaativissa olosuhteissa</h2>
-      <p>Kreate rakentaa uuden patoluukun Sodankylässä sijaitsevaan Kelukosken voimalaitokseen Kemijoki Oy:lle. Hanke alkaa valmistelevilla töillä huhtikuussa 2026 ja valmistuu syyskuussa 2027, ja se parantaa voimalaitoksen patoturvallisuutta ja ohijuoksutuskapasiteettia.</p>
+      <p>Kreate rakentaa uuden patoluukun Sodankylän Kelukosken voimalaitokseen Kemijoki Oy:n tilauksesta parantaakseen patoturvallisuutta ja ohijuoksutuskapasiteettia. Valmistelevat työt alkavat huhtikuussa 2026, rakennustyöt kesäkuussa 2026 ja urakka valmistuu syyskuussa 2027. Hanke toteutetaan vaativissa olosuhteissa toimivan voimalaitoksen maapatoon.</p>
       <div class="lahde-rivi">
         <span class="lahde-teksti">Lähde: Kreate · Koko Suomi</span>
         <a class="lue-lisaa"
