@@ -111,12 +111,13 @@ header {
 .filtteri-rivi {
   display: flex;
   align-items: center;
-  gap: 10px;
+  justify-content: center;
+  gap: 8px;
   flex-wrap: wrap;
 }
 
 .filtteri-haku {
-  justify-content: center;
+  margin-top: 2px;
 }
 
 .filtteri-napit {
