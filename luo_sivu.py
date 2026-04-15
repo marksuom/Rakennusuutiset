@@ -22,6 +22,13 @@ SYOTTEET = [
     {"nimi": "Yle Uutiset — Talous", "url": "https://feeds.yle.fi/uutiset/v1/recent.rss?publisherIds=YLE_UUTISET&concepts=18-34837"},
     {"nimi": "Keskisuomalainen", "url": "https://www.ksml.fi/feed/rss"},
     {"nimi": "Kaleva", "url": "https://www.kaleva.fi/rss/kaikki"},
+    # Yritysten omat syötteet
+    {"nimi": "Lehto Group", "url": "https://www.lehto.fi/feed/"},
+    {"nimi": "Lapti", "url": "https://www.lapti.fi/feed/"},
+    {"nimi": "Luja", "url": "https://www.luja.fi/feed/"},
+    {"nimi": "Jatke", "url": "https://www.jatke.fi/feed/"},
+    {"nimi": "Fira", "url": "https://www.fira.fi/feed/"},
+    {"nimi": "Kreate", "url": "https://www.kreate.fi/feed/"},
 ]
 
 ALUEET = [
@@ -61,7 +68,10 @@ def on_relevantti(otsikko, teksti):
                             "relevantti rakennustuotetoimittajalle. Relevantteja aiheita ovat: uudet "
                             "rakennushankkeet, rakentamisen suhdanteet, toimitilat, infrastruktuuri, "
                             "kaavoitus, rakennusluvat, kiinteistömarkkina, rakennusmateriaalit ja -tuotteet, "
-                            "alan yritykset. Vastaa AINOASTAAN sanalla KYLLÄ tai EI."
+                            "alan yritykset. Erityisen relevantteja ovat uutiset jotka koskevat seuraavia "
+                            "rakennusalan yrityksiä: YIT, SRV, Skanska, NCC, Peab, Hartela, Lehto Group, "
+                            "Lapti, Are, Luja, Jatke, Fira, Consti, Bonava, Destia, Kreate, Caverion. "
+                            "Vastaa AINOASTAAN sanalla KYLLÄ tai EI."
                         )
                     },
                     {
