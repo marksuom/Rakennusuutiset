@@ -52,6 +52,114 @@ header {
   text-align: center;
 }
 
+/* --- Päivänavigaatio --- */
+.paivanavigaatio {
+  display: flex;
+  gap: 6px;
+  padding: 12px 32px;
+  background-color: var(--paavari-tumma);
+  flex-wrap: wrap;
+  justify-content: center;
+  border-top: 1px solid rgba(255,255,255,0.07);
+}
+
+.paivanavigaatio button {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.25);
+  color: #ccc;
+  padding: 5px 13px;
+  border-radius: 20px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.paivanavigaatio button:hover {
+  background: rgba(255,255,255,0.1);
+  color: white;
+}
+
+.paivanavigaatio button.aktiivinen {
+  background: var(--korostus);
+  border-color: var(--korostus);
+  color: white;
+  font-weight: bold;
+}
+
+/* --- Filtteripalkki --- */
+.filtterit {
+  background: white;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 14px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.filtteri-rivi {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.filtteri-otsikko {
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--teksti-harmaa);
+  min-width: 36px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.filtteri-napit {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.filtteri-napit button {
+  background: #f0f0f0;
+  border: 1px solid #ddd;
+  color: var(--teksti-tumma);
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+
+.filtteri-napit button:hover {
+  background: #e0e0e0;
+}
+
+.filtteri-napit button.aktiivinen {
+  background: var(--korostus);
+  border-color: var(--korostus);
+  color: white;
+}
+
+#hakukentta {
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 5px 14px;
+  font-size: 13px;
+  width: 300px;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+#hakukentta:focus {
+  border-color: var(--korostus);
+}
+
+.virhe {
+  text-align: center;
+  color: var(--teksti-harmaa);
+  padding: 40px;
+  font-size: 15px;
+}
+
 main {
   max-width: 760px;
   margin: 0 auto;
@@ -74,6 +182,19 @@ main {
 
 .uutiskortti:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.kortti-aihepiiri {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--korostus);
+  background: #e8f0fb;
+  padding: 2px 8px;
+  border-radius: 10px;
+  margin-bottom: 8px;
 }
 
 .uutiskortti h2 {
