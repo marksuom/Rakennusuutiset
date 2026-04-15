@@ -16,247 +16,385 @@
       </div>
     </div>
     <div class="header-alapalkki">
-      Päivitetty: 15.04.2026 08:42
+      Päivitetty: 15.04.2026 09:36
     </div>
+    <nav class="paivanavigaatio">
+        <button class="aktiivinen" onclick="lataaPaiva('2026-04-15')">15.4.</button>
+    </nav>
   </header>
 
-  <main>
-    <div class="uutismaara">Tänään 17 relevanttia uutista</div>
+  <div class="filtterit">
+    <div class="filtteri-rivi">
+      <span class="filtteri-otsikko">Alue:</span>
+      <div class="filtteri-napit" id="alue-napit">
+        <button class="aktiivinen" onclick="asetaAlue(this, 'kaikki')">Kaikki alueet</button>
+        <button onclick="asetaAlue(this, 'Pääkaupunkiseutu')">Pääkaupunkiseutu</button>
+        <button onclick="asetaAlue(this, 'Tampere / Pirkanmaa')">Tampere / Pirkanmaa</button>
+        <button onclick="asetaAlue(this, 'Turku / Varsinais-Suomi')">Turku / Varsinais-Suomi</button>
+        <button onclick="asetaAlue(this, 'Oulu / Pohjois-Suomi')">Oulu / Pohjois-Suomi</button>
+        <button onclick="asetaAlue(this, 'Jyväskylä / Keski-Suomi')">Jyväskylä / Keski-Suomi</button>
+        <button onclick="asetaAlue(this, 'Kuopio / Itä-Suomi')">Kuopio / Itä-Suomi</button>
+        <button onclick="asetaAlue(this, 'Koko Suomi')">Koko Suomi</button>
 
-    <div class="uutiskortti">
-      <h2>Teräsristikkokeksintö voi korvata hitsauksen ruuveilla</h2>
-      <p>Hämeen ammattikorkeakoulun Hamk Tech -tutkimusyksikkö kehittää uutta teräsristikkokeksintöä, joka voi korvata perinteisen hitsauksen ruuveilla. Menetelmä ratkaisee nykyisiä haasteita, kuten nosturin sitomista hitsauksen ajaksi. Keksintö on vaiheessa tutkimuskehitystä ilman mainintoja hankkeen koosta, sijainnista tai aikataulusta.</p>
+      </div>
+    </div>
+    <div class="filtteri-rivi">
+      <span class="filtteri-otsikko">Aihe:</span>
+      <div class="filtteri-napit" id="aihe-napit">
+        <button class="aktiivinen" onclick="asetaAihe(this, 'kaikki')">Kaikki aiheet</button>
+        <button onclick="asetaAihe(this, 'Uudet hankkeet')">Uudet hankkeet</button>
+        <button onclick="asetaAihe(this, 'Suhdanteet')">Suhdanteet</button>
+        <button onclick="asetaAihe(this, 'Toimitilat & kiinteistöt')">Toimitilat & kiinteistöt</button>
+        <button onclick="asetaAihe(this, 'Infrastruktuuri')">Infrastruktuuri</button>
+        <button onclick="asetaAihe(this, 'Alan yritykset')">Alan yritykset</button>
+
+      </div>
+    </div>
+    <div class="filtteri-rivi">
+      <span class="filtteri-otsikko">Haku:</span>
+      <input type="text" id="hakukentta" placeholder="Hae otsikoista ja yhteenvedoista...">
+    </div>
+  </div>
+
+  <main id="uutislista">
+    <div class="uutismaara" id="uutismaara">Tänään 20 relevanttia uutista</div>
+
+    <div class="uutiskortti"
+         data-alue="Koko Suomi"
+         data-aihepiiri="Uudet hankkeet">
+      <div class="kortti-aihepiiri">Uudet hankkeet</div>
+      <h2>Niuvanniemen sairaalan suunnittelukilpailu ratkesi</h2>
+      <p>Niuvanniemen oikeuspsykiatrisen sairaalan uudisrakennuksen suunnittelukilpailun ensimmäinen vaihe on ratkennut, ja 'Toivo' sekä 'Niityllä' -ehdotukset etenevät kehitysvaiheeseen yhteistyössä käyttäjien kanssa. Hanke sijaitsee Kuopiossa ja kattaa noin 11 000 brm²:n kokonaisuuden kuudella potilasosastolla ja hoitokeskuksella ulkoilupihoineen. Lopullinen suunnittelutoimeksianto ja sopimukset päätetään kehitysvaiheen jälkeen, minkä jälkeen rakentaminen pyritään aloittamaan mahdollisimman pian.</p>
       <div class="lahde-rivi">
-        <span class="lahde-teksti">Lähde: Rakennuslehti</span>
+        <span class="lahde-teksti">Lähde: Rakennuslehti · Koko Suomi</span>
+        <a class="lue-lisaa"
+           href="https://www.rakennuslehti.fi/2026/04/niuvanniemen-sairaalan-suunnittelukilpailu-ratkesi/"
+           target="_blank"
+           rel="noopener noreferrer">
+          Lue alkuperäinen →
+        </a>
+      </div>
+    </div>
+
+    <div class="uutiskortti"
+         data-alue="Koko Suomi"
+         data-aihepiiri="Alan yritykset">
+      <div class="kortti-aihepiiri">Alan yritykset</div>
+      <h2>Remount kasvoi vahvasti yritysostojen siivittämänä</h2>
+      <p>Remount-yritys on kasvanut vahvasti yritysostojen ansiosta, minkä lisäksi myös orgaanista kasvua on tapahtunut jonkin verran. Kasvun kokoluokka ja tarkka sijainti eivät käy ilmi uutisesta, eikä aikataulua ole määritelty. Uutinen korostaa yrityskauppojen merkitystä rakennusalan toimijoiden kasvustrategiassa.</p>
+      <div class="lahde-rivi">
+        <span class="lahde-teksti">Lähde: Rakennuslehti · Koko Suomi</span>
+        <a class="lue-lisaa"
+           href="https://www.rakennuslehti.fi/2026/04/remount-kasvoi-vahvasti-yritysostojen-siivittamana/"
+           target="_blank"
+           rel="noopener noreferrer">
+          Lue alkuperäinen →
+        </a>
+      </div>
+    </div>
+
+    <div class="uutiskortti"
+         data-alue="Koko Suomi"
+         data-aihepiiri="Alan yritykset">
+      <div class="kortti-aihepiiri">Alan yritykset</div>
+      <h2>Teräsristikkokeksintö voi korvata hitsauksen ruuveilla</h2>
+      <p>Hämeen ammattikorkeakoulun Hamk Tech -tutkimusyksikkö kehittää uutta teräsristikkokeksintöä, joka mahdollistaa ruuvikiinnityksen hitsauksen sijaan. Menetelmä nopeuttaa asennustöitä vapauttamalla nosturin hitsauksen sitomisen sijaan. Tutkimus keskittyy Kanta-Hämeeseen ilman määriteltyä hankekokoa tai aikataulua.</p>
+      <div class="lahde-rivi">
+        <span class="lahde-teksti">Lähde: Rakennuslehti · Koko Suomi</span>
         <a class="lue-lisaa"
            href="https://www.rakennuslehti.fi/2026/04/terasristikkokeksinto-voi-korvata-hitsauksen-ruuveilla/"
            target="_blank"
            rel="noopener noreferrer">
-          Lue alkuperäinen uutinen →
+          Lue alkuperäinen →
         </a>
       </div>
     </div>
 
-    <div class="uutiskortti">
+    <div class="uutiskortti"
+         data-alue="Pääkaupunkiseutu"
+         data-aihepiiri="Infrastruktuuri">
+      <div class="kortti-aihepiiri">Infrastruktuuri</div>
       <h2>Destia peruskorjaa kahdeksan siltaa Uudellamaalla</h2>
-      <p>Destia peruskorjaa kahdeksan siltaa Uudellamaalla Hyvinkäällä, Inkoossa ja Järvenpäässä Kaakkois-Suomen Elinvoimakeskuksen urakassa. Työ sisältää monipuolisia betonirakenne-, pinta- ja teräsrakennetöitä sekä liikuntasaumojen uusimisia. Urakka toteutetaan syksyyn 2027 mennessä.</p>
+      <p>Destia on voittanut Kaakkois-Suomen Elinvoimakeskukselta urakan, jossa peruskorjataan kahdeksan siltaa Uudellamaalla Hyvinkäällä, Inkoossa ja Järvenpäässä. Urakka sisältää betonirakennetöitä, pinta- ja teräsrakenteita sekä liikuntasaumojen kunnostusta ja uusimista.</p>
       <div class="lahde-rivi">
-        <span class="lahde-teksti">Lähde: Rakennuslehti</span>
+        <span class="lahde-teksti">Lähde: Rakennuslehti · Pääkaupunkiseutu</span>
         <a class="lue-lisaa"
            href="https://www.rakennuslehti.fi/2026/04/destia-peruskorjaa-kahdeksan-siltaa-uudellamaalla/"
            target="_blank"
            rel="noopener noreferrer">
-          Lue alkuperäinen uutinen →
+          Lue alkuperäinen →
         </a>
       </div>
     </div>
 
-    <div class="uutiskortti">
+    <div class="uutiskortti"
+         data-alue="Koko Suomi"
+         data-aihepiiri="Alan yritykset">
+      <div class="kortti-aihepiiri">Alan yritykset</div>
       <h2>Perinteikäs talotoimittaja keskeyttää myynnin Suomessa</h2>
-      <p>Perinteikäs talotoimittaja keskeyttää myynnin Suomessa, mutta myynti jatkuu kesään asti ja toimitukset ensi vuoteen. Yhtiö sitoutuu täyttämään kaikki velvoitteensa. Uutinen korostaa haasteellista markkinatilannetta rakennusalalla ilman mainintoja hankkeiden koosta tai sijainnista.</p>
+      <p>Perinteikäs talotoimittaja Älvsbytalo keskeyttää myynnin Suomessa kesään 2026 asti, mutta jatkaa sovittujen talotoimitusten toteuttamista kesään 2027 saakka. Yhtiö sitoutuu täyttämään kaikki velvoitteensa ja takuuaikaiset vastuut. Rakennustuotetoimittajan näkökulmasta päätös heijastaa alan haastavaa tilannetta koko Suomessa.</p>
       <div class="lahde-rivi">
-        <span class="lahde-teksti">Lähde: Rakennuslehti</span>
+        <span class="lahde-teksti">Lähde: Rakennuslehti · Koko Suomi</span>
         <a class="lue-lisaa"
            href="https://www.rakennuslehti.fi/2026/04/perinteikas-talotoimittaja-keskeyttaa-myynnin-suomessa/"
            target="_blank"
            rel="noopener noreferrer">
-          Lue alkuperäinen uutinen →
+          Lue alkuperäinen →
         </a>
       </div>
     </div>
 
-    <div class="uutiskortti">
-      <h2>Joensuuhun nousee kaksi ikääntyneiden asumisyksikköä</h2>
-      <p>Joensuuhun Rantakylän alueelle nousee kaksi ikääntyneiden asumisyksikköä, joihin tulee yhteensä 120 asuntoa eli kumpaankin 60 asuntoa. Rakentaminen alkoi huhtikuun alussa, ja yksiköt valmistuvat kesällä 2027. Kohteet toteuttaa Rakennusliike Lapti Pohjois-Karjan hyvinvointialueen Siun soten käyttöön, kokonaislaajuudeltaan yli 5700 brm².</p>
-      <div class="lahde-rivi">
-        <span class="lahde-teksti">Lähde: Rakennuslehti</span>
-        <a class="lue-lisaa"
-           href="https://www.rakennuslehti.fi/2026/04/joensuuhun-nousee-kaksi-ikaantyneiden-asumisyksikkoa/"
-           target="_blank"
-           rel="noopener noreferrer">
-          Lue alkuperäinen uutinen →
-        </a>
-      </div>
-    </div>
-
-    <div class="uutiskortti">
+    <div class="uutiskortti"
+         data-alue="Koko Suomi"
+         data-aihepiiri="Uudet hankkeet">
+      <div class="kortti-aihepiiri">Uudet hankkeet</div>
       <h2>Suomeen pukkaa nyt datakeskuksia tolkutonta tahtia</h2>
-      <p>Etelä-Suomen sähköverkko on jo täydessä käytössä datakeskushankkeista johtuen – Fingrid on saanut yli 50 000 megawatin liittymiskyselyitä, mikä ylittää kolminkertaisesti Suomen nykyisen huippukulutuksen. Vaikka realistisesti vain noin 10 prosenttia hankkeista toteutuisi, se merkitsisi 5 000 megawatin lisäystä eli kolmanneksen nykyisestä huippukulutuksesta. Fingrid korostaa, että kantaverkkoa täytyy vahvistaa merkittävästi, ja toivoo, että energiaintensiiviset investoinnit hakeutuisivat lähelle tuulivoiman tuotantoalueita kalliiden voimajohtoinvestointien välttämiseksi.</p>
+      <p>Suomeen suunnitellaan satoja datakeskuksia, joiden yhteisteho ylittää kolminkertaisesti nykyisen huippukulutuksen, mutta Etelä-Suomen sähköverkko ei kestä kaikkia hankkeita ja vain osa toteutuu. Fingrid suosittelee sijoittamista tuulivoima-alueille verkkorakentamisen sijaan. Seinäjoelle varmistui miljardin euron datakeskushanke.</p>
       <div class="lahde-rivi">
-        <span class="lahde-teksti">Lähde: Kauppalehti — Rakentaminen</span>
+        <span class="lahde-teksti">Lähde: Kauppalehti — Rakentaminen · Koko Suomi</span>
         <a class="lue-lisaa"
            href="https://www.kauppalehti.fi/uutiset/a/f06582e2-ec7f-4f3c-8c60-04d9089b0b1c"
            target="_blank"
            rel="noopener noreferrer">
-          Lue alkuperäinen uutinen →
+          Lue alkuperäinen →
         </a>
       </div>
     </div>
 
-    <div class="uutiskortti">
-      <h2>Konkurssien riivaama ala katkerana: Poliitikot pahensivat lamaa</h2>
-      <p>Rakennusalan konkurssit ovat edelleen merkittävä ongelma Suomessa, ja alan asiantuntijat odottavat niiden jatkavan kasvuaan lähitulevaisuudessa. Helmikuussa 2026 rakennusalan yrityksiä haettiin konkurssiin noin 70 kappaletta, ja maaliskuussa 2025 vastaava luku oli 72 yritystä, mikä kuvastaa alan jatkuvaa vaikeutta. Rakennusalan konkurssit ovat olleet kilpailussa eniten konkurssihakemuksia tekevien toimialojen joukossa yhdessä kaupan alan kanssa, ja alan tilannetta on heikentänyt koronapandemia, inflaation ja korkojen nousu, asuntojen kysynnän romahdus sekä Venäjän hyökkäyssodan vaikutukset.</p>
+    <div class="uutiskortti"
+         data-alue="Koko Suomi"
+         data-aihepiiri="Toimitilat & kiinteistöt">
+      <div class="kortti-aihepiiri">Toimitilat & kiinteistöt</div>
+      <h2>Taloyhtiöitä piinaavaan ongelmaan ehdotetaan nyt ratkaisuja – Asiantuntijalla heräsi huoli</h2>
+      <p>Taloyhtiöt kohtaavat kasvavia vaikeuksia korjauslainojen saannissa etenkin edullisilla alueilla ja pienissä yhtiöissä, missä asuntojen matala neliöhinta heikentää vakuusarvoa ja voi johtaa remonttien vaiheistamiseen tai osakkaiden henkilökohtaiseen rahoitukseen. Ongelma kattaa koko Suomen ja pahenee korkojen nousun sekä arvonlaskun myötä, mikä uhkaa korjaustarpeiden toteuttamista sadoista tuhansista miljooniin euroihin nousevilla hankkeilla. Asiantuntijat varoittavat taloyhtiöiden taloudellisista riskeistä ja ehdottavat vaihtoehtoisia rahoitusratkaisuja tilanteen helpottamiseksi.</p>
       <div class="lahde-rivi">
-        <span class="lahde-teksti">Lähde: Kauppalehti — Rakentaminen</span>
+        <span class="lahde-teksti">Lähde: Kauppalehti — Rakentaminen · Koko Suomi</span>
+        <a class="lue-lisaa"
+           href="https://www.kauppalehti.fi/uutiset/a/baed86e9-901a-4a1b-94da-0e9370d9bb6e"
+           target="_blank"
+           rel="noopener noreferrer">
+          Lue alkuperäinen →
+        </a>
+      </div>
+    </div>
+
+    <div class="uutiskortti"
+         data-alue="Koko Suomi"
+         data-aihepiiri="Suhdanteet">
+      <div class="kortti-aihepiiri">Suhdanteet</div>
+      <h2>Konkurssien riivaama ala katkerana: Poliitikot pahensivat lamaa</h2>
+      <p>Rakennusalalla on nähty reilun vuoden aikana lähes 700 yrityksen konkurssi ja alkuvuonna jo 60 yritystä, mikä ennakoi satojen konkursseja myös tänä vuonna. Uusien asuntohankkeiden määrä voi pudota jopa puoleen edellisvuodesta noin 20 000 asuntoon, mikä uhkaa työllistää 20 000 työntekijää vähemmän. Alan etujärjestö vaatii elvytystä tilanteen pahenemisen estämiseksi.</p>
+      <div class="lahde-rivi">
+        <span class="lahde-teksti">Lähde: Kauppalehti — Rakentaminen · Koko Suomi</span>
         <a class="lue-lisaa"
            href="https://www.kauppalehti.fi/uutiset/a/cdd686da-659b-4d3d-8636-3881ea605d47"
            target="_blank"
            rel="noopener noreferrer">
-          Lue alkuperäinen uutinen →
+          Lue alkuperäinen →
         </a>
       </div>
     </div>
 
-    <div class="uutiskortti">
+    <div class="uutiskortti"
+         data-alue="Koko Suomi"
+         data-aihepiiri="Suhdanteet">
+      <div class="kortti-aihepiiri">Suhdanteet</div>
       <h2>Nokian imu muuttui, sijoittajat luottavat nyt buddhalaiseen filosofiaan, rakentajilta karu ennuste – Katso perjantain Talousaamu</h2>
-      <p>Talousaamussa käsiteltiin Suomen asuinrakentamisen historiallisen heikkoa tilannetta, josta rakentajat antavat karun ennusteen. Keskustelu korosti alan syvää alamäkeä ilman mainintoja yksittäisistä hankkeiden koosta, sijainnista tai aikatauluista. Aihetta lähestyttiin rakennusalan näkökulmasta laajana markkinatrendinä.</p>
+      <p>Suomen asuinrakentaminen on historiallisen heikossa tilanteessa, josta rakentajat antavat karun ennusteen. Keskustelussa korostui alan syvä lamausehto, joka vaikuttaa koko rakennusalan suhdanteisiin. Tilanne heijastaa laajaa epävarmuutta tulevissa hankkeissa koko Suomessa.</p>
       <div class="lahde-rivi">
-        <span class="lahde-teksti">Lähde: Kauppalehti — Rakentaminen</span>
+        <span class="lahde-teksti">Lähde: Kauppalehti — Rakentaminen · Koko Suomi</span>
         <a class="lue-lisaa"
            href="https://www.kauppalehti.fi/uutiset/a/54b19b4c-933a-4640-ba8d-b4aca3411285"
            target="_blank"
            rel="noopener noreferrer">
-          Lue alkuperäinen uutinen →
+          Lue alkuperäinen →
         </a>
       </div>
     </div>
 
-    <div class="uutiskortti">
+    <div class="uutiskortti"
+         data-alue="Koko Suomi"
+         data-aihepiiri="Suhdanteet">
+      <div class="kortti-aihepiiri">Suhdanteet</div>
       <h2>Jopa 1990-luvun lamassa ja finanssikriisissä meni paremmin – Pääekonomistilta synkkä arvio</h2>
-      <p>Pääekonomisti varoittaa asuntorakentamisen surkeista näkymistä, jotka ovat jopa 1990-luvun laman ja finanssikriisin tasoa heikompia. Vertailu korostaa nykytilanteen poikkeuksellista vakavuutta verrattuna aiempien kriisien hitaampaan alamäkeen ja nopeampaan toipumiseen. Rakennusalan toimijoille tämä ennakoi merkittävää laskua uusissa hankkeissa ilman mainintoja konkreettisista kohteista, sijainneista tai aikatauluista.</p>
+      <p>Pääekonomisti antaa synkän arvion asuntorakentamisen näkymistä, jotka ovat heikompia kuin 1990-luvun lamassa ja finanssikriisissä. Talousaamussa korostettiin alan surkeita suhdanteita koko Suomessa. Rakennusalalla odotettavissa poikkeuksellisen vaikea jakso ilman merkittäviä uusia hankkeita.</p>
       <div class="lahde-rivi">
-        <span class="lahde-teksti">Lähde: Kauppalehti — Rakentaminen</span>
+        <span class="lahde-teksti">Lähde: Kauppalehti — Rakentaminen · Koko Suomi</span>
         <a class="lue-lisaa"
            href="https://www.kauppalehti.fi/uutiset/a/4f9ae3e5-6773-45c6-8380-dd176b2a4d89"
            target="_blank"
            rel="noopener noreferrer">
-          Lue alkuperäinen uutinen →
+          Lue alkuperäinen →
         </a>
       </div>
     </div>
 
-    <div class="uutiskortti">
-      <h2>Yksi asia muutti kaiken – Onko edessä jälleen täysjarrutus?</h2>
-      <p>Iranin sota uhkaa suomalaisyritysten kohentuneita kasvunäkymiä aiheuttaen inflaatiopaineita, energian hinnannousua ja epävarmuutta, joka voi hillitä kulutusta ja investointeja. Kriisin vaikutukset riippuvat sen kestosta: lyhyt häiriö pitää talousvaikutukset maltillisina, mutta pitkä kevääseen ulottuva kriisi iskee raaka-aineisiin ja teollisuuteen. Rakennusalan kannalta geopoliittinen riski Hormuzinsalmella korostaa vihreän siirtymän tarvetta vähentää riippuvuutta tuont energiasta.</p>
+    <div class="uutiskortti"
+         data-alue="Koko Suomi"
+         data-aihepiiri="Suhdanteet">
+      <div class="kortti-aihepiiri">Suhdanteet</div>
+      <h2>5 grafiikkaa kertovat nyt olennaisen markkinoista</h2>
+      <p>Yhdysvaltojen ja Iranin kahden viikon tulitauko on poistanut markkinoiden pelkopreemiot ja laskenut Vix-indeksiä normaalitasolle, mutta analyytikot varoittavat petollisesta helpotuksesta ja riskeistä neuvottelujen kariutumisen suhteen. Uutinen keskittyy yleiseen markkinakehitykseen ilman rakennusalan hankkeita, kokoluokkia tai aikatauluja. Sijoittajille suositellaan varovaisuutta ja mahdollisia sijoituskohteita.</p>
       <div class="lahde-rivi">
-        <span class="lahde-teksti">Lähde: Kauppalehti — Suhdanteet</span>
+        <span class="lahde-teksti">Lähde: Kauppalehti — Suhdanteet · Koko Suomi</span>
+        <a class="lue-lisaa"
+           href="https://www.kauppalehti.fi/uutiset/a/36ae5c80-ac41-413d-94ae-801f767ae291"
+           target="_blank"
+           rel="noopener noreferrer">
+          Lue alkuperäinen →
+        </a>
+      </div>
+    </div>
+
+    <div class="uutiskortti"
+         data-alue="Koko Suomi"
+         data-aihepiiri="Suhdanteet">
+      <div class="kortti-aihepiiri">Suhdanteet</div>
+      <h2>Yksi asia muutti kaiken – Onko edessä jälleen täysjarrutus?</h2>
+      <p>Iranin sota on pahin mahdollinen uutinen suomalaisyritysten kohentuneille kasvunäkymille, uhkaen johtaa talouskasvun täysjarrutukseen logistiikka- ja vientiongelmien kautta. Geopoliittinen kriisi heikentää kansainvälistä kauppaa ja nostaa kustannuksia koko Suomessa. Rakennusalalla tämä voi hidastaa uusia hankkeita ja korjaustöitä koko maassa.</p>
+      <div class="lahde-rivi">
+        <span class="lahde-teksti">Lähde: Kauppalehti — Suhdanteet · Koko Suomi</span>
         <a class="lue-lisaa"
            href="https://www.kauppalehti.fi/uutiset/a/07392a82-2325-43ff-9247-1758e5bdc037"
            target="_blank"
            rel="noopener noreferrer">
-          Lue alkuperäinen uutinen →
+          Lue alkuperäinen →
         </a>
       </div>
     </div>
 
-    <div class="uutiskortti">
+    <div class="uutiskortti"
+         data-alue="Koko Suomi"
+         data-aihepiiri="Suhdanteet">
+      <div class="kortti-aihepiiri">Suhdanteet</div>
       <h2>S-Pankki leikkasi nyt kasvuennustetta – Yksi asia voi vielä pahentaa tilannetta</h2>
-      <p>S-Pankki on leikannut Suomen vuoden 2026 BKT-kasvuennustetta 1,3 prosentista 0,9 prosenttiin pääosin Lähi-idän geopoliittisen tilanteen vuoksi. Rakennusalan kannalta merkittävää on investointien odotettu 4 prosentin vuotuinen kasvu vuosina 2026–2027, mikä voi tukea tuotetoimituksia koko maan tasolla. Kasvuennuste nousee 1,5 prosenttiin vuodelle 2027, mutta epävarmuus voi heikentää orasta elpymistä.</p>
+      <p>S-Pankki on laskenut Suomen talouden BKT-kasvuennusteen vuodelle 2026 0,9 prosenttiin aiemman 1,3 prosentin sijaan, pääosin Lähi-idän geopoliittisen epävarmuuden vuoksi. Kasvua odotetaan investointien ja yksityisen kulutuksen tukemana, mutta tilanne on herkkä ja voi pahentua konfliktien pitkittyessä koko maassa. Rakennusalalla tämä heijastuu mahdollisesti investointien maltillisempaan kasvuun, joka ennustetaan 4 prosentin tasolle vuosina 2026–2027.</p>
       <div class="lahde-rivi">
-        <span class="lahde-teksti">Lähde: Kauppalehti — Suhdanteet</span>
+        <span class="lahde-teksti">Lähde: Kauppalehti — Suhdanteet · Koko Suomi</span>
         <a class="lue-lisaa"
            href="https://www.kauppalehti.fi/uutiset/a/643a4834-8f72-4f6d-a99b-00ac03f57cda"
            target="_blank"
            rel="noopener noreferrer">
-          Lue alkuperäinen uutinen →
+          Lue alkuperäinen →
         </a>
       </div>
     </div>
 
-    <div class="uutiskortti">
+    <div class="uutiskortti"
+         data-alue="Koko Suomi"
+         data-aihepiiri="Suhdanteet">
+      <div class="kortti-aihepiiri">Suhdanteet</div>
       <h2>Rakentajille tehty kysely vihjaa: Merkkejä paremmasta löytyy jo</h2>
-      <p>Stark Suomen helmikuussa 2026 teettämässä kyselyssä lähes 3 000 rakennusalan ammattilaista raportoi jo havaitsevansa käänteen merkkejä parempaan suuntaan, sillä 40,5 prosenttia vastaajista näkee positiivisia signaaleja. Seuraavan 12 kuukauden osalta optimismi on vielä selkeämpää: 77 prosenttia uskoo alan tilanteen paranevan tai paljon paranevan. Vaikka ammattilaiset jakautuvat lyhyemmällä aikavälillä, kun 48 prosenttia arvioi tilanteen paranevan puolen vuoden aikana ja 47 prosenttia odottaa sen pysyvän ennallaan, tulokset kertovat selvästi siitä, että alan pessimismi on lieventynyt ja usko tulevaisuuteen vahvistunut.</p>
+      <p>Rakennusalan ammattilaiset näkevät alan näkymiä kirkastumassa, kuten uusi kysely osoittaa. Rakennusluvat ovat lisääntyneet ja asuntomarkkinoilla näkyy merkkejä piristymisestä korkonäkymän ja vahvistuvan talouden myötä, vaikka korkeat asuntovarastot pitävät uudistuotantoa vielä rajoissa.</p>
       <div class="lahde-rivi">
-        <span class="lahde-teksti">Lähde: Kauppalehti — Suhdanteet</span>
+        <span class="lahde-teksti">Lähde: Kauppalehti — Suhdanteet · Koko Suomi</span>
         <a class="lue-lisaa"
            href="https://www.kauppalehti.fi/uutiset/a/3b7b09e2-c2e9-4f82-a72f-159ff1f2e906"
            target="_blank"
            rel="noopener noreferrer">
-          Lue alkuperäinen uutinen →
+          Lue alkuperäinen →
         </a>
       </div>
     </div>
 
-    <div class="uutiskortti">
+    <div class="uutiskortti"
+         data-alue="Pääkaupunkiseutu"
+         data-aihepiiri="Toimitilat & kiinteistöt">
+      <div class="kortti-aihepiiri">Toimitilat & kiinteistöt</div>
       <h2>Yli miljoona neliötä tyhjillään – Asiantuntija kertoo, mitä niille vielä voi tapahtua</h2>
-      <p>Pääkaupunkiseudulla on tyhjillään yli 700 000 neliömetriä toimistotilaa tärkeimmillä alueilla, joista eniten Pitäjänmäellä lähes 90 000 neliömetriä, ja vajaakäyttö on jatkunut yli 15 vuotta. Tilanne johtuu etätyöstä ja työpisteiden karsimisesta, minkä vuoksi omistajat toivovat rakennusten purkamista tai muuntamista asunnoiksi. Alueilla kuten Keilaniemessä, Pasilassa, Sörnäisissä ja Vantaan keskuksissa on edelleen vapaita toimisto- ja toimitiloja vuokrattavana.</p>
+      <p>Pääkaupunkiseudulla on yli miljoona neliötä toimistotiloja tyhjillään, mikä vastaa noin 15–18 prosentin vajaakäyttöastetta keskeisillä alueilla kuten Pitäjänmäellä ja Sörnäisissä. Tilanne on jatkunut yli 15–20 vuotta etätyön ja tilatarpeiden muutosten vuoksi, eikä uusia suuria hankkeita ole käynnissä. Asiantuntijat ehdottavat purkamista tai remonttia asunnoiksi ratkaisuna, mutta suhdanteet hidastavat muutoksia.</p>
       <div class="lahde-rivi">
-        <span class="lahde-teksti">Lähde: Kauppalehti — Toimitilat</span>
+        <span class="lahde-teksti">Lähde: Kauppalehti — Toimitilat · Pääkaupunkiseutu</span>
         <a class="lue-lisaa"
            href="https://www.kauppalehti.fi/uutiset/a/090019a7-7bb2-4f38-be47-33eb90a418ce"
            target="_blank"
            rel="noopener noreferrer">
-          Lue alkuperäinen uutinen →
+          Lue alkuperäinen →
         </a>
       </div>
     </div>
 
-    <div class="uutiskortti">
+    <div class="uutiskortti"
+         data-alue="Koko Suomi"
+         data-aihepiiri="Infrastruktuuri">
+      <div class="kortti-aihepiiri">Infrastruktuuri</div>
       <h2>Valtion jätti-investoinnit eivät hidastu – Nato-rahoitus avaa uusia ovia</h2>
-      <p>Suomi saa ensimmäistä kertaa Naton yhteisrahoitusta puolustushankkeilleen, mukaan lukien yli 100 miljoonan euron arvioidun tuen F-35-hävittäjätukikohtien rakentamiseen. Valtion rakentamisohjelma turvallisuusviranomaisille jatkuu korkealla tasolla, sillä Nato on hyväksynyt lähes koko Suomen F-35-infrarakentamisohjelman rahoituskelpoiseksi. Lisäksi Suomi isännöi Naton Innovation Range -testaustoimintoja, joissa painopiste on tulevaisuuden viestintäteknologioiden kehittämisessä.</p>
+      <p>Valtion jätti-investoinnit turvallisuusviranomaisten tarpeisiin jatkuvat korkealla tasolla lähivuosina Senaatin konsernijohtajan mukaan. Nato-jäsenyys avaa uusia rahoitusmahdollisuuksia puolustusinfrarakentamiseen, kuten F-35-hävittäjien tukikohtiin koko Suomessa. Rakentaminen kattaa miljardeja euroja ja ulottuu useisiin kohteisiin ilman tarkempaa sijaintirajoitusta.</p>
       <div class="lahde-rivi">
-        <span class="lahde-teksti">Lähde: Kauppalehti — Toimitilat</span>
+        <span class="lahde-teksti">Lähde: Kauppalehti — Toimitilat · Koko Suomi</span>
         <a class="lue-lisaa"
            href="https://www.kauppalehti.fi/uutiset/a/7844d8fd-750c-4e2d-abd6-001e7821408b"
            target="_blank"
            rel="noopener noreferrer">
-          Lue alkuperäinen uutinen →
+          Lue alkuperäinen →
         </a>
       </div>
     </div>
 
-    <div class="uutiskortti">
+    <div class="uutiskortti"
+         data-alue="Pääkaupunkiseutu"
+         data-aihepiiri="Toimitilat & kiinteistöt">
+      <div class="kortti-aihepiiri">Toimitilat & kiinteistöt</div>
       <h2>Suosittu etätyö tyhjentää nyt toimistot – Lisää tulee silti</h2>
-      <p>Pääkaupunkiseudun toimistotilojen vajaakäyttö on noussut ennätystasolle maaliskuun 2025 lopussa, jolloin tyhjää tilaa oli yli 700 000 neliömetriä keskeisillä alueilla kuten Sörnäissä, Pitäjänmäellä, Keilaniemessä ja Pasilassa. Vajaakäyttöaste on noin 18 prosenttia, ja se on kasvanut edellisestä kvartaalista noin 0,5 prosenttiyksikköä etä- ja hybridityön yleistymisen vuoksi. Rakennustuotteiden toimittajille tilanne korostaa toimistomarkkinan polarisaatiota, jossa laadukkaat Grade A -tilat kärsivät vähemmän vajaakäytöstä.</p>
+      <p>Pääkaupunkiseudulla toimistotilojen vajaakäyttö on saavuttanut ennätyksen, yli 700 000 neliömetriä tyhjää tilaa keskeisillä alueilla, johtuen etätyön lisääntymisestä ja nimikoiduista työpisteistä luopumisesta. Tilanne on pahentunut useilla alueilla kuten Sörnäisissä ja Pitäjänmäellä, vaikka laadukkaiden Grade A -tilojen kysyntä pysyy vahvana. Rakennustuotetoimittajille tämä merkitsee vähentynyttä uustuotannon tarvetta ja kasvavaa peruskorjauspainetta vanhemmille kohteille.</p>
       <div class="lahde-rivi">
-        <span class="lahde-teksti">Lähde: Kauppalehti — Toimitilat</span>
+        <span class="lahde-teksti">Lähde: Kauppalehti — Toimitilat · Pääkaupunkiseutu</span>
         <a class="lue-lisaa"
            href="https://www.kauppalehti.fi/uutiset/a/98905e5d-aaf6-4d52-8320-e61a8956aad5"
            target="_blank"
            rel="noopener noreferrer">
-          Lue alkuperäinen uutinen →
+          Lue alkuperäinen →
         </a>
       </div>
     </div>
 
-    <div class="uutiskortti">
+    <div class="uutiskortti"
+         data-alue="Pääkaupunkiseutu"
+         data-aihepiiri="Toimitilat & kiinteistöt">
+      <div class="kortti-aihepiiri">Toimitilat & kiinteistöt</div>
       <h2>Helsingin ”rumin rakennus” on nyt myytävänä – Kuka ostaa?</h2>
-      <p>Helsingin kaupungin äänestämä **rumimmaksi rakennukseksi** on pantu myyntiin. Uutinen koskee yksittäistä kiinteistöä Helsingissä ilman mainintoja hankkeen kokoluokasta tai aikataulusta. Rakennusalan toimijoille tämä avaa mahdollisuuden tutustua kohteeseen potentiaalisena hankkeena.</p>
+      <p>Helsingin kaupungin äänestämä 'rumin rakennus' on nyt myynnissä, mikä avaa mahdollisuuksia rakennustuotetoimittajille toimittamaan materiaaleja mahdolliseen peruskorjaukseen tai purkuun. Hanke sijoittuu Pääkaupunkiseudulle Helsingin keskustaan, eikä myynnin aikataulua ole tarkemmin määritelty. Kohde herättää kiinnostusta sijaintinsa ja keskustelun herättämisen ansiosta.</p>
       <div class="lahde-rivi">
-        <span class="lahde-teksti">Lähde: Kauppalehti — Toimitilat</span>
+        <span class="lahde-teksti">Lähde: Kauppalehti — Toimitilat · Pääkaupunkiseutu</span>
         <a class="lue-lisaa"
            href="https://www.kauppalehti.fi/uutiset/a/36be6ec4-5b59-4b0c-8adb-58c3b69d4233"
            target="_blank"
            rel="noopener noreferrer">
-          Lue alkuperäinen uutinen →
+          Lue alkuperäinen →
         </a>
       </div>
     </div>
 
-    <div class="uutiskortti">
+    <div class="uutiskortti"
+         data-alue="Koko Suomi"
+         data-aihepiiri="Toimitilat & kiinteistöt">
+      <div class="kortti-aihepiiri">Toimitilat & kiinteistöt</div>
       <h2>Yhä useampi toimisto jää nyt tyhjäksi: ”Lyö uusia ennätyksiä”</h2>
-      <p>Etätyön vakiintuminen vähentää toimistotilojen tarvetta Suomessa merkittävästi, ja Senaatti-kiinteistöjen mukaan valtion tilat voivat puolittua nykyisestä 20 neliömetristä henkilötyövuotta kohden. Uusien vuokrasopimusten keskikoko on pienentynyt 20–30 prosenttia, vuokrat laskeneet etenkin B- ja C-luokan kohteissa 10–15 prosenttia, ja IT-alalla tilat ovat supistuneet 30–40 prosenttia. Sijoittajat karttavat sektoria tyhjien toimistojen ennätysten takia, mikä heikentää rakennustuotetoimittajien kysyntää.</p>
+      <p>Etätyön vakiintuminen on johtanut toimistotilojen kysynnän vähenemiseen ympäri Suomea. Valtion toimistotilat voivat vähentyä jopa puoleen nykyisestä, ja erityisesti pääkaupunkiseudulla ja muualla Suomessa ennakoidaan tyhjien toimistotilojen määrän kasvavan merkittävästi.</p>
       <div class="lahde-rivi">
-        <span class="lahde-teksti">Lähde: Kauppalehti — Toimitilat</span>
+        <span class="lahde-teksti">Lähde: Kauppalehti — Toimitilat · Koko Suomi</span>
         <a class="lue-lisaa"
            href="https://www.kauppalehti.fi/uutiset/a/a1099c95-a4c4-4a8e-b1ab-86b76869e1de"
            target="_blank"
            rel="noopener noreferrer">
-          Lue alkuperäinen uutinen →
+          Lue alkuperäinen →
         </a>
       </div>
     </div>
 
-    <div class="uutiskortti">
+    <div class="uutiskortti"
+         data-alue="Pääkaupunkiseutu"
+         data-aihepiiri="Uudet hankkeet">
+      <div class="kortti-aihepiiri">Uudet hankkeet</div>
       <h2>Merituulivoima kärvistelee vaikeassa markkina­tilanteessa – sitä kehittävä Arenso sai uudet omistajat yhtiön johdosta</h2>
-      <p>Arenson päähanke on Tahkoluodon merituulipuiston laajennus Porin edustalla, joka kattaa 40 voimalaa ja kokonaistehon 600–800 MW. Hanke sijoittuu 4–22 kilometrin päähän rannasta 15–45 metrin syvyyteen, ja sen arvioitu rakennusaikataulu on 2027–2029. Yhtiön omistus on siirtynyt johdolle vaikeassa markkinatilanteessa merituulivoiman kehityksessä.</p>
+      <p>Merituulivoimaa kehittävän Arenson päähanke on Tahkoluodon merituulipuiston laajennus Porin edustalla, joka kattaa 40 voimalaa ja kokonaistehon 600–800 MW. Hanke sijoittuu 4–22 km rannasta merialueelle 15–45 metrin syvyyteen, ja sen arvioitu rakennusaikataulu on 2027–2029. Vaikeasta markkinatilanteesta huolimatta yhtiön omistus on siirtynyt johdolle, ja yhteistyö Porin kaupungin kanssa Merituulikeskus-hankkeessa etenee.</p>
       <div class="lahde-rivi">
-        <span class="lahde-teksti">Lähde: Yle Uutiset — Talous</span>
+        <span class="lahde-teksti">Lähde: Yle Uutiset — Talous · Pääkaupunkiseutu</span>
         <a class="lue-lisaa"
            href="https://yle.fi/a/74-20220586?origin=rss"
            target="_blank"
            rel="noopener noreferrer">
-          Lue alkuperäinen uutinen →
+          Lue alkuperäinen →
         </a>
       </div>
     </div>
@@ -267,6 +405,105 @@
     <p>Uutiset kerätty automaattisesti julkisista lähteistä.</p>
     <p>Kaikki oikeudet alkuperäisille julkaisijoille.</p>
   </footer>
+
+  <script>
+    // --- Tila ---
+    let aktiivisetKortit = [];
+    let valittuAlue = "kaikki";
+    let valittuAihe = "kaikki";
+    let hakusana = "";
+    const ladattuPaiva = "2026-04-15";
+
+    // --- Alusta kortit sivun latautuessa ---
+    document.addEventListener("DOMContentLoaded", () => {
+      aktiivisetKortit = Array.from(document.querySelectorAll(".uutiskortti"));
+      document.getElementById("hakukentta").addEventListener("input", (e) => {
+        hakusana = e.target.value.toLowerCase();
+        suodataUutiset();
+      });
+    });
+
+    // --- Päivän vaihto ---
+    async function lataaPaiva(paiva) {
+      // Päivitä napit
+      document.querySelectorAll(".paivanavigaatio button").forEach(b => {
+        const paivaStr = b.getAttribute("onclick").match(/'([^']+)'/)[1];
+        b.classList.toggle("aktiivinen", paivaStr === paiva);
+      });
+
+      if (paiva === ladattuPaiva) {
+        // Palauta alkuperäiset kortit
+        const lista = document.getElementById("uutislista");
+        lista.innerHTML = document.getElementById("alkuperaiset-kortit").innerHTML;
+        aktiivisetKortit = Array.from(lista.querySelectorAll(".uutiskortti"));
+        suodataUutiset();
+        return;
+      }
+
+      try {
+        const vastaus = await fetch("historia/" + paiva + ".json");
+        if (!vastaus.ok) throw new Error("Ei löydy");
+        const uutiset = await vastaus.json();
+        renderKortit(uutiset);
+      } catch (e) {
+        document.getElementById("uutislista").innerHTML =
+          '<p class="virhe">Uutisia ei löydy tälle päivälle.</p>';
+      }
+    }
+
+    function renderKortit(uutiset) {
+      const lista = document.getElementById("uutislista");
+      let html = '<div class="uutismaara" id="uutismaara">' + uutiset.length + ' uutista</div>';
+      uutiset.forEach(u => {
+        html += '<div class="uutiskortti" data-alue="' + u.alue + '" data-aihepiiri="' + u.aihepiiri + '">' +
+          '<div class="kortti-aihepiiri">' + u.aihepiiri + '</div>' +
+          '<h2>' + u.otsikko + '</h2>' +
+          '<p>' + u.yhteenveto + '</p>' +
+          '<div class="lahde-rivi">' +
+            '<span class="lahde-teksti">Lähde: ' + u.lahde + ' · ' + u.alue + '</span>' +
+            '<a class="lue-lisaa" href="' + u.linkki + '" target="_blank" rel="noopener noreferrer">Lue alkuperäinen →</a>' +
+          '</div></div>';
+      });
+      lista.innerHTML = html;
+      aktiivisetKortit = Array.from(lista.querySelectorAll(".uutiskortti"));
+      suodataUutiset();
+    }
+
+    // --- Filtterit ---
+    function asetaAlue(nappi, arvo) {
+      valittuAlue = arvo;
+      document.querySelectorAll("#alue-napit button").forEach(b => b.classList.remove("aktiivinen"));
+      nappi.classList.add("aktiivinen");
+      suodataUutiset();
+    }
+
+    function asetaAihe(nappi, arvo) {
+      valittuAihe = arvo;
+      document.querySelectorAll("#aihe-napit button").forEach(b => b.classList.remove("aktiivinen"));
+      nappi.classList.add("aktiivinen");
+      suodataUutiset();
+    }
+
+    function suodataUutiset() {
+      let nakyvia = 0;
+      aktiivisetKortit.forEach(kortti => {
+        const alue = kortti.dataset.alue || "";
+        const aihe = kortti.dataset.aihepiiri || "";
+        const teksti = (kortti.querySelector("h2").textContent + " " +
+                        (kortti.querySelector("p") ? kortti.querySelector("p").textContent : "")).toLowerCase();
+
+        const alueOk = valittuAlue === "kaikki" || alue === valittuAlue;
+        const aiheOk = valittuAihe === "kaikki" || aihe === valittuAihe;
+        const hakuOk = hakusana === "" || teksti.includes(hakusana);
+
+        kortti.style.display = (alueOk && aiheOk && hakuOk) ? "" : "none";
+        if (alueOk && aiheOk && hakuOk) nakyvia++;
+      });
+
+      const maara = document.getElementById("uutismaara");
+      if (maara) maara.textContent = nakyvia + " uutista";
+    }
+  </script>
 
 </body>
 </html>
