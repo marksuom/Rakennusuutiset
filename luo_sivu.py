@@ -1,6 +1,7 @@
 import feedparser
 import requests
 import os
+import re
 from datetime import datetime
 from dotenv import load_dotenv
 
@@ -65,7 +66,7 @@ def tee_yhteenveto(otsikko, teksti):
                 "messages": [
                     {
                         "role": "system",
-                        "content": "Olet rakennusalan uutistoimittaja. Tee lyhyt ja selkeä 2-3 lauseen yhteenveto suomeksi annetusta uutisesta rakennustuotetoimittajan näkökulmasta. Korosta erityisesti hankkeiden kokoluokkaa, sijaintia ja aikataulua jos ne mainitaan. Älä lisää omia mielipiteitä."
+                        "content": "Olet rakennusalan uutistoimittaja. Tee lyhyt ja selkeä 2-3 lauseen yhteenveto suomeksi annetusta uutisesta rakennustuotetoimittajan näkökulmasta. Korosta erityisesti hankkeiden kokoluokkaa, sijaintia ja aikataulua jos ne mainitaan. Älä lisää omia mielipiteitä. Älä käytä viittausnumeroita tai hakasulkuja tekstissä."
                     },
                     {
                         "role": "user",
@@ -76,7 +77,9 @@ def tee_yhteenveto(otsikko, teksti):
             }
         )
         vastaus.raise_for_status()
-        return vastaus.json()["choices"][0]["message"]["content"]
+        tulos = vastaus.json()["choices"][0]["message"]["content"]
+        tulos = re.sub(r'\[\d+\]', '', tulos).strip()
+        return tulos
     except Exception as e:
         print(f"API-virhe: {e}")
         return teksti[:200] + "..." if len(teksti) > 200 else teksti
@@ -95,7 +98,6 @@ def hae_uutiset():
             }
             kaikki_uutiset.append(uutinen)
 
-    # Tallennetaan uutiset tiedostoon myöhempää käyttöä varten
     import json
     with open("uutiset_cache.json", "w", encoding="utf-8") as f:
         json.dump(kaikki_uutiset, f, ensure_ascii=False, indent=2)
@@ -140,131 +142,7 @@ def luo_html(uutiset):
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rakennusmarkkinan uutiset</title>
-  <style>
-    * {{ box-sizing: border-box; margin: 0; padding: 0; }}
-
-    body {{
-      font-family: 'Segoe UI', Arial, sans-serif;
-      background-color: #f0f0f0;
-      color: #222;
-    }}
-
-    header {{
-      background-color: #D2051E;
-      color: white;
-    }}
-
-    .header-ylaosa {{
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 16px 32px;
-    }}
-
-    .header-ylaosa h1 {{
-      font-size: 24px;
-      font-weight: 700;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-    }}
-
-    .header-ylaosa .alaotsikko {{
-      font-size: 13px;
-      opacity: 0.85;
-      margin-top: 4px;
-    }}
-
-    .header-alapalkki {{
-      background-color: #a80016;
-      padding: 8px 32px;
-      font-size: 12px;
-      opacity: 0.9;
-    }}
-
-    main {{
-      max-width: 820px;
-      margin: 0 auto;
-      padding: 24px 16px;
-    }}
-
-    .uutismaara {{
-      font-size: 13px;
-      color: #666;
-      margin-bottom: 16px;
-      padding-bottom: 12px;
-      border-bottom: 2px solid #D2051E;
-    }}
-
-    .uutiskortti {{
-      background-color: white;
-      border-radius: 4px;
-      padding: 20px 24px;
-      margin-bottom: 12px;
-      border-left: 4px solid #D2051E;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
-    }}
-
-    .uutiskortti:hover {{
-      box-shadow: 0 3px 10px rgba(0,0,0,0.12);
-    }}
-
-    .uutiskortti h2 {{
-      color: #1a1a1a;
-      font-size: 17px;
-      font-weight: 600;
-      margin-bottom: 10px;
-      line-height: 1.4;
-    }}
-
-    .uutiskortti p {{
-      color: #444;
-      line-height: 1.7;
-      font-size: 15px;
-      margin-bottom: 14px;
-    }}
-
-    .lahde-rivi {{
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      padding-top: 12px;
-      border-top: 1px solid #eee;
-      flex-wrap: wrap;
-    }}
-
-    .lahde-teksti {{
-      font-size: 12px;
-      color: #999;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }}
-
-    .lue-lisaa {{
-      display: inline-block;
-      color: #D2051E;
-      text-decoration: none;
-      font-size: 13px;
-      font-weight: 600;
-      padding: 4px 12px;
-      border: 1.5px solid #D2051E;
-      border-radius: 3px;
-    }}
-
-    .lue-lisaa:hover {{
-      background-color: #D2051E;
-      color: white;
-    }}
-
-    footer {{
-      background-color: #1a1a1a;
-      color: #999;
-      text-align: center;
-      padding: 24px;
-      font-size: 12px;
-      margin-top: 40px;
-      line-height: 1.8;
-    }}
-  </style>
+  <link rel="stylesheet" href="tyyli.css">
 </head>
 <body>
 
