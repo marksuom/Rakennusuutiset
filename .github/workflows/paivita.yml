@@ -2,7 +2,7 @@ name: Päivitä uutiset päivittäin
 
 on:
   schedule:
-    - cron: "0 4 * * *" # Joka päivä klo 7:00 Suomen aikaa (UTC+3)
+    - cron: "0 7 * * *" # Joka päivä klo 9:00 talvella / 10:00 kesällä Suomen aikaa
   workflow_dispatch: # Mahdollistaa myös manuaalisen ajamisen
 
 jobs:
@@ -32,6 +32,6 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "265981152+marksuom@users.noreply.github.com"
-          git add index.html
+          git add index.html historia/
           git diff --staged --quiet || git commit -m "Automaattinen päivitys $(date +'%d.%m.%Y %H:%M')"
           git push
