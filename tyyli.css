@@ -124,6 +124,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
+  justify-content: center;
 }
 
 .filtteri-napit button {
