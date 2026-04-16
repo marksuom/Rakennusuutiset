@@ -333,15 +333,6 @@ def luo_html(analysoidut, paivat, paiva_str):
         b.classList.toggle("aktiivinen", paivaStr === paiva);
       }});
 
-      if (paiva === ladattuPaiva) {{
-        // Palauta alkuperäiset kortit
-        const lista = document.getElementById("uutislista");
-        lista.innerHTML = document.getElementById("alkuperaiset-kortit").innerHTML;
-        aktiivisetKortit = Array.from(lista.querySelectorAll(".uutiskortti"));
-        suodataUutiset();
-        return;
-      }}
-
       try {{
         const vastaus = await fetch("historia/" + paiva + ".json");
         if (!vastaus.ok) throw new Error("Ei löydy");
