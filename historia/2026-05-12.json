@@ -1,12 +1,84 @@
 [
   {
+    "otsikko": "Espooseen nousee yli 170 asunnon kohde",
+    "linkki": "https://www.rakennuslehti.fi/2026/05/espooseen-nousee-yli-170-asunnon-kohde/",
+    "lahde": "Rakennuslehti",
+    "yhteenveto": "Rakentaminen on alkanut ja valmista on ensi vuoden syksyllä.",
+    "alue": "Koko Suomi",
+    "aihepiiri": "Alan yritykset",
+    "paiva": "2026-05-12"
+  },
+  {
+    "otsikko": "NCC sai koulu-urakan Porvoosta",
+    "linkki": "https://www.rakennuslehti.fi/2026/05/ncc-sai-koulu-urakan-porvoosta/",
+    "lahde": "Rakennuslehti",
+    "yhteenveto": "Rakentaminen on alkanut purkutöillä.",
+    "alue": "Koko Suomi",
+    "aihepiiri": "Alan yritykset",
+    "paiva": "2026-05-12"
+  },
+  {
+    "otsikko": "Perinteikästä perheyritystä uhkaa konkurssi – ”Emme ole lyöneet kirvestä kaivoon”",
+    "linkki": "https://www.rakennuslehti.fi/2026/05/perinteikasta-perheyritysta-uhkaa-konkurssi-emme-ole-lyoneet-kirvesta-kaivoon/",
+    "lahde": "Rakennuslehti",
+    "yhteenveto": "Talousongelmien taustalla on monia syitä.",
+    "alue": "Koko Suomi",
+    "aihepiiri": "Alan yritykset",
+    "paiva": "2026-05-12"
+  },
+  {
+    "otsikko": "Jyväskylään nousee kaksi uutta palvelukotia",
+    "linkki": "https://www.rakennuslehti.fi/2026/05/jyvaskylaan-nousee-kaksi-uutta-palvelukotia/",
+    "lahde": "Rakennuslehti",
+    "yhteenveto": "Rakennukset valmistuvat ensi vuoden keväällä.",
+    "alue": "Koko Suomi",
+    "aihepiiri": "Alan yritykset",
+    "paiva": "2026-05-12"
+  },
+  {
+    "otsikko": "Lohkare Infra taas ostoksilla – nyt saman katon alle Nordic Electro Power",
+    "linkki": "https://www.rakennuslehti.fi/2026/05/lohkare-infra-taas-ostoksilla-nyt-saman-katon-alle-nordic-electro-power/",
+    "lahde": "Rakennuslehti",
+    "yhteenveto": "Lohkare Infran edellinen yrityskauppa uutisoitiin viime viikolla, jolloin siihen ostettiin Ylöjärven Kiviset.",
+    "alue": "Koko Suomi",
+    "aihepiiri": "Alan yritykset",
+    "paiva": "2026-05-12"
+  },
+  {
+    "otsikko": "Suomessa puretaan rakennuksia kiihtyvää vauhtia: \"Tahti on kova\"",
+    "linkki": "https://www.kauppalehti.fi/uutiset/a/a6402b67-5eaf-42d8-8131-35208d5772da",
+    "lahde": "Kauppalehti — Rakentaminen",
+    "yhteenveto": "Eniten yllätti se, minkä ikäisiä rakennuksia nyt puretaan, kertoo Kauppalehden datatoimittaja Maaria Drake Talousaamussa.",
+    "alue": "Koko Suomi",
+    "aihepiiri": "Alan yritykset",
+    "paiva": "2026-05-12"
+  },
+  {
+    "otsikko": "Purkutuomio – Suomessa puretaan tänä vuonna lähes 600 kuntien omistamaa rakennusta",
+    "linkki": "https://www.kauppalehti.fi/uutiset/a/5e8c3294-182b-427f-b188-49b1d380f25f",
+    "lahde": "Kauppalehti — Rakentaminen",
+    "yhteenveto": "Kehno talous, väestömuutos ja korjausvelka luovat yhtälön, jossa purkaminen voittaa korjaamisen. Kokosimme listan tänä vuonna purettavista kuntien rakennuksista. Joukossa on yhä uudempia.",
+    "alue": "Koko Suomi",
+    "aihepiiri": "Alan yritykset",
+    "paiva": "2026-05-12"
+  },
+  {
+    "otsikko": "Kreatelle 28 miljoonan euron urakka",
+    "linkki": "https://www.kauppalehti.fi/uutiset/a/c02bc76e-db63-4e21-8f9a-4f00ee893e77",
+    "lahde": "Kauppalehti — Rakentaminen",
+    "yhteenveto": "Urakka kirjataan Kreaten toisen neljänneksen tilauskantaan.",
+    "alue": "Koko Suomi",
+    "aihepiiri": "Alan yritykset",
+    "paiva": "2026-05-12"
+  },
+  {
     "otsikko": "Kuuma ilmiö näkyy nyt jopa Helsingin pörssin kauppayhtiössä",
     "linkki": "https://www.kauppalehti.fi/uutiset/a/0556c749-22d8-44e9-b17a-3fceee7acad4",
     "lahde": "Kauppalehti — Rakentaminen",
     "yhteenveto": "Keskon rakentamisen ja talotekniikan kauppa kasvaa asuntorakentamisen heikkoudesta huolimatta.",
     "alue": "Koko Suomi",
     "aihepiiri": "Alan yritykset",
-    "paiva": "2026-05-05"
+    "paiva": "2026-05-12"
   },
   {
     "otsikko": "Timo Vlasov yrittää ajaa hissiä niin kauan, että se menee rikki – ”On oikeastaan hyvä juttu”",
@@ -15,34 +87,34 @@
     "yhteenveto": "Hissiteknologian kehittäminen erityisesti korkeisiin rakennuksiin on tarkkaa puuhaa. Vierailimme kaivoksessa, jonka Kone on valjastanut testitarkoituksiin.",
     "alue": "Koko Suomi",
     "aihepiiri": "Alan yritykset",
-    "paiva": "2026-05-05"
+    "paiva": "2026-05-12"
   },
   {
-    "otsikko": "Microsoft tuplaa datakeskuksensa Suomessa – kertoo uutta tietoa sähkön hankinnasta",
-    "linkki": "https://www.kauppalehti.fi/uutiset/a/b4152baa-e2d0-471f-8f6b-0c405589769c",
-    "lahde": "Kauppalehti — Rakentaminen",
-    "yhteenveto": "Amerikkalaisjätti käynnistää kolmen uuden datakeskusrakennuksen rakentamisen pääkaupunkiseudulla. Ensimmäisten datakeskusten sähköstä on solmittu 200 megawatin sopimukset.",
+    "otsikko": "Tämä on syy, miksi osakkeet nousivat – ”Kriisi jää lopulta rajatuksi”",
+    "linkki": "https://www.kauppalehti.fi/uutiset/a/563f6150-0f8c-41f9-86ea-efc6aad880bf",
+    "lahde": "Kauppalehti — Suhdanteet",
+    "yhteenveto": "Vahvat yhtiötulokset ja odotukset Iranin sodan ratkeamisesta nostivat osakemarkkinoita huhtikuussa. S-Pankin päästrategi Tanja Wennonen-Kärnä kommentoi tilannetta.",
     "alue": "Koko Suomi",
     "aihepiiri": "Alan yritykset",
-    "paiva": "2026-05-05"
+    "paiva": "2026-05-12"
   },
   {
-    "otsikko": "Suomen suurimman rakentajan osake vajosi selvään laskuun – Toimitusjohtaja kertoo, miksi tulos kääntyy pian",
-    "linkki": "https://www.kauppalehti.fi/uutiset/a/3c9ea325-5c9e-4143-b585-3d4093d3acdd",
-    "lahde": "Kauppalehti — Rakentaminen",
-    "yhteenveto": "Suomen suurin rakentaja YIT tekee nyt suurimman osan tuloksestaan ulkomailla. Talousaamun haastattelussa toimitusjohtaja Heikki Vuorenmaa ei ennakoi nopeaa nousua Suomen asuntomarkkinoille.",
+    "otsikko": "Suomessa tapahtui käänne, jota edes asiantuntijat eivät heti huomanneet – Teollisuudesta vyöryy nyt poikkeuksellisia lukuja",
+    "linkki": "https://www.kauppalehti.fi/uutiset/a/fbffbd89-dd41-4e07-bf28-cdc4af27b5a8",
+    "lahde": "Kauppalehti — Suhdanteet",
+    "yhteenveto": "Teollisuuden tuotanto loikkasi maaliskuussa peräti 7,3 prosenttia, ja tilauskirjat paisuvat vauhdilla. Nordean ekonomisti Juho Kostiainen ja Teollisuusliiton Timo Eklund paljastavat, miten talouden su...",
     "alue": "Koko Suomi",
     "aihepiiri": "Alan yritykset",
-    "paiva": "2026-05-05"
+    "paiva": "2026-05-12"
   },
   {
-    "otsikko": "Pörssin rakentajan hirmuinen kurssinousu: Tässä on yhtiön salaisuus",
-    "linkki": "https://www.kauppalehti.fi/uutiset/a/358f8167-af96-4b13-a83e-d6ec6c0f141b",
-    "lahde": "Kauppalehti — Rakentaminen",
-    "yhteenveto": "Infrarakentaja Kreate Groupin tilauskanta kolminkertaistui viime vuodesta. Timo Vikström kertoi Talousaamun haastattelussa, miksi yhtiöllä menee niin hyvin.",
+    "otsikko": "”Pitäkää tuolista kiinni, nyt mennään” – Teollisuuden kasvu sytytti ekonomistit liekkeihin",
+    "linkki": "https://www.kauppalehti.fi/uutiset/a/891f95f0-de64-4e5e-829a-d31663fdbd56",
+    "lahde": "Kauppalehti — Suhdanteet",
+    "yhteenveto": "Teollisuuden tuoreet luvut saivat ekonomistit innostumaan. Vahva kehitys sekä tuotannossa että tilauksissa antaa aitoa toivoa siitä, että kotimaan talous olisi matkalla kohti parempia aikoja.",
     "alue": "Koko Suomi",
     "aihepiiri": "Alan yritykset",
-    "paiva": "2026-05-05"
+    "paiva": "2026-05-12"
   },
   {
     "otsikko": "Suomen bkt pomppasi yllättäen – ekonomisti kertoo, mistä kasvussa on kyse",
@@ -51,7 +123,7 @@
     "yhteenveto": "Kotimaan kasvunäkymissä käy ristiveto. Konflikti Iranissa jarruttaa ennusteita, mutta alkuvuoden kehitys oli odotettua parempaa. Korttidatan perusteella suomalaiset kuluttivat maaliskuussakin kevättä ...",
     "alue": "Koko Suomi",
     "aihepiiri": "Alan yritykset",
-    "paiva": "2026-05-05"
+    "paiva": "2026-05-12"
   },
   {
     "otsikko": "Ekonomisti: Suomen talous kasvaa nyt vauhdilla – ”Enemmän kuin kukaan uskalsi unelmoida”",
@@ -60,34 +132,7 @@
     "yhteenveto": "Suomen talous teki alkuvuonna 2026 yllättävän vahvan paluun kasvu-uralle, arvioi Keskuskauppakamarin pääekonomisti Jukka Appelqvist.",
     "alue": "Koko Suomi",
     "aihepiiri": "Alan yritykset",
-    "paiva": "2026-05-05"
-  },
-  {
-    "otsikko": "Tämä pelko tappaa Suomessa kaiken kasvun",
-    "linkki": "https://www.kauppalehti.fi/uutiset/a/dfeaa11c-605a-4a64-9d72-45104c9a64e5",
-    "lahde": "Kauppalehti — Suhdanteet",
-    "yhteenveto": "Yrittäjyysympäristö on muuttunut Suomessa aiempaakin varovaisemmaksi. Tämä on huono uutinen talouskasvun kannalta, kirjoittaa Kauppalehden uutispäällikkö Janne Pöysti.",
-    "alue": "Koko Suomi",
-    "aihepiiri": "Alan yritykset",
-    "paiva": "2026-05-05"
-  },
-  {
-    "otsikko": "Yrityksillä vaisut näkymät – vain teollisuudessa kajastaa valoa",
-    "linkki": "https://www.kauppalehti.fi/uutiset/a/c1479357-01d3-4aad-9efd-8d99bbb39efd",
-    "lahde": "Kauppalehti — Suhdanteet",
-    "yhteenveto": "EK:n suhdannebarometrin mukaan Iranin sota heikentää näkymiä merkittävästi.",
-    "alue": "Koko Suomi",
-    "aihepiiri": "Alan yritykset",
-    "paiva": "2026-05-05"
-  },
-  {
-    "otsikko": "Työttömyys paheni – ”Riskit koholla”",
-    "linkki": "https://www.kauppalehti.fi/uutiset/a/ace4fa60-9452-4b5e-9566-52f44a748690",
-    "lahde": "Kauppalehti — Suhdanteet",
-    "yhteenveto": "Työmarkkinoiden riskit ovat nyt koholla, Suomalainen työn Juhana Brotherus kommentoi tilannetta.",
-    "alue": "Koko Suomi",
-    "aihepiiri": "Alan yritykset",
-    "paiva": "2026-05-05"
+    "paiva": "2026-05-12"
   },
   {
     "otsikko": "Yli miljoona neliötä tyhjillään – Asiantuntija kertoo, mitä niille vielä voi tapahtua",
@@ -96,7 +141,7 @@
     "yhteenveto": "Pääkaupunkiseudulla on ollut pian 20 vuotta toimistokriisi, johon halutaan helpottavia ratkaisuja. Niitä löytyy, vakuuttaa kiinteistösijoittamisen asiantuntija.",
     "alue": "Koko Suomi",
     "aihepiiri": "Alan yritykset",
-    "paiva": "2026-05-05"
+    "paiva": "2026-05-12"
   },
   {
     "otsikko": "Valtion jätti-investoinnit eivät hidastu – Nato-rahoitus avaa uusia ovia",
@@ -105,7 +150,7 @@
     "yhteenveto": "Senaatin konsernijohtajan mukaan turvallisuusviranomaisten tarpeita vastaava rakentaminen jatkuu korkealla tasolla lähivuosina. Suomen on mahdollista saada varoja hankkeille myös Natosta.",
     "alue": "Koko Suomi",
     "aihepiiri": "Alan yritykset",
-    "paiva": "2026-05-05"
+    "paiva": "2026-05-12"
   },
   {
     "otsikko": "Suosittu etätyö tyhjentää nyt toimistot – Lisää tulee silti",
@@ -114,7 +159,7 @@
     "yhteenveto": "Pääkaupunkiseudulla lyödään ennätyksiä, sillä tyhjää toimistotilaa ei ole koskaan aiemmin ollut yhtä paljon kuin nyt.",
     "alue": "Koko Suomi",
     "aihepiiri": "Alan yritykset",
-    "paiva": "2026-05-05"
+    "paiva": "2026-05-12"
   },
   {
     "otsikko": "Helsingin ”rumin rakennus” on nyt myytävänä – Kuka ostaa?",
@@ -123,7 +168,7 @@
     "yhteenveto": "Helsingin kaupungin rumimmaksi äänestetty rakennus on pantu myyntiin.",
     "alue": "Koko Suomi",
     "aihepiiri": "Alan yritykset",
-    "paiva": "2026-05-05"
+    "paiva": "2026-05-12"
   },
   {
     "otsikko": "Yhä useampi toimisto jää nyt tyhjäksi: ”Lyö uusia ennätyksiä”",
@@ -132,97 +177,97 @@
     "yhteenveto": "Toimistotilan tarve vähenee etätyön lisääntymisen takia. Tästäkin syystä sijoittajat karttavat koko sektoria.",
     "alue": "Koko Suomi",
     "aihepiiri": "Alan yritykset",
-    "paiva": "2026-05-05"
+    "paiva": "2026-05-12"
   },
   {
-    "otsikko": "Oulussa on useampaan kouluun kohdistuva koulu-uhkaus",
-    "linkki": "https://yle.fi/a/74-20224259?origin=rss",
+    "otsikko": "Naantaliin ympäristöystävällisen polttoaineen tuotantolaitosta suunnitellut Liquid Wind hakeutuu konkurssiin",
+    "linkki": "https://yle.fi/a/74-20225583?origin=rss",
     "lahde": "Yle Uutiset — Talous",
-    "yhteenveto": "Poliisi on paikalla uhkaukseen kohteena olevilla kouluille ja selvittää asiaa.",
+    "yhteenveto": "Ruotsalaisyrityksen oli tarkoitus hyödyntää Naantalin voimalaitoksen tuottamaa höyryä ja hiilidioksidia synteettisen metanolin valmistamisessa.",
     "alue": "Koko Suomi",
     "aihepiiri": "Alan yritykset",
-    "paiva": "2026-05-05"
+    "paiva": "2026-05-12"
   },
   {
-    "otsikko": "Viertolan kouluampujan isoisälle ehdollista vankeutta ampuma-aserikoksesta",
-    "linkki": "https://yle.fi/a/74-20224230?origin=rss",
+    "otsikko": "Vantaan seurakuntayhtymä hakee valituslupaa Lehtisaaren tonttivuokrista",
+    "linkki": "https://yle.fi/a/74-20225582?origin=rss",
     "lahde": "Yle Uutiset — Talous",
-    "yhteenveto": "Luokka­tovereitaan Vantaan Viertolassa ampuneen 12-vuotiaan pojan isoisä tuomittiin ampuma-aserikoksesta. Hän antoi aseen pojan haltuun ilman valvontaa.",
+    "yhteenveto": "Vantaan seurakunta­yhtymä hakee valituslupaa ratkaisusta, joka koskee Lehtisaaren tonttivuokraa. Seurakunta­yhtymä katsoo, että kyse on heitä suuremmasta asiasta.",
     "alue": "Koko Suomi",
     "aihepiiri": "Alan yritykset",
-    "paiva": "2026-05-05"
+    "paiva": "2026-05-12"
   },
   {
-    "otsikko": "Kela-kortista on tullut lähes turha – Kela: Ilman pärjää hyvin",
-    "linkki": "https://yle.fi/a/74-20223582?origin=rss",
+    "otsikko": "Espoo tekee intialais­yhteisön haaveesta totta: kaupunkiin rakennetaan valtava krikettikenttä",
+    "linkki": "https://yle.fi/a/74-20223326?origin=rss",
     "lahde": "Yle Uutiset — Talous",
-    "yhteenveto": "Iso muutos tapahtui viime vuoden alussa.",
+    "yhteenveto": "Espoo katsoo, että liikunta voi auttaa merkittävästi maahanmuuttajia kotoutumisessa.",
     "alue": "Koko Suomi",
     "aihepiiri": "Alan yritykset",
-    "paiva": "2026-05-05"
+    "paiva": "2026-05-12"
   },
   {
-    "otsikko": "Pohjois-Pohjanmaalla herättiin lumiseen aamuun – maa voi olla valkeana myös keskiviikkona",
-    "linkki": "https://yle.fi/a/74-20224207?origin=rss",
+    "otsikko": "Matalalla lentävä kone voi herättää huomiota Tampereen, Turun ja Jyväskylän yllä – tästä on kyse",
+    "linkki": "https://yle.fi/a/74-20225495?origin=rss",
     "lahde": "Yle Uutiset — Talous",
-    "yhteenveto": "Koillismaalla lunta satoi tiistain vastaisena yön aikana useita senttejä.",
+    "yhteenveto": "Maan­mittauslaitos on aloittanut kartoituslennot eri puolilla Suomea. Kartoituskoneen tunnistaa edestakaisin sahaavasta lentoreitistä.",
     "alue": "Koko Suomi",
     "aihepiiri": "Alan yritykset",
-    "paiva": "2026-05-05"
+    "paiva": "2026-05-12"
   },
   {
-    "otsikko": "Metsähallitus arpoi suositun Suomujoen kalastusluvat – sama voisi sopia muidenkin kysyttyjen erälupien myyntiin",
-    "linkki": "https://yle.fi/a/74-20224214?origin=rss",
+    "otsikko": "Poliisilta uutta tietoa Oulun väkivallan­teoista: tapauksia useampia, kaikki uhrit eivät ole ulkomaalais­taustaisia",
+    "linkki": "https://yle.fi/a/74-20225561?origin=rss",
     "lahde": "Yle Uutiset — Talous",
-    "yhteenveto": "Lupien arpomista on toivottu Metsähallituksen suosituimpien lupien kohdalla, sillä puhelin- ja verkkomyynnit ovat ruuhkautuneet pahoin.",
+    "yhteenveto": "Poliisin mukaan myös kaksi suomalaista on joutunut pyöräilijän tönäisemäksi. Heille ei ole kuitenkaan tullut vammoja, minkä takia tapauksia ei ole tutkittu.",
     "alue": "Koko Suomi",
     "aihepiiri": "Alan yritykset",
-    "paiva": "2026-05-05"
+    "paiva": "2026-05-12"
   },
   {
-    "otsikko": "Keski-Suomen taivaalla nähdään tänä kesänä poikkeuksellisen paljon drooneja",
-    "linkki": "https://www.ksml.fi/paikalliset/9425891",
+    "otsikko": "Nämä kuusi hakijaa loppusuoralla Jyväskylän kaupunginteatterin johtajaksi",
+    "linkki": "https://www.ksml.fi/paikalliset/9445782",
     "lahde": "Keskisuomalainen",
     "yhteenveto": "",
     "alue": "Koko Suomi",
     "aihepiiri": "Alan yritykset",
-    "paiva": "2026-05-05"
+    "paiva": "2026-05-12"
   },
   {
-    "otsikko": "IS: Toimittaja meni hoitajaksi palvelutaloon kaaoksen keskelle: \"Kuoleva vanhus huutaa yksin\"",
-    "linkki": "https://www.ksml.fi/uutissuomalainen/9426230",
+    "otsikko": "Tänään julkaistaan Keski-​Suomen lukioista valmistuneet kevään ylioppilaat – katso nimet tästä",
+    "linkki": "https://www.ksml.fi/paikalliset/9444467",
     "lahde": "Keskisuomalainen",
     "yhteenveto": "",
     "alue": "Koko Suomi",
     "aihepiiri": "Alan yritykset",
-    "paiva": "2026-05-05"
+    "paiva": "2026-05-12"
   },
   {
-    "otsikko": "Jyväskylän Huhtasuon apteekki suljetaan – \"Liiketoiminta on tappiollista\"",
-    "linkki": "https://www.ksml.fi/paikalliset/9426091",
+    "otsikko": "Saarijärven Säästölä laitettiin myyntiin nettihuutokauppaan: lähtöhinta 20 000 euroa",
+    "linkki": "https://www.ksml.fi/paikalliset/9445475",
     "lahde": "Keskisuomalainen",
     "yhteenveto": "",
     "alue": "Koko Suomi",
     "aihepiiri": "Alan yritykset",
-    "paiva": "2026-05-05"
+    "paiva": "2026-05-12"
   },
   {
-    "otsikko": "IL: Nuori suomalaismies kuollut Australiassa – kuolemaan liittyy epäselvyyksiä",
-    "linkki": "https://www.ksml.fi/uutissuomalainen/9426499",
+    "otsikko": "Kalervo Kummola kommentoi IS:lle MTV:n ja Elisan sopimusriitaa: \"Äärimmäisen huonoa PR:ää\"",
+    "linkki": "https://www.ksml.fi/uutissuomalainen/9445586",
     "lahde": "Keskisuomalainen",
     "yhteenveto": "",
     "alue": "Koko Suomi",
     "aihepiiri": "Alan yritykset",
-    "paiva": "2026-05-05"
+    "paiva": "2026-05-12"
   },
   {
-    "otsikko": "Liigausko nousee Äänekosken Kipinä Basketin leirissä – \"Mitään ylitsepääsemätöntä ei ole tullut eteen\"",
-    "linkki": "https://www.ksml.fi/urheilu/9426489",
+    "otsikko": "Juho Rahkosen näkökulma | Popcornit esiin – oppositio grillaa hallitusta käänteisestä Robin Hood -politiikasta",
+    "linkki": "https://www.ksml.fi/uutissuomalainen/9445585",
     "lahde": "Keskisuomalainen",
-    "yhteenveto": "",
+    "yhteenveto": "On kiinnostavaa nähdä, millä konkreettisilla esimerkeillä Suomen heikko taloustilanne osoitetaan hallituksen syyksi.",
     "alue": "Koko Suomi",
     "aihepiiri": "Alan yritykset",
-    "paiva": "2026-05-05"
+    "paiva": "2026-05-12"
   },
   {
     "otsikko": "Lehto mukana Vaasan EnergyWeekeillä keskiviikkona 18.3.2026",
@@ -231,7 +276,7 @@
     "yhteenveto": "<p>Lehto osallistuu Vaasan EnergyWeek -tapahtumaan keskiviikkona 18.3.2026. EnergyWeek on yksi Pohjoismaiden merkittävimmistä energia-alan verkostoitumis- ja seminaarikokonaisuuksista, joka kokoaa Vaa...",
     "alue": "Koko Suomi",
     "aihepiiri": "Alan yritykset",
-    "paiva": "2026-05-05"
+    "paiva": "2026-05-12"
   },
   {
     "otsikko": "Virta päällä vihreässä siirtymässä – Lehto Groupin uusi alku energia-alalla",
@@ -240,7 +285,7 @@
     "yhteenveto": "<p>Energiajärjestelmä on murroksessa – ja muutos on täynnä mahdollisuuksia. Kun yhteiskunta sähköistyy ja uusiutuva energia ottaa yhä suuremman roolin, tarvitaan ratkaisuja, jotka pitävät kokonaisuude...",
     "alue": "Koko Suomi",
     "aihepiiri": "Alan yritykset",
-    "paiva": "2026-05-05"
+    "paiva": "2026-05-12"
   },
   {
     "otsikko": "Kalajoelle uutta energiaa – suunnitteilla 30 MW sähkövarasto",
@@ -249,7 +294,7 @@
     "yhteenveto": "<p>Virta päällä ja suunta kohti uusia energiahankkeita! Olemme allekirjoittaneet liiketoimintakauppasopimuksen, jonka myötä Lehto Group Oyj hankkii oikeudet, sopimukset ja luvat suuren sähkövaraston r...",
     "alue": "Koko Suomi",
     "aihepiiri": "Alan yritykset",
-    "paiva": "2026-05-05"
+    "paiva": "2026-05-12"
   },
   {
     "otsikko": "Lehdolla käynnissä akkupuistohanke Pielavedellä",
@@ -258,7 +303,7 @@
     "yhteenveto": "<p>9 MW / 18 MWh energiavarasto valmistuu 2026 alkuvuodesta Lehto Group Oyj:llä on käynnissä merkittävä energiahanke Pielavedellä, jossa rakennetaan 9 MW / 18 MWh akkupuisto tukemaan Suomen sähköverko...",
     "alue": "Koko Suomi",
     "aihepiiri": "Alan yritykset",
-    "paiva": "2026-05-05"
+    "paiva": "2026-05-12"
   },
   {
     "otsikko": "Kastellin uuden liikekeskuksen rakentaminen on alkanut Oulussa",
@@ -267,7 +312,7 @@
     "yhteenveto": "<p>Uudessa liikekeskuksessa tullaan näkemään sekä nykyisestä ostoskeskuksesta tuttuja että täysin uusia liikkeitä. Kastellinkartano on suunniteltu avattavaksi asiakkaille keväällä 2027.</p><p>The post...",
     "alue": "Koko Suomi",
     "aihepiiri": "Alan yritykset",
-    "paiva": "2026-05-05"
+    "paiva": "2026-05-12"
   },
   {
     "otsikko": "Uuden Minna Canthin koulun työmaalla juhlittiin harjannostajaisia Kuopiossa",
@@ -276,7 +321,7 @@
     "yhteenveto": "<p>Rakennustyöt ovat edenneet aikataulun, budjetin ja laadun osalta suunnitellusti kohti valmistumistaan syyslukukaudeksi 2027.</p><p>The post <a href=\"https://lapti.fi/ajankohtaista/uuden-minna-canth...",
     "alue": "Koko Suomi",
     "aihepiiri": "Alan yritykset",
-    "paiva": "2026-05-05"
+    "paiva": "2026-05-12"
   },
   {
     "otsikko": "Saikantalo valmistui Lempäälässä – avautuu käyttöön Asuntomessuilla",
@@ -285,7 +330,7 @@
     "yhteenveto": "<p>Saikantalossa on tilat varhaiskasvatuksen kuudelle lapsiryhmälle sekä alakoululle. Tilat mahdollistavat monipuolista ilta- ja vapaa-ajan käyttöä toimien alueen ”kylätalona”.</p><p>The post <a href=...",
     "alue": "Koko Suomi",
     "aihepiiri": "Alan yritykset",
-    "paiva": "2026-05-05"
+    "paiva": "2026-05-12"
   },
   {
     "otsikko": "Joensuuhun rakentuu kahteen uuteen asumisyksikköön yhteensä 120 asuntoa ikääntyneille",
@@ -294,7 +339,7 @@
     "yhteenveto": "<p>Asumisyksiköissä on sekä ikääntyneiden ympärivuorokautista palveluasumista että yhteisöllistä asumista. Rakentamisesta ja tilojen suunnittelusta vastaa Lapti.</p><p>The post <a href=\"https://lapti....",
     "alue": "Koko Suomi",
     "aihepiiri": "Alan yritykset",
-    "paiva": "2026-05-05"
+    "paiva": "2026-05-12"
   },
   {
     "otsikko": "Lapti toteuttaa Poriin uuden 50-paikkaisen palvelutalon",
@@ -303,7 +348,7 @@
     "yhteenveto": "<p>Tilat on suunniteltu vastaamaan monipuolisesti ikäihmisten asumispalvelutarpeisiin muun muassa turvallisuuden, viihtyisyyden ja toimivan arjen näkökulmista.</p><p>The post <a href=\"https://lapti.fi...",
     "alue": "Koko Suomi",
     "aihepiiri": "Alan yritykset",
-    "paiva": "2026-05-05"
+    "paiva": "2026-05-12"
   },
   {
     "otsikko": "Lujatalo on voittanut Heka Tapanilan laajan peruskorjaushankkeen",
@@ -312,7 +357,7 @@
     "yhteenveto": "<p><strong>Lujatalo on valittu toteuttajaksi Helsingin kaupungin asunnot Oy:n (Heka) vuokratalokohteen laajaan peruskorjaukseen Tapanilassa. Hankeen rakennuttajana toimii Helsingin kaupungin Asuntotuo...",
     "alue": "Koko Suomi",
     "aihepiiri": "Alan yritykset",
-    "paiva": "2026-05-05"
+    "paiva": "2026-05-12"
   },
   {
     "otsikko": "Lujatalo käynnisti Kaskia hyvinvointikorttelin rakentamisen – peruskivi muurattiin Turussa 29.4.2026",
@@ -321,7 +366,7 @@
     "yhteenveto": "<p><strong>Turun Kaskenmäelle rakentuvan Kaskia hyvinvointikorttelin peruskivenmuurausta juhlittiin 29.4.2026. Kohteen urakkasopimus allekirjoitettiin viime vuoden toukokuussa, ja purku- sekä maanrake...",
     "alue": "Koko Suomi",
     "aihepiiri": "Alan yritykset",
-    "paiva": "2026-05-05"
+    "paiva": "2026-05-12"
   },
   {
     "otsikko": "Lujatalolle uusi markkinointi- ja myyntijohtaja Lujakoti-asuntomyyntiin",
@@ -330,7 +375,7 @@
     "yhteenveto": "<p><strong>Lujatalo Oy:n Uudenmaan asuntorakentamisen yksikköön on nimitetty markkinointi- ja myyntijohtajaksi Hanne Miettinen 30.3.2026 alkaen.</strong></p>\n<p>The post <a href=\"https://www.luja.fi/2...",
     "alue": "Koko Suomi",
     "aihepiiri": "Alan yritykset",
-    "paiva": "2026-05-05"
+    "paiva": "2026-05-12"
   },
   {
     "otsikko": "Hipposkeskuksen pysäköintilaitoksen perustuksiin vaihtui vähähiilinen betoni",
@@ -339,7 +384,7 @@
     "yhteenveto": "<p style=\"font-weight: 400;\">KSBR (Keski-Suomen Betonirakenne Oy) rakentaa Jyväskylässä Hipposkeskuksen yhteyteen nousevan pysäköintilaitoksen, jonka perustusten rakentamisessa käytetään materiaalina ...",
     "alue": "Koko Suomi",
     "aihepiiri": "Alan yritykset",
-    "paiva": "2026-05-05"
+    "paiva": "2026-05-12"
   },
   {
     "otsikko": "Hausia toteuttaa asuntokohteen Lujabetonin valmistamilla Kuorikivi-elementeillä – kaikki asunnot varattiin nopeasti",
@@ -348,7 +393,7 @@
     "yhteenveto": "<p><strong>Hausia toteuttaa Helsingin Lauttasaareen uuden asuntokohteen yhteistyössä Lammin Betonin ja Lujabetonin kanssa. Lujabetoni valmistaa ja toimittaa kaikki projektin betonielementit, mukaanluk...",
     "alue": "Koko Suomi",
     "aihepiiri": "Alan yritykset",
-    "paiva": "2026-05-05"
+    "paiva": "2026-05-12"
   },
   {
     "otsikko": "Jatkeen urakoima Asuntosäätiön hankekokonaisuus valmistui Kruununvuorenrantaan",
@@ -357,7 +402,7 @@
     "yhteenveto": "<p>Jatke rakensi kahden asumisoikeuskohteen hankekokonaisuuden Kruununvuorenrannan kasvavalle ja kehittyvälle alueelle.</p>\n<p>The post <a href=\"https://jatke.fi/jatkeen-urakoima-asuntosaation-hankeko...",
     "alue": "Koko Suomi",
     "aihepiiri": "Alan yritykset",
-    "paiva": "2026-05-05"
+    "paiva": "2026-05-12"
   },
   {
     "otsikko": "Asunto Oy Helsingin Arabianrannan Illuusio on kestävän asuntorakentamisen mallihanke",
@@ -366,7 +411,7 @@
     "yhteenveto": "<p>Jatke Uusimaa Oy rakentaa Arabianrannan kauppakeskuksen yhteyteen poikkeuksellista asuntokohdetta. </p>\n<p>The post <a href=\"https://jatke.fi/asunto-oy-helsingin-arabianrannan-illuusia-on-kestavan-...",
     "alue": "Koko Suomi",
     "aihepiiri": "Alan yritykset",
-    "paiva": "2026-05-05"
+    "paiva": "2026-05-12"
   },
   {
     "otsikko": "Jatke Uusimaa rakentaa Eden Asunnoille 41 asunnon kohteen Helsingin Laajasalossa",
@@ -375,7 +420,7 @@
     "yhteenveto": "<p>Jatke Uusimaa Oy on sopinut 41 laadukkaan vuokrakodin rakentamisesta Eden Asuntojen kanssa. Helsingin Laajasalon Yliskylään valmistuvan asuntokohteen, Laajasalon Minean rakennustyöt alkavat heti, j...",
     "alue": "Koko Suomi",
     "aihepiiri": "Alan yritykset",
-    "paiva": "2026-05-05"
+    "paiva": "2026-05-12"
   },
   {
     "otsikko": "Jatke urakoi Etelä-Karjalan hyvinvointialueelle Lappeenrantaan uuden sotekeskuksen",
@@ -384,7 +429,7 @@
     "yhteenveto": "<p>Kahilanniemen sairaalakampus Lappeenrannassa täydentyy uudella sotekeskuksella.</p>\n<p>The post <a href=\"https://jatke.fi/jatke-urakoi-etela-karjalan-hyvinvointialueelle-lappeenrantaan-uuden-soteke...",
     "alue": "Koko Suomi",
     "aihepiiri": "Alan yritykset",
-    "paiva": "2026-05-05"
+    "paiva": "2026-05-12"
   },
   {
     "otsikko": "Espoon kaupungin Hurraa!-palkinto Espoonlahden terveysaseman peruskorjaukselle",
@@ -393,7 +438,7 @@
     "yhteenveto": "<p>Vuoden 2025 Hurraa!-palkinto myönnettiin Jatke Toimitilat Oy:n urakoimalle Espoonlahden terveysaseman peruskorjaukselle.</p>\n<p>The post <a href=\"https://jatke.fi/espoon-kaupungin-hurraa-palkinto-e...",
     "alue": "Koko Suomi",
     "aihepiiri": "Alan yritykset",
-    "paiva": "2026-05-05"
+    "paiva": "2026-05-12"
   },
   {
     "otsikko": "Fira rakentaa asuinkerrostalon Eden Asunnoille Oulunkylään",
@@ -402,7 +447,7 @@
     "yhteenveto": "<p>Artikkeli <a href=\"https://fira.fi/tiedote/fira-rakentaa-asuinkerrostalon-eden-asunnoille-oulunkylaan/\">Fira rakentaa asuinkerrostalon Eden Asunnoille Oulunkylään</a> julkaistiin ensimmäisen kerran...",
     "alue": "Koko Suomi",
     "aihepiiri": "Alan yritykset",
-    "paiva": "2026-05-05"
+    "paiva": "2026-05-12"
   },
   {
     "otsikko": "Firalle positiivinen tulos pienentyneestä liikevaihdosta huolimatta",
@@ -411,7 +456,7 @@
     "yhteenveto": "<p>Artikkeli <a href=\"https://fira.fi/tiedote/firalle-positiivinen-tulos-pienentyneesta-liikevaihdosta-huolimatta/\">Firalle positiivinen tulos pienentyneestä liikevaihdosta huolimatta</a> julkaistiin ...",
     "alue": "Koko Suomi",
     "aihepiiri": "Alan yritykset",
-    "paiva": "2026-05-05"
+    "paiva": "2026-05-12"
   },
   {
     "otsikko": "Fira rakentaa modernin jakelukeskuksen lääketukkuri Oriolalle",
@@ -420,7 +465,7 @@
     "yhteenveto": "<p>Artikkeli <a href=\"https://fira.fi/tiedote/fira-rakentaa-modernin-jakelukeskuksen-laaketukkuri-oriolalle/\">Fira rakentaa modernin jakelukeskuksen lääketukkuri Oriolalle</a> julkaistiin ensimmäisen ...",
     "alue": "Koko Suomi",
     "aihepiiri": "Alan yritykset",
-    "paiva": "2026-05-05"
+    "paiva": "2026-05-12"
   },
   {
     "otsikko": "Datakeskuksien monitoimimies Ari Kurvi: ”Työskentelen 50 vuotta alalla – sitten katson mitä teen isona”",
@@ -429,7 +474,7 @@
     "yhteenveto": "<p>Artikkeli <a href=\"https://fira.fi/blog/datakeskuksien-monitoimimies-ari-kurvi-tyoskentelen-50-vuotta-alalla-sitten-katson-mita-teen-isona/\">Datakeskuksien monitoimimies Ari Kurvi: &#8221;Työskente...",
     "alue": "Koko Suomi",
     "aihepiiri": "Alan yritykset",
-    "paiva": "2026-05-05"
+    "paiva": "2026-05-12"
   },
   {
     "otsikko": "Fira on ostanut Flow Modulesin liiketoiminnot 1.1.2026",
@@ -438,7 +483,34 @@
     "yhteenveto": "<p>Artikkeli <a href=\"https://fira.fi/uutiset/fira-on-ostanut-flow-modulesin-liiketoiminnot-1-1-2026/\">Fira on ostanut Flow Modulesin liiketoiminnot 1.1.2026</a> julkaistiin ensimmäisen kerran <a href...",
     "alue": "Koko Suomi",
     "aihepiiri": "Alan yritykset",
-    "paiva": "2026-05-05"
+    "paiva": "2026-05-12"
+  },
+  {
+    "otsikko": "Veli‑Matti Aaltonen siirtyi rakennuspäälliköksi tukemaan ratayksikön kasvua",
+    "linkki": "https://kreate.fi/veli%e2%80%91matti-aaltonen-siirtyi-rakennuspaallikoksi-tukemaan-ratayksikon-kasvua/",
+    "lahde": "Kreate",
+    "yhteenveto": "<p>Yhdyskuntatekniikan insinööri&#160;Veli‑Matti Aaltonen&#160;on nimitetty ratarakentamisen rakennuspäälliköksi 1.5.2026 alkaen. Uuteen rooliin Veli-Matti siirtyi työpäällikön tehtävästä, jossa hän o...",
+    "alue": "Koko Suomi",
+    "aihepiiri": "Alan yritykset",
+    "paiva": "2026-05-12"
+  },
+  {
+    "otsikko": "Kreate ja GRK allekirjoittivat Vantaan ratikan itäosan toisen osatilauksen – Kreaten osuus noin 79 miljoonaa euroa",
+    "linkki": "https://kreate.fi/kreate-ja-grk-allekirjoittivat-vantaan-ratikan-itaosan-toisen-osatilauksen-kreaten-osuus-noin-79-miljoonaa-euroa/",
+    "lahde": "Kreate",
+    "yhteenveto": "<p>Kreaten ja GRK:n muodostama ryhmittymä on allekirjoittanut sopimuksen Vantaan ratikan itäosan toisesta toteutusvaiheesta 5.5.2026. Vantaan ratikan tarkistettu kokonaiskustannusarvio on noin 750 mil...",
+    "alue": "Koko Suomi",
+    "aihepiiri": "Alan yritykset",
+    "paiva": "2026-05-12"
+  },
+  {
+    "otsikko": "Kreate käynnistää maanalaisen suurhankkeen rakentamisen Tampereella – kehitysvaiheen tulokset ylittivät odotukset",
+    "linkki": "https://kreate.fi/kreate-kaynnistaa-maanalaisen-suurhankkeen-rakentamisen-tampereella-kehitysvaiheen-tulokset-ylittivat-odotukset/",
+    "lahde": "Kreate",
+    "yhteenveto": "<p>Kreate käynnistää välittömästi Viinikankadun maanalaisen ajoyhteyden rakentamisen allekirjoitettuaan toteutusvaiheen sopimuksen Tampereen kaupungin ja Tampereen Veden kanssa. Kyseessä on vaativa ka...",
+    "alue": "Koko Suomi",
+    "aihepiiri": "Alan yritykset",
+    "paiva": "2026-05-12"
   },
   {
     "otsikko": "Datakeskushankkeilla työturvallisuuden rakentamisessa ei jätetä mitään sattuman varaan",
@@ -447,7 +519,7 @@
     "yhteenveto": "<p>Kansainväliset tilaajat ja teknologiatoimijat ovat työskennelleet Kreaten kanssa vaativien infrarakentamisen hankkeiden parissa jo pitkään. Parhaillaan Etelä-Suomen alueella toteutetaan kohteita, j...",
     "alue": "Koko Suomi",
     "aihepiiri": "Alan yritykset",
-    "paiva": "2026-05-05"
+    "paiva": "2026-05-12"
   },
   {
     "otsikko": "Kreate vahvistaa sijoittajaviestintää – sijoittajauutisten roolia kasvatetaan tiedonantopolitiikan päivityksellä",
@@ -456,33 +528,6 @@
     "yhteenveto": "<p>Kreate Group Oyj on päivittänyt tiedonantopolitiikkaansa. Päivityksen keskeinen muutos on sijoittajauutisten roolin kasvattaminen. Jatkossa sijoittajauutisia käytetään täydentämään pörssi- ja lehdi...",
     "alue": "Koko Suomi",
     "aihepiiri": "Alan yritykset",
-    "paiva": "2026-05-05"
-  },
-  {
-    "otsikko": "Kreate käynnisti Koskelan uuden varikon ratarakentamisen – raiteet rakennetaan edistyksellisinä kiintoraidelaattoina",
-    "linkki": "https://kreate.fi/kreate-kaynnisti-koskelan-uuden-varikon-ratarakentamisen-raiteet-rakennetaan-edistyksellisina-kiintoraidelaattoina/",
-    "lahde": "Kreate",
-    "yhteenveto": "<p>Kreate&#160;rakentaa Koskelan varikkohankkeessa radan ja sähköradan sekä tekniset järjestelmät.&#160;Hallien sisällä edetään maanrakennuksesta ratapohjiin ja kiintoraiteeseen, minkä jälkeen vuoross...",
-    "alue": "Koko Suomi",
-    "aihepiiri": "Alan yritykset",
-    "paiva": "2026-05-05"
-  },
-  {
-    "otsikko": "Kreate rakentaa Jyväskylän uuden maamerkin – Taulumäen vesitornin toteuttaminen käynnistyy keväällä",
-    "linkki": "https://kreate.fi/kreate-rakentaa-jyvaskylan-uuden-maamerkin-taulumaen-vesitornin-toteuttaminen-kaynnistyy-kevaalla/",
-    "lahde": "Kreate",
-    "yhteenveto": "<p>Jyväskylän Taulumäelle nousee uusi näyttävä vesitorni, jonka rakentamisesta vastaa vaativaan infrarakentamiseen erikoistunut Kreate. Alva-yhtiöt Oy ja Kreate Oy solmivat yli 26 miljoonan euron sopi...",
-    "alue": "Koko Suomi",
-    "aihepiiri": "Alan yritykset",
-    "paiva": "2026-05-05"
-  },
-  {
-    "otsikko": "Kreate lähtee rakentamaan tunneleita Norjaan – Gullberg-tunnelin sisäverhousurakasta sopimus",
-    "linkki": "https://kreate.fi/kreate-lahtee-rakentamaan-tunneleita-norjaan-gullberg-tunnelin-sisaverhousurakasta-sopimus/",
-    "lahde": "Kreate",
-    "yhteenveto": "<p>Kreate Sverige AB on allekirjoittanut Skanska Norge AS:n kanssa sopimuksen Lofooteilla sijaitsevasta Gullberg‑tunnelin sisäverhousurakasta, joka on osa mittavaa OPS E10 Hålogalandsvegen -hanketta. ...",
-    "alue": "Koko Suomi",
-    "aihepiiri": "Alan yritykset",
-    "paiva": "2026-05-05"
+    "paiva": "2026-05-12"
   }
 ]
