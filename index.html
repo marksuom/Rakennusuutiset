@@ -16,16 +16,16 @@
       </div>
     </div>
     <div class="header-alapalkki">
-      Päivitetty: 29.05.2026 13:37
+      Päivitetty: 30.05.2026 12:08
     </div>
     <nav class="paivanavigaatio">
       <div class="kehys">
-        <button class="aktiivinen" onclick="lataaPaiva('2026-05-29')">29.5.</button>
+        <button class="aktiivinen" onclick="lataaPaiva('2026-05-30')">30.5.</button>
+        <button onclick="lataaPaiva('2026-05-29')">29.5.</button>
         <button onclick="lataaPaiva('2026-05-28')">28.5.</button>
         <button onclick="lataaPaiva('2026-05-27')">27.5.</button>
         <button onclick="lataaPaiva('2026-05-25')">25.5.</button>
         <button onclick="lataaPaiva('2026-05-24')">24.5.</button>
-        <button onclick="lataaPaiva('2026-05-23')">23.5.</button>
       </div>
     </nav>
   </header>
@@ -64,6 +64,23 @@
 
   <main id="uutislista">
     <div class="uutismaara" id="uutismaara">Tänään 59 relevanttia uutista</div>
+
+    <div class="uutiskortti"
+         data-alue="Koko Suomi"
+         data-aihepiiri="Alan yritykset">
+      <div class="kortti-aihepiiri">Alan yritykset</div>
+      <h2>Pientalorakentamisella haetaan myönteistä kehitystä Helsingin naapurustoihin</h2>
+      <p>Uusien suuntaviivojen mukaan pientalotontteja voitaisiin kaavoittaa aiempaa enemmän.</p>
+      <div class="lahde-rivi">
+        <span class="lahde-teksti">Lähde: Rakennuslehti · Koko Suomi</span>
+        <a class="lue-lisaa"
+           href="https://www.rakennuslehti.fi/2026/05/pientalorakentamisella-haetaan-myonteista-kehitysta-helsingin-naapurustoihin/"
+           target="_blank"
+           rel="noopener noreferrer">
+          Lue alkuperäinen →
+        </a>
+      </div>
+    </div>
 
     <div class="uutiskortti"
          data-alue="Koko Suomi"
@@ -137,12 +154,12 @@
          data-alue="Koko Suomi"
          data-aihepiiri="Alan yritykset">
       <div class="kortti-aihepiiri">Alan yritykset</div>
-      <h2>Peab peruskorjaa ja uudistaa Iisalmen kulttuurikeskuksen</h2>
-      <p>Iisalmen kulttuurikeskus on kaupungin Kirkkopuistossa sijaitseva julkinen rakennus, jossa toimivat muun muassa kansalaisopisto, kaupunginkirjasto, kaupungin kulttuuritoimi, luontomuseo ja musiikkiopis...</p>
+      <h2>Temun ”metalliset” vesihanat joutuivat Suomen viranomaisen testiin – Murenivat sisältä mustaksi jauhoksi</h2>
+      <p>Tukesin Temusta tilaamat vesihanat osoittautuivat testeissä poikkeuksellisen heikkolaatuisiksi.</p>
       <div class="lahde-rivi">
-        <span class="lahde-teksti">Lähde: Rakennuslehti · Koko Suomi</span>
+        <span class="lahde-teksti">Lähde: Kauppalehti — Rakentaminen · Koko Suomi</span>
         <a class="lue-lisaa"
-           href="https://www.rakennuslehti.fi/2026/05/peab-peruskorjaa-ja-uudistaa-iisalmen-kulttuurikeskuksen/"
+           href="https://www.kauppalehti.fi/uutiset/a/02fc8a0c-557f-4cca-8962-e26441c9db83"
            target="_blank"
            rel="noopener noreferrer">
           Lue alkuperäinen →
@@ -211,23 +228,6 @@
         <span class="lahde-teksti">Lähde: Kauppalehti — Rakentaminen · Koko Suomi</span>
         <a class="lue-lisaa"
            href="https://www.kauppalehti.fi/uutiset/a/72ba146e-0909-41f2-badc-561c614c1ac7"
-           target="_blank"
-           rel="noopener noreferrer">
-          Lue alkuperäinen →
-        </a>
-      </div>
-    </div>
-
-    <div class="uutiskortti"
-         data-alue="Koko Suomi"
-         data-aihepiiri="Alan yritykset">
-      <div class="kortti-aihepiiri">Alan yritykset</div>
-      <h2>Vilja Riihimäki näki asuntojen hinnat ja päätyi erikoiseen ratkaisuun – Pääekonomistilta tiukka arvio muutoksesta kaupungeissa</h2>
-      <p>Tilastokeskuksen mukaan alle 30-vuotiaiden yksinasuvien määrä väheni jo toista vuotta peräkkäin. Hypon pääekonomisti Juho Keskinen kertoo, millaisessa muutoksessa asuminen oikeastaan on.</p>
-      <div class="lahde-rivi">
-        <span class="lahde-teksti">Lähde: Kauppalehti — Rakentaminen · Koko Suomi</span>
-        <a class="lue-lisaa"
-           href="https://www.kauppalehti.fi/uutiset/a/2ea76fb8-3f74-4e05-a0e9-25a7bc363c3f"
            target="_blank"
            rel="noopener noreferrer">
           Lue alkuperäinen →
@@ -409,12 +409,12 @@
          data-alue="Koko Suomi"
          data-aihepiiri="Alan yritykset">
       <div class="kortti-aihepiiri">Alan yritykset</div>
-      <h2>Neljää epäillään vammaisten pahoinpitelystä ja kaltoin­kohtelusta asumisyksikössä Kajaanissa</h2>
-      <p>Oulun poliisi kertoo uusia tietoja Kajaanin Rajamäentien asumisyksikössä heränneistä rikos­epäilyistä.</p>
+      <h2>HS: Kansanedustaja Joona Räsäsen rattijuopumussakosta voi nousta rikostutkinta</h2>
+      <p>Poliisihallituksen edustajan mukaan poliisi on voinut käyttää valtaa, jota sillä ei ole.</p>
       <div class="lahde-rivi">
         <span class="lahde-teksti">Lähde: Yle Uutiset — Talous · Koko Suomi</span>
         <a class="lue-lisaa"
-           href="https://yle.fi/a/74-20228742?origin=rss"
+           href="https://yle.fi/a/74-20228900?origin=rss"
            target="_blank"
            rel="noopener noreferrer">
           Lue alkuperäinen →
@@ -426,12 +426,12 @@
          data-alue="Koko Suomi"
          data-aihepiiri="Alan yritykset">
       <div class="kortti-aihepiiri">Alan yritykset</div>
-      <h2>Jäikö ylioppilaslakki tänä keväänä saamatta? Poimi tästä jutusta vinkit, miten selviät siitä eteenpäin</h2>
-      <p>Psykologin mukaan lakitta jääneen kannattaa kuulostella rauhassa, onko valmistujais­päivänä voimia lähteä juhlimaan kavereita.</p>
+      <h2>Tänään on lämmintä, huomenna pilvet lisääntyvät</h2>
+      <p>Päivän lämpötilat liikkuvat monin paikoin 18–21 asteessa.</p>
       <div class="lahde-rivi">
         <span class="lahde-teksti">Lähde: Yle Uutiset — Talous · Koko Suomi</span>
         <a class="lue-lisaa"
-           href="https://yle.fi/a/74-20224350?origin=rss"
+           href="https://yle.fi/a/74-20228897?origin=rss"
            target="_blank"
            rel="noopener noreferrer">
           Lue alkuperäinen →
@@ -443,12 +443,12 @@
          data-alue="Koko Suomi"
          data-aihepiiri="Alan yritykset">
       <div class="kortti-aihepiiri">Alan yritykset</div>
-      <h2>Terrorismilainsäädäntö kiristyy kesäkuun alussa</h2>
-      <p>Terrorismirikoksista tuomitaan jatkossa kovempiin rangaistuksiin.</p>
+      <h2>Karhuista on tullut Lieksassa jopa tavanomainen näky – näin kävi, kun Ylen toimittaja lähti ”varmoille apajille”</h2>
+      <p>Lieksassa ja muuallakin Pohjois-Karjalassa tehdään karhuista havaintoja päivittäin. Myös Pohjois-Savossa karhuhavainnot ovat lisääntyneet.</p>
       <div class="lahde-rivi">
         <span class="lahde-teksti">Lähde: Yle Uutiset — Talous · Koko Suomi</span>
         <a class="lue-lisaa"
-           href="https://yle.fi/a/74-20228724?origin=rss"
+           href="https://yle.fi/a/74-20226559?origin=rss"
            target="_blank"
            rel="noopener noreferrer">
           Lue alkuperäinen →
@@ -460,12 +460,12 @@
          data-alue="Koko Suomi"
          data-aihepiiri="Alan yritykset">
       <div class="kortti-aihepiiri">Alan yritykset</div>
-      <h2>Timo Vornanen hakee valituslupaa tuomiolleen</h2>
-      <p>Humalassa ollut kansanedustaja Timo Vornanen muun muassa uhkasi aseella miestä ja ampui varoituslaukauksen katuun baari-illan jälkeen Helsingissä keväällä 2024.</p>
+      <h2>Akkuvalmistaja Ioncor irtisanoo Salossa ja Uudessa­kaupungissa yhteensä  125 työntekijää</h2>
+      <p>Akkutilausten hiipuminen näkyy Salon ja Uudenkaupungin tehtailla. Ioncor on työllistänyt 1 100 henkilöä kuudessa toimipaikassa Suomessa ja Saksassa.</p>
       <div class="lahde-rivi">
         <span class="lahde-teksti">Lähde: Yle Uutiset — Talous · Koko Suomi</span>
         <a class="lue-lisaa"
-           href="https://yle.fi/a/74-20228268?origin=rss"
+           href="https://yle.fi/a/74-20228886?origin=rss"
            target="_blank"
            rel="noopener noreferrer">
           Lue alkuperäinen →
@@ -477,12 +477,12 @@
          data-alue="Koko Suomi"
          data-aihepiiri="Alan yritykset">
       <div class="kortti-aihepiiri">Alan yritykset</div>
-      <h2>Joensuulainen mies pyöritti Suomen suurimpia verkko­huumekauppoja sitten Silkkitien – sai yli 7 vuotta vankeutta</h2>
-      <p>Tuomittu ylläpiti kolmea eri verkko­huumekauppaa, joiden liikevaihto oli noin 5,3 miljoonaa euroa. Esitutkinnassa hän kertoi avoimesti, miten teki rikokset.</p>
+      <h2>Työntekijän päihteiden käyttöä testataan vain harvoin hyvin­vointialueilla – jopa alfa‑PVP:n käyttöä tullut ilmi</h2>
+      <p>Kysyimme kahdelta hyvin­vointi­alueelta ja HUSilta, miten työntekijöiden epäiltyyn päihteiden käyttöön puututaan.</p>
       <div class="lahde-rivi">
         <span class="lahde-teksti">Lähde: Yle Uutiset — Talous · Koko Suomi</span>
         <a class="lue-lisaa"
-           href="https://yle.fi/a/74-20228534?origin=rss"
+           href="https://yle.fi/a/74-20228538?origin=rss"
            target="_blank"
            rel="noopener noreferrer">
           Lue alkuperäinen →
@@ -494,12 +494,12 @@
          data-alue="Koko Suomi"
          data-aihepiiri="Alan yritykset">
       <div class="kortti-aihepiiri">Alan yritykset</div>
-      <h2>Ihminen menehtyi Jämsänkosken tulipalossa perjantaiyönä</h2>
+      <h2>JYP-pomo Jukka Seppänen uskoo, että Jyväskylään on valmistumassa Euroopan katsojaystävällisin jääareena – "Tullaan ihastelemaan"</h2>
       <p></p>
       <div class="lahde-rivi">
         <span class="lahde-teksti">Lähde: Keskisuomalainen · Koko Suomi</span>
         <a class="lue-lisaa"
-           href="https://www.ksml.fi/paikalliset/9491147"
+           href="https://www.ksml.fi/urheilu/9493613"
            target="_blank"
            rel="noopener noreferrer">
           Lue alkuperäinen →
@@ -511,12 +511,12 @@
          data-alue="Koko Suomi"
          data-aihepiiri="Alan yritykset">
       <div class="kortti-aihepiiri">Alan yritykset</div>
-      <h2>Useita poliisipartioita hälytettiin Äänekosken Sumiaisiin – poliisi vaitonainen tapahtuneesta</h2>
+      <h2>Suora | Jyväskylän Lyseon lukion valmistuneita juhlitaan tänään – katso suora lähetys</h2>
       <p></p>
       <div class="lahde-rivi">
         <span class="lahde-teksti">Lähde: Keskisuomalainen · Koko Suomi</span>
         <a class="lue-lisaa"
-           href="https://www.ksml.fi/paikalliset/9491791"
+           href="https://www.ksml.fi/paikalliset/9479604"
            target="_blank"
            rel="noopener noreferrer">
           Lue alkuperäinen →
@@ -528,12 +528,12 @@
          data-alue="Koko Suomi"
          data-aihepiiri="Alan yritykset">
       <div class="kortti-aihepiiri">Alan yritykset</div>
-      <h2>Timo Vornanen on hakenut valituslupaa korkeimmasta oikeudesta</h2>
-      <p>Valituksen kohteena on hovioikeuden päätös olla antamatta valituslupaa ampumisjutussa.</p>
+      <h2>Näin työsopimuksen tekeminen helpottuu maanantaista alkaen – enää ei tarvita perusteltua syytä</h2>
+      <p>Muutoksia tulee myös lomautuksista ilmoittamiseen ja takaisinottovelvoitteeseen.</p>
       <div class="lahde-rivi">
         <span class="lahde-teksti">Lähde: Keskisuomalainen · Koko Suomi</span>
         <a class="lue-lisaa"
-           href="https://www.ksml.fi/uutissuomalainen/9491672"
+           href="https://www.ksml.fi/uutissuomalainen/9494556"
            target="_blank"
            rel="noopener noreferrer">
           Lue alkuperäinen →
@@ -545,12 +545,12 @@
          data-alue="Koko Suomi"
          data-aihepiiri="Alan yritykset">
       <div class="kortti-aihepiiri">Alan yritykset</div>
-      <h2>Laukaan kunnanjohtaja Linda Leinonen eteni Kajaanin kaupunginjohtajahaussa soveltuvuusarviointeihin</h2>
+      <h2>Laukaan lukio oli STT:n lukiovertailussa Keski-Suomen paras – nyt nuoret kertovat syyn</h2>
       <p></p>
       <div class="lahde-rivi">
         <span class="lahde-teksti">Lähde: Keskisuomalainen · Koko Suomi</span>
         <a class="lue-lisaa"
-           href="https://www.ksml.fi/paikalliset/9491851"
+           href="https://www.ksml.fi/paikalliset/9494205"
            target="_blank"
            rel="noopener noreferrer">
           Lue alkuperäinen →
@@ -562,12 +562,12 @@
          data-alue="Koko Suomi"
          data-aihepiiri="Alan yritykset">
       <div class="kortti-aihepiiri">Alan yritykset</div>
-      <h2>IL: Kalajoella viime kesänä hukkuneiden teinipoikien hautakivet sotkettu</h2>
+      <h2>HS: Poliisi ehdotti rattijuopumussakon saaneelle kansanedustaja Joona Räsäselle liian pieniä tuloja</h2>
       <p></p>
       <div class="lahde-rivi">
         <span class="lahde-teksti">Lähde: Keskisuomalainen · Koko Suomi</span>
         <a class="lue-lisaa"
-           href="https://www.ksml.fi/uutissuomalainen/9491765"
+           href="https://www.ksml.fi/uutissuomalainen/9494560"
            target="_blank"
            rel="noopener noreferrer">
           Lue alkuperäinen →
@@ -1085,7 +1085,7 @@
     let valittuAlue = "kaikki";
     let valittuAihe = "kaikki";
     let hakusana = "";
-    const ladattuPaiva = "2026-05-29";
+    const ladattuPaiva = "2026-05-30";
 
     // --- Alusta kortit sivun latautuessa ---
     document.addEventListener("DOMContentLoaded", () => {
